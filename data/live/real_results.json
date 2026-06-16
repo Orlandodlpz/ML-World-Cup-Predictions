@@ -1,0 +1,210 @@
+[
+  {
+    "home": "Mexico",
+    "away": "South Africa",
+    "home_goals": 2,
+    "away_goals": 0,
+    "actual_outcome": 2,
+    "actual_label": "Mexico Win",
+    "predicted_proba": [
+      0.068771131336689,
+      0.1955452859401703,
+      0.7356836199760437
+    ]
+  },
+  {
+    "home": "South Korea",
+    "away": "Czechia",
+    "home_goals": 2,
+    "away_goals": 1,
+    "actual_outcome": 2,
+    "actual_label": "South Korea Win",
+    "predicted_proba": [
+      0.04524754360318184,
+      0.1258404552936554,
+      0.8289120197296143
+    ]
+  },
+  {
+    "home": "Canada",
+    "away": "Bosnia and Herzegovina",
+    "home_goals": 1,
+    "away_goals": 1,
+    "actual_outcome": 1,
+    "actual_label": "Draw",
+    "predicted_proba": [
+      0.15371601283550262,
+      0.28701522946357727,
+      0.5592687129974365
+    ]
+  },
+  {
+    "home": "Qatar",
+    "away": "Switzerland",
+    "home_goals": 1,
+    "away_goals": 1,
+    "actual_outcome": 1,
+    "actual_label": "Draw",
+    "predicted_proba": [
+      0.6554209589958191,
+      0.18379518389701843,
+      0.16078385710716248
+    ]
+  },
+  {
+    "home": "USA",
+    "away": "Paraguay",
+    "home_goals": 4,
+    "away_goals": 1,
+    "actual_outcome": 2,
+    "actual_label": "USA Win",
+    "predicted_proba": [
+      0.651206910610199,
+      0.19885055720806122,
+      0.14994248747825623
+    ]
+  },
+  {
+    "home": "Brazil",
+    "away": "Morocco",
+    "home_goals": 1,
+    "away_goals": 1,
+    "actual_outcome": 1,
+    "actual_label": "Draw",
+    "predicted_proba": [
+      0.41781654953956604,
+      0.2634008228778839,
+      0.3187826871871948
+    ]
+  },
+  {
+    "home": "Scotland",
+    "away": "Haiti",
+    "home_goals": 1,
+    "away_goals": 0,
+    "actual_outcome": 2,
+    "actual_label": "Scotland Win",
+    "predicted_proba": [
+      0.14853230118751526,
+      0.23167452216148376,
+      0.6197932362556458
+    ]
+  },
+  {
+    "home": "Australia",
+    "away": "Turkey",
+    "home_goals": 2,
+    "away_goals": 0,
+    "actual_outcome": 2,
+    "actual_label": "Australia Win",
+    "predicted_proba": [
+      0.34059274196624756,
+      0.29866090416908264,
+      0.3607463836669922
+    ]
+  },
+  {
+    "home": "Germany",
+    "away": "Curacao",
+    "home_goals": 7,
+    "away_goals": 1,
+    "actual_outcome": 2,
+    "actual_label": "Germany Win",
+    "predicted_proba": [
+      0.07135038822889328,
+      0.09254570305347443,
+      0.8361039161682129
+    ]
+  },
+  {
+    "home": "Ivory Coast",
+    "away": "Ecuador",
+    "home_goals": 1,
+    "away_goals": 0,
+    "actual_outcome": 2,
+    "actual_label": "Ivory Coast Win",
+    "predicted_proba": [
+      0.466960072517395,
+      0.25462639331817627,
+      0.2784135639667511
+    ]
+  },
+  {
+    "home": "Netherlands",
+    "away": "Japan",
+    "home_goals": 2,
+    "away_goals": 2,
+    "actual_outcome": 1,
+    "actual_label": "Draw",
+    "predicted_proba": [
+      0.40061265230178833,
+      0.2488706260919571,
+      0.350516676902771
+    ]
+  },
+  {
+    "home": "Sweden",
+    "away": "Tunisia",
+    "home_goals": 5,
+    "away_goals": 1,
+    "actual_outcome": 2,
+    "actual_label": "Sweden Win",
+    "predicted_proba": [
+      0.2527909576892853,
+      0.2770630419254303,
+      0.4701460003852844
+    ]
+  },
+  {
+    "home": "Spain",
+    "away": "Cape Verde",
+    "home_goals": 0,
+    "away_goals": 0,
+    "actual_outcome": 1,
+    "actual_label": "Draw",
+    "predicted_proba": [
+      0.03859446942806244,
+      0.16556528210639954,
+      0.7958402037620544
+    ]
+  },
+  {
+    "home": "Belgium",
+    "away": "Egypt",
+    "home_goals": 1,
+    "away_goals": 1,
+    "actual_outcome": 1,
+    "actual_label": "Draw",
+    "predicted_proba": [
+      0.22538374364376068,
+      0.24617771804332733,
+      0.5284385681152344
+    ]
+  },
+  {
+    "home": "Saudi Arabia",
+    "away": "Uruguay",
+    "home_goals": 1,
+    "away_goals": 1,
+    "actual_outcome": 1,
+    "actual_label": "Draw",
+    "predicted_proba": [
+      0.619710385799408,
+      0.20863394439220428,
+      0.17165569961071014
+    ]
+  },
+  {
+    "home": "Iran",
+    "away": "New Zealand",
+    "home_goals": 2,
+    "away_goals": 2,
+    "actual_outcome": 1,
+    "actual_label": "Draw",
+    "predicted_proba": [
+      0.19358578324317932,
+      0.2781331539154053,
+      0.5282810926437378
+    ]
+  }
+]

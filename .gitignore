@@ -1,0 +1,6 @@
+/data/__pycache__/
+/data/*.pyc
+/data/*.pyo
+/data/*.pyd
+/data/.Python
+learning.md

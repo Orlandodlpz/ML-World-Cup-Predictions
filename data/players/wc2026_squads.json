@@ -1,0 +1,8230 @@
+{
+  "Brazil": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Alisson",
+        "pos": "GK",
+        "fifa": 90,
+        "value_m": 30,
+        "club": "Liverpool"
+      },
+      {
+        "name": "Ederson",
+        "pos": "GK",
+        "fifa": 88,
+        "value_m": 25,
+        "club": "Man City"
+      },
+      {
+        "name": "Weverton",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 5,
+        "club": "Palmeiras"
+      },
+      {
+        "name": "Marquinhos",
+        "pos": "DEF",
+        "fifa": 87,
+        "value_m": 40,
+        "club": "PSG"
+      },
+      {
+        "name": "\u00c9der Milit\u00e3o",
+        "pos": "DEF",
+        "fifa": 86,
+        "value_m": 60,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Gabriel Magalh\u00e3es",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 55,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Danilo",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 15,
+        "club": "Juventus"
+      },
+      {
+        "name": "Vanderson",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 30,
+        "club": "Monaco"
+      },
+      {
+        "name": "Guilherme Arana",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 18,
+        "club": "Atl\u00e9tico MG"
+      },
+      {
+        "name": "Wendell",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 8,
+        "club": "Porto"
+      },
+      {
+        "name": "Casemiro",
+        "pos": "MID",
+        "fifa": 85,
+        "value_m": 20,
+        "club": "Man United"
+      },
+      {
+        "name": "Bruno Guimar\u00e3es",
+        "pos": "MID",
+        "fifa": 87,
+        "value_m": 90,
+        "club": "Newcastle"
+      },
+      {
+        "name": "Lucas Paquet\u00e1",
+        "pos": "MID",
+        "fifa": 85,
+        "value_m": 65,
+        "club": "West Ham"
+      },
+      {
+        "name": "Gerson",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 22,
+        "club": "Flamengo"
+      },
+      {
+        "name": "Douglas Luiz",
+        "pos": "MID",
+        "fifa": 83,
+        "value_m": 45,
+        "club": "Juventus"
+      },
+      {
+        "name": "Andrey Santos",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 25,
+        "club": "Chelsea"
+      },
+      {
+        "name": "Vinicius Jr.",
+        "pos": "ATT",
+        "fifa": 92,
+        "value_m": 200,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Rodrygo",
+        "pos": "ATT",
+        "fifa": 86,
+        "value_m": 120,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Raphinha",
+        "pos": "ATT",
+        "fifa": 85,
+        "value_m": 80,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Gabriel Jesus",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 45,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Endrick",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 60,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Savinho",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 40,
+        "club": "Man City"
+      },
+      {
+        "name": "Gabriel Martinelli",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 65,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Luiz Henrique",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 20,
+        "club": "Real Betis"
+      },
+      {
+        "name": "Igor Jesus",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 15,
+        "club": "Botafogo"
+      },
+      {
+        "name": "Jo\u00e3o Pedro",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 30,
+        "club": "Brighton"
+      }
+    ]
+  },
+  "Argentina": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Emiliano Mart\u00ednez",
+        "pos": "GK",
+        "fifa": 89,
+        "value_m": 25,
+        "club": "Aston Villa"
+      },
+      {
+        "name": "Franco Armani",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 3,
+        "club": "River Plate"
+      },
+      {
+        "name": "Walter Ben\u00edtez",
+        "pos": "GK",
+        "fifa": 80,
+        "value_m": 8,
+        "club": "PSG"
+      },
+      {
+        "name": "Cristian Romero",
+        "pos": "DEF",
+        "fifa": 86,
+        "value_m": 65,
+        "club": "Tottenham"
+      },
+      {
+        "name": "Nicol\u00e1s Otamendi",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 8,
+        "club": "Benfica"
+      },
+      {
+        "name": "Lisandro Mart\u00ednez",
+        "pos": "DEF",
+        "fifa": 85,
+        "value_m": 60,
+        "club": "Man United"
+      },
+      {
+        "name": "Nicol\u00e1s Tagliafico",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 12,
+        "club": "Lyon"
+      },
+      {
+        "name": "Nahuel Molina",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 35,
+        "club": "Atl\u00e9tico Madrid"
+      },
+      {
+        "name": "Gonzalo Montiel",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 12,
+        "club": "Nottm Forest"
+      },
+      {
+        "name": "Marcos Acu\u00f1a",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 10,
+        "club": "Sevilla"
+      },
+      {
+        "name": "Rodrigo De Paul",
+        "pos": "MID",
+        "fifa": 85,
+        "value_m": 40,
+        "club": "Atl\u00e9tico Madrid"
+      },
+      {
+        "name": "Alexis Mac Allister",
+        "pos": "MID",
+        "fifa": 85,
+        "value_m": 80,
+        "club": "Liverpool"
+      },
+      {
+        "name": "Enzo Fern\u00e1ndez",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 100,
+        "club": "Chelsea"
+      },
+      {
+        "name": "Leandro Paredes",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 10,
+        "club": "Roma"
+      },
+      {
+        "name": "Giovani Lo Celso",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 25,
+        "club": "Villarreal"
+      },
+      {
+        "name": "Exequiel Palacios",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 35,
+        "club": "Bayer Leverkusen"
+      },
+      {
+        "name": "Lionel Messi",
+        "pos": "ATT",
+        "fifa": 91,
+        "value_m": 30,
+        "club": "Inter Miami"
+      },
+      {
+        "name": "Lautaro Mart\u00ednez",
+        "pos": "ATT",
+        "fifa": 88,
+        "value_m": 100,
+        "club": "Inter Milan"
+      },
+      {
+        "name": "Juli\u00e1n \u00c1lvarez",
+        "pos": "ATT",
+        "fifa": 86,
+        "value_m": 90,
+        "club": "Atl\u00e9tico Madrid"
+      },
+      {
+        "name": "\u00c1ngel Di Mar\u00eda",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 5,
+        "club": "Benfica"
+      },
+      {
+        "name": "Nicol\u00e1s Gonz\u00e1lez",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 35,
+        "club": "Juventus"
+      },
+      {
+        "name": "Paulo Dybala",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 25,
+        "club": "Roma"
+      },
+      {
+        "name": "Thiago Almada",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 22,
+        "club": "Lyon"
+      },
+      {
+        "name": "Valent\u00edn Carboni",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 35,
+        "club": "Marseille"
+      },
+      {
+        "name": "Alejandro Garnacho",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 60,
+        "club": "Man United"
+      },
+      {
+        "name": "Facundo Buonanotte",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 25,
+        "club": "Leicester"
+      }
+    ]
+  },
+  "France": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Mike Maignan",
+        "pos": "GK",
+        "fifa": 88,
+        "value_m": 50,
+        "club": "AC Milan"
+      },
+      {
+        "name": "Alphonse Areola",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 8,
+        "club": "West Ham"
+      },
+      {
+        "name": "Guillaume Restes",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 12,
+        "club": "Toulouse"
+      },
+      {
+        "name": "William Saliba",
+        "pos": "DEF",
+        "fifa": 87,
+        "value_m": 100,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Dayot Upamecano",
+        "pos": "DEF",
+        "fifa": 85,
+        "value_m": 60,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Ibrahima Konat\u00e9",
+        "pos": "DEF",
+        "fifa": 85,
+        "value_m": 70,
+        "club": "Liverpool"
+      },
+      {
+        "name": "Theo Hern\u00e1ndez",
+        "pos": "DEF",
+        "fifa": 85,
+        "value_m": 60,
+        "club": "AC Milan"
+      },
+      {
+        "name": "Jules Kound\u00e9",
+        "pos": "DEF",
+        "fifa": 85,
+        "value_m": 65,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Benjamin Pavard",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 30,
+        "club": "Inter Milan"
+      },
+      {
+        "name": "Ferland Mendy",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 25,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "N'Golo Kant\u00e9",
+        "pos": "MID",
+        "fifa": 85,
+        "value_m": 15,
+        "club": "Al-Ittihad"
+      },
+      {
+        "name": "Aur\u00e9lien Tchouam\u00e9ni",
+        "pos": "MID",
+        "fifa": 85,
+        "value_m": 80,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Adrien Rabiot",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 20,
+        "club": "Marseille"
+      },
+      {
+        "name": "Warren Za\u00efre-Emery",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 60,
+        "club": "PSG"
+      },
+      {
+        "name": "Youssouf Fofana",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 45,
+        "club": "AC Milan"
+      },
+      {
+        "name": "Matteo Guendouzi",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 30,
+        "club": "Marseille"
+      },
+      {
+        "name": "Kylian Mbapp\u00e9",
+        "pos": "ATT",
+        "fifa": 93,
+        "value_m": 180,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Antoine Griezmann",
+        "pos": "ATT",
+        "fifa": 87,
+        "value_m": 25,
+        "club": "Atl\u00e9tico Madrid"
+      },
+      {
+        "name": "Ousmane Demb\u00e9l\u00e9",
+        "pos": "ATT",
+        "fifa": 86,
+        "value_m": 60,
+        "club": "PSG"
+      },
+      {
+        "name": "Marcus Thuram",
+        "pos": "ATT",
+        "fifa": 85,
+        "value_m": 65,
+        "club": "Inter Milan"
+      },
+      {
+        "name": "Randal Kolo Muani",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 50,
+        "club": "Juventus"
+      },
+      {
+        "name": "Bradley Barcola",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 60,
+        "club": "PSG"
+      },
+      {
+        "name": "Christopher Nkunku",
+        "pos": "ATT",
+        "fifa": 84,
+        "value_m": 55,
+        "club": "Chelsea"
+      },
+      {
+        "name": "Michael Olise",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 70,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Kingsley Coman",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 20,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Eduardo Camavinga",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 90,
+        "club": "Real Madrid"
+      }
+    ]
+  },
+  "Spain": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Unai Sim\u00f3n",
+        "pos": "GK",
+        "fifa": 85,
+        "value_m": 30,
+        "club": "Athletic Club"
+      },
+      {
+        "name": "David Raya",
+        "pos": "GK",
+        "fifa": 85,
+        "value_m": 35,
+        "club": "Arsenal"
+      },
+      {
+        "name": "\u00c1lvaro Valles",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 12,
+        "club": "Las Palmas"
+      },
+      {
+        "name": "Dani Carvajal",
+        "pos": "DEF",
+        "fifa": 85,
+        "value_m": 30,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Robin Le Normand",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 35,
+        "club": "Atl\u00e9tico Madrid"
+      },
+      {
+        "name": "Aymeric Laporte",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 20,
+        "club": "Al-Nassr"
+      },
+      {
+        "name": "Marc Cucurella",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 30,
+        "club": "Chelsea"
+      },
+      {
+        "name": "Pedro Porro",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 35,
+        "club": "Tottenham"
+      },
+      {
+        "name": "Pau Cubars\u00ed",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 60,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Alejandro Grimaldo",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 35,
+        "club": "Bayer Leverkusen"
+      },
+      {
+        "name": "Rodri",
+        "pos": "MID",
+        "fifa": 91,
+        "value_m": 120,
+        "club": "Man City"
+      },
+      {
+        "name": "Pedri",
+        "pos": "MID",
+        "fifa": 88,
+        "value_m": 120,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Fabi\u00e1n Ruiz",
+        "pos": "MID",
+        "fifa": 85,
+        "value_m": 55,
+        "club": "PSG"
+      },
+      {
+        "name": "Mikel Merino",
+        "pos": "MID",
+        "fifa": 83,
+        "value_m": 45,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Mart\u00edn Zubimendi",
+        "pos": "MID",
+        "fifa": 83,
+        "value_m": 60,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Dani Olmo",
+        "pos": "MID",
+        "fifa": 85,
+        "value_m": 65,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Lamine Yamal",
+        "pos": "ATT",
+        "fifa": 87,
+        "value_m": 180,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Nico Williams",
+        "pos": "ATT",
+        "fifa": 85,
+        "value_m": 100,
+        "club": "Athletic Club"
+      },
+      {
+        "name": "\u00c1lvaro Morata",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 18,
+        "club": "AC Milan"
+      },
+      {
+        "name": "Mikel Oyarzabal",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 45,
+        "club": "Real Sociedad"
+      },
+      {
+        "name": "Ferran Torres",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 30,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Bryan Gil",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 20,
+        "club": "Girona"
+      },
+      {
+        "name": "Ayoze P\u00e9rez",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 10,
+        "club": "Villarreal"
+      },
+      {
+        "name": "Yeremy Pino",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 25,
+        "club": "Villarreal"
+      },
+      {
+        "name": "Joselu",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 8,
+        "club": "Al-Qadsiah"
+      },
+      {
+        "name": "Alejandro Baena",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 30,
+        "club": "Atalanta"
+      }
+    ]
+  },
+  "England": {
+    "formation": "4-2-3-1",
+    "players": [
+      {
+        "name": "Jordan Pickford",
+        "pos": "GK",
+        "fifa": 85,
+        "value_m": 30,
+        "club": "Everton"
+      },
+      {
+        "name": "Dean Henderson",
+        "pos": "GK",
+        "fifa": 81,
+        "value_m": 12,
+        "club": "Crystal Palace"
+      },
+      {
+        "name": "Aaron Ramsdale",
+        "pos": "GK",
+        "fifa": 80,
+        "value_m": 18,
+        "club": "Southampton"
+      },
+      {
+        "name": "Kyle Walker",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 15,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "John Stones",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 35,
+        "club": "Man City"
+      },
+      {
+        "name": "Harry Maguire",
+        "pos": "DEF",
+        "fifa": 81,
+        "value_m": 15,
+        "club": "Man United"
+      },
+      {
+        "name": "Luke Shaw",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 20,
+        "club": "Man United"
+      },
+      {
+        "name": "Trent Alexander-Arnold",
+        "pos": "DEF",
+        "fifa": 87,
+        "value_m": 70,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Levi Colwill",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 45,
+        "club": "Chelsea"
+      },
+      {
+        "name": "Rico Lewis",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 40,
+        "club": "Man City"
+      },
+      {
+        "name": "Declan Rice",
+        "pos": "MID",
+        "fifa": 87,
+        "value_m": 120,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Jude Bellingham",
+        "pos": "MID",
+        "fifa": 91,
+        "value_m": 180,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Conor Gallagher",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 45,
+        "club": "Atl\u00e9tico Madrid"
+      },
+      {
+        "name": "Kobbie Mainoo",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 60,
+        "club": "Man United"
+      },
+      {
+        "name": "Adam Wharton",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 30,
+        "club": "Crystal Palace"
+      },
+      {
+        "name": "Phil Foden",
+        "pos": "ATT",
+        "fifa": 89,
+        "value_m": 150,
+        "club": "Man City"
+      },
+      {
+        "name": "Harry Kane",
+        "pos": "ATT",
+        "fifa": 90,
+        "value_m": 80,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Bukayo Saka",
+        "pos": "ATT",
+        "fifa": 88,
+        "value_m": 150,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Marcus Rashford",
+        "pos": "ATT",
+        "fifa": 84,
+        "value_m": 50,
+        "club": "Man United"
+      },
+      {
+        "name": "Ollie Watkins",
+        "pos": "ATT",
+        "fifa": 84,
+        "value_m": 60,
+        "club": "Aston Villa"
+      },
+      {
+        "name": "Anthony Gordon",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 60,
+        "club": "Newcastle"
+      },
+      {
+        "name": "Cole Palmer",
+        "pos": "ATT",
+        "fifa": 86,
+        "value_m": 120,
+        "club": "Chelsea"
+      },
+      {
+        "name": "Jarrod Bowen",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 40,
+        "club": "West Ham"
+      },
+      {
+        "name": "Eberechi Eze",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 55,
+        "club": "Crystal Palace"
+      },
+      {
+        "name": "Noni Madueke",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 40,
+        "club": "Chelsea"
+      },
+      {
+        "name": "Lys Mousset",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 5,
+        "club": "Reims"
+      }
+    ]
+  },
+  "Germany": {
+    "formation": "4-2-3-1",
+    "players": [
+      {
+        "name": "Manuel Neuer",
+        "pos": "GK",
+        "fifa": 87,
+        "value_m": 8,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Marc-Andr\u00e9 ter Stegen",
+        "pos": "GK",
+        "fifa": 87,
+        "value_m": 20,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Oliver Baumann",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 8,
+        "club": "Hoffenheim"
+      },
+      {
+        "name": "Antonio R\u00fcdiger",
+        "pos": "DEF",
+        "fifa": 86,
+        "value_m": 25,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Jonathan Tah",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 40,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Nico Schlotterbeck",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 40,
+        "club": "Dortmund"
+      },
+      {
+        "name": "David Raum",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 30,
+        "club": "RB Leipzig"
+      },
+      {
+        "name": "Joshua Kimmich",
+        "pos": "DEF",
+        "fifa": 87,
+        "value_m": 50,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Benjamin Henrichs",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 20,
+        "club": "RB Leipzig"
+      },
+      {
+        "name": "Waldemar Anton",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 18,
+        "club": "Stuttgart"
+      },
+      {
+        "name": "Toni Kroos",
+        "pos": "MID",
+        "fifa": 87,
+        "value_m": 15,
+        "club": "Real Madrid"
+      },
+      {
+        "name": "Leon Goretzka",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 30,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Florian Wirtz",
+        "pos": "MID",
+        "fifa": 88,
+        "value_m": 150,
+        "club": "Bayer Leverkusen"
+      },
+      {
+        "name": "Jamal Musiala",
+        "pos": "MID",
+        "fifa": 88,
+        "value_m": 150,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Pascal Gro\u00df",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 15,
+        "club": "Dortmund"
+      },
+      {
+        "name": "Robert Andrich",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 25,
+        "club": "Bayer Leverkusen"
+      },
+      {
+        "name": "Kai Havertz",
+        "pos": "ATT",
+        "fifa": 84,
+        "value_m": 65,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Thomas M\u00fcller",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 5,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Serge Gnabry",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 20,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Niclas F\u00fcllkrug",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 30,
+        "club": "West Ham"
+      },
+      {
+        "name": "Leroy San\u00e9",
+        "pos": "ATT",
+        "fifa": 84,
+        "value_m": 30,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Deniz Undav",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 30,
+        "club": "Stuttgart"
+      },
+      {
+        "name": "Tim Kleindienst",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 18,
+        "club": "M\u00f6nchengladbach"
+      },
+      {
+        "name": "Maximilian Beier",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 30,
+        "club": "Dortmund"
+      },
+      {
+        "name": "Chris F\u00fchrich",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 22,
+        "club": "Stuttgart"
+      },
+      {
+        "name": "Angelo Stiller",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 30,
+        "club": "Stuttgart"
+      }
+    ]
+  },
+  "Portugal": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Diogo Costa",
+        "pos": "GK",
+        "fifa": 86,
+        "value_m": 60,
+        "club": "Porto"
+      },
+      {
+        "name": "Rui Patr\u00edcio",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 3,
+        "club": "Roma"
+      },
+      {
+        "name": "Jos\u00e9 S\u00e1",
+        "pos": "GK",
+        "fifa": 83,
+        "value_m": 18,
+        "club": "Wolves"
+      },
+      {
+        "name": "R\u00faben Dias",
+        "pos": "DEF",
+        "fifa": 89,
+        "value_m": 80,
+        "club": "Man City"
+      },
+      {
+        "name": "Pepe",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 1,
+        "club": "Porto"
+      },
+      {
+        "name": "Gon\u00e7alo In\u00e1cio",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 55,
+        "club": "Sporting CP"
+      },
+      {
+        "name": "Nuno Mendes",
+        "pos": "DEF",
+        "fifa": 85,
+        "value_m": 60,
+        "club": "PSG"
+      },
+      {
+        "name": "Diogo Dalot",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 45,
+        "club": "Man United"
+      },
+      {
+        "name": "Jo\u00e3o Cancelo",
+        "pos": "DEF",
+        "fifa": 85,
+        "value_m": 30,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Ant\u00f3nio Silva",
+        "pos": "DEF",
+        "fifa": 81,
+        "value_m": 45,
+        "club": "Benfica"
+      },
+      {
+        "name": "R\u00faben Neves",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 30,
+        "club": "Al-Hilal"
+      },
+      {
+        "name": "Jo\u00e3o Palhinha",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 40,
+        "club": "Bayern Munich"
+      },
+      {
+        "name": "Bruno Fernandes",
+        "pos": "MID",
+        "fifa": 87,
+        "value_m": 70,
+        "club": "Man United"
+      },
+      {
+        "name": "Vitinha",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 70,
+        "club": "PSG"
+      },
+      {
+        "name": "Jo\u00e3o Neves",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 80,
+        "club": "PSG"
+      },
+      {
+        "name": "Bernardo Silva",
+        "pos": "MID",
+        "fifa": 88,
+        "value_m": 80,
+        "club": "Man City"
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "pos": "ATT",
+        "fifa": 85,
+        "value_m": 10,
+        "club": "Al-Nassr"
+      },
+      {
+        "name": "Rafael Le\u00e3o",
+        "pos": "ATT",
+        "fifa": 86,
+        "value_m": 80,
+        "club": "AC Milan"
+      },
+      {
+        "name": "Pedro Neto",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 55,
+        "club": "Chelsea"
+      },
+      {
+        "name": "Gon\u00e7alo Ramos",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 60,
+        "club": "PSG"
+      },
+      {
+        "name": "Francisco Concei\u00e7\u00e3o",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 30,
+        "club": "Juventus"
+      },
+      {
+        "name": "Diogo Jota",
+        "pos": "ATT",
+        "fifa": 85,
+        "value_m": 55,
+        "club": "Liverpool"
+      },
+      {
+        "name": "Jo\u00e3o F\u00e9lix",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 35,
+        "club": "Chelsea"
+      },
+      {
+        "name": "Rafa Silva",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 10,
+        "club": "Benfica"
+      },
+      {
+        "name": "Trinc\u00e3o",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 25,
+        "club": "Sporting CP"
+      },
+      {
+        "name": "Bruma",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 5,
+        "club": "Panathinaikos"
+      }
+    ]
+  },
+  "Netherlands": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Bart Verbruggen",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 25,
+        "club": "Brighton"
+      },
+      {
+        "name": "Mark Flekken",
+        "pos": "GK",
+        "fifa": 81,
+        "value_m": 12,
+        "club": "Brentford"
+      },
+      {
+        "name": "Remko Pasveer",
+        "pos": "GK",
+        "fifa": 79,
+        "value_m": 3,
+        "club": "Ajax"
+      },
+      {
+        "name": "Virgil van Dijk",
+        "pos": "DEF",
+        "fifa": 89,
+        "value_m": 40,
+        "club": "Liverpool"
+      },
+      {
+        "name": "Nathan Ak\u00e9",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 35,
+        "club": "Man City"
+      },
+      {
+        "name": "Stefan de Vrij",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 12,
+        "club": "Inter Milan"
+      },
+      {
+        "name": "Matthijs de Ligt",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 35,
+        "club": "Man United"
+      },
+      {
+        "name": "Denzel Dumfries",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 35,
+        "club": "Inter Milan"
+      },
+      {
+        "name": "Jurri\u00ebn Timber",
+        "pos": "DEF",
+        "fifa": 83,
+        "value_m": 55,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Ian Maatsen",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 35,
+        "club": "Aston Villa"
+      },
+      {
+        "name": "Ryan Gravenberch",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 60,
+        "club": "Liverpool"
+      },
+      {
+        "name": "Tijjani Reijnders",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 55,
+        "club": "AC Milan"
+      },
+      {
+        "name": "Jerdy Schouten",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 30,
+        "club": "PSV"
+      },
+      {
+        "name": "Mats Wieffer",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 30,
+        "club": "Brighton"
+      },
+      {
+        "name": "Frenkie de Jong",
+        "pos": "MID",
+        "fifa": 86,
+        "value_m": 60,
+        "club": "Barcelona"
+      },
+      {
+        "name": "Xavi Simons",
+        "pos": "MID",
+        "fifa": 85,
+        "value_m": 80,
+        "club": "RB Leipzig"
+      },
+      {
+        "name": "Cody Gakpo",
+        "pos": "ATT",
+        "fifa": 85,
+        "value_m": 65,
+        "club": "Liverpool"
+      },
+      {
+        "name": "Memphis Depay",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 8,
+        "club": "Corinthians"
+      },
+      {
+        "name": "Donyell Malen",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 30,
+        "club": "Aston Villa"
+      },
+      {
+        "name": "Wout Weghorst",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 8,
+        "club": "Hoffenheim"
+      },
+      {
+        "name": "Brian Brobbey",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 30,
+        "club": "Ajax"
+      },
+      {
+        "name": "Steven Bergwijn",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 18,
+        "club": "Ajax"
+      },
+      {
+        "name": "Noa Lang",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 30,
+        "club": "PSV"
+      },
+      {
+        "name": "Quinten Timber",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 30,
+        "club": "Arsenal"
+      },
+      {
+        "name": "Myron Boadu",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 12,
+        "club": "Monaco"
+      },
+      {
+        "name": "Justin Kluivert",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Bournemouth"
+      }
+    ]
+  },
+  "USA": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Matt Turner",
+        "pos": "GK",
+        "fifa": 79,
+        "value_m": 8,
+        "club": "Crystal Palace"
+      },
+      {
+        "name": "Ethan Horvath",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 2,
+        "club": "Luton Town"
+      },
+      {
+        "name": "Patrick Schulte",
+        "pos": "GK",
+        "fifa": 75,
+        "value_m": 5,
+        "club": "Columbus Crew"
+      },
+      {
+        "name": "Sergino Dest",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 12,
+        "club": "PSV"
+      },
+      {
+        "name": "Tim Ream",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 2,
+        "club": "Charlotte FC"
+      },
+      {
+        "name": "Chris Richards",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 12,
+        "club": "Crystal Palace"
+      },
+      {
+        "name": "Joe Scally",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 12,
+        "club": "M\u00f6nchengladbach"
+      },
+      {
+        "name": "Antonee Robinson",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 25,
+        "club": "Fulham"
+      },
+      {
+        "name": "DeAndre Yedlin",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 1,
+        "club": "Inter Miami"
+      },
+      {
+        "name": "Miles Robinson",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 8,
+        "club": "Atlanta United"
+      },
+      {
+        "name": "Tyler Adams",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 20,
+        "club": "Bournemouth"
+      },
+      {
+        "name": "Weston McKennie",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 18,
+        "club": "Juventus"
+      },
+      {
+        "name": "Yunus Musah",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 25,
+        "club": "AC Milan"
+      },
+      {
+        "name": "Luca de la Torre",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 8,
+        "club": "Celta Vigo"
+      },
+      {
+        "name": "Gio Reyna",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 20,
+        "club": "Nottm Forest"
+      },
+      {
+        "name": "Johnny Cardoso",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 18,
+        "club": "Real Betis"
+      },
+      {
+        "name": "Christian Pulisic",
+        "pos": "ATT",
+        "fifa": 83,
+        "value_m": 30,
+        "club": "AC Milan"
+      },
+      {
+        "name": "Ricardo Pepi",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 15,
+        "club": "PSV"
+      },
+      {
+        "name": "Timothy Weah",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 18,
+        "club": "Juventus"
+      },
+      {
+        "name": "Josh Sargent",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 12,
+        "club": "Norwich City"
+      },
+      {
+        "name": "Folarin Balogun",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 20,
+        "club": "Monaco"
+      },
+      {
+        "name": "Malik Tillman",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 12,
+        "club": "PSV"
+      },
+      {
+        "name": "Daryl Dike",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 8,
+        "club": "West Brom"
+      },
+      {
+        "name": "Jordan Morris",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 5,
+        "club": "Seattle Sounders"
+      },
+      {
+        "name": "Cade Cowell",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 10,
+        "club": "Guadalajara"
+      },
+      {
+        "name": "Joe Scally",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 12,
+        "club": "M\u00f6nchengladbach"
+      }
+    ]
+  },
+  "Mexico": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Guillermo Ochoa",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 3,
+        "club": "Salernitana"
+      },
+      {
+        "name": "Ra\u00fal Rangel",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 3,
+        "club": "Chivas"
+      },
+      {
+        "name": "Luis Malag\u00f3n",
+        "pos": "GK",
+        "fifa": 79,
+        "value_m": 5,
+        "club": "Am\u00e9rica"
+      },
+      {
+        "name": "C\u00e9sar Montes",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 8,
+        "club": "Espanyol"
+      },
+      {
+        "name": "Johan V\u00e1squez",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 8,
+        "club": "Genoa"
+      },
+      {
+        "name": "Edson \u00c1lvarez",
+        "pos": "MID",
+        "fifa": 83,
+        "value_m": 35,
+        "club": "West Ham"
+      },
+      {
+        "name": "H\u00e9ctor Moreno",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 2,
+        "club": "Rayados"
+      },
+      {
+        "name": "Jes\u00fas Gallardo",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 5,
+        "club": "Rayados"
+      },
+      {
+        "name": "Jorge S\u00e1nchez",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 5,
+        "club": "Porto"
+      },
+      {
+        "name": "Gerardo Arteaga",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 6,
+        "club": "Stade Reims"
+      },
+      {
+        "name": "Carlos Rodr\u00edguez",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 5,
+        "club": "Cruz Azul"
+      },
+      {
+        "name": "Orbel\u00edn Pineda",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 5,
+        "club": "AEK Athens"
+      },
+      {
+        "name": "Luis Ch\u00e1vez",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 10,
+        "club": "Dortmund"
+      },
+      {
+        "name": "Fernando Beltr\u00e1n",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 5,
+        "club": "Chivas"
+      },
+      {
+        "name": "Erick Guti\u00e9rrez",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 3,
+        "club": "PSV"
+      },
+      {
+        "name": "Roberto Alvarado",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 5,
+        "club": "Chivas"
+      },
+      {
+        "name": "Hirving Lozano",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 15,
+        "club": "PSV"
+      },
+      {
+        "name": "Ra\u00fal Jim\u00e9nez",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 10,
+        "club": "Fulham"
+      },
+      {
+        "name": "Alexis Vega",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 5,
+        "club": "Chivas"
+      },
+      {
+        "name": "Santiago Gim\u00e9nez",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 40,
+        "club": "AC Milan"
+      },
+      {
+        "name": "Uriel Antuna",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 5,
+        "club": "Cruz Azul"
+      },
+      {
+        "name": "Juli\u00e1n Qui\u00f1ones",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 6,
+        "club": "Am\u00e9rica"
+      },
+      {
+        "name": "Henry Mart\u00edn",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 5,
+        "club": "Am\u00e9rica"
+      },
+      {
+        "name": "Rodrigo Huescas",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 8,
+        "club": "Copenhagen"
+      },
+      {
+        "name": "Charly Rodr\u00edguez",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 5,
+        "club": "Chivas"
+      },
+      {
+        "name": "Diego Lainez",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 4,
+        "club": "Braga"
+      }
+    ]
+  },
+  "Jamaica": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Jamaica Player 1",
+        "pos": "GK",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 2",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 3",
+        "pos": "GK",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 4",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 5",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 6",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 7",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 8",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 9",
+        "pos": "DEF",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 10",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 11",
+        "pos": "DEF",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 12",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 13",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 14",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 15",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 16",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 17",
+        "pos": "MID",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 18",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 19",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 20",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 21",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 22",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 23",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 24",
+        "pos": "ATT",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 25",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Jamaica Player 26",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Venezuela": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Venezuela Player 1",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 2",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 3",
+        "pos": "GK",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 4",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 5",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 6",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 7",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 8",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 9",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 10",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 11",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 12",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 13",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 14",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 15",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 16",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 17",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 18",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 19",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 20",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 21",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 22",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 23",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 24",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 25",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Venezuela Player 26",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Panama": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Panama Player 1",
+        "pos": "GK",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 2",
+        "pos": "GK",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 3",
+        "pos": "GK",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 4",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 5",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 6",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 7",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 8",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 9",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 10",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 11",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 12",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 13",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 14",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 15",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 16",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 17",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 18",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 19",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 20",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 21",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 22",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 23",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 24",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 25",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Panama Player 26",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Bolivia": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Bolivia Player 1",
+        "pos": "GK",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 2",
+        "pos": "GK",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 3",
+        "pos": "GK",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 4",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 5",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 6",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 7",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 8",
+        "pos": "DEF",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 9",
+        "pos": "DEF",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 10",
+        "pos": "DEF",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 11",
+        "pos": "DEF",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 12",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 13",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 14",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 15",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 16",
+        "pos": "MID",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 17",
+        "pos": "MID",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 18",
+        "pos": "MID",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 19",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 20",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 21",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 22",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 23",
+        "pos": "ATT",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 24",
+        "pos": "ATT",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 25",
+        "pos": "ATT",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Bolivia Player 26",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Canada": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Canada Player 1",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 2",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 3",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 4",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 5",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 6",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 7",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 8",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 9",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 10",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 11",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 12",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 13",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 14",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 15",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 16",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 17",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 18",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 19",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 20",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 21",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 22",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 23",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 24",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 25",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Canada Player 26",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Honduras": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Honduras Player 1",
+        "pos": "GK",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 2",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 3",
+        "pos": "GK",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 4",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 5",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 6",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 7",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 8",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 9",
+        "pos": "DEF",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 10",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 11",
+        "pos": "DEF",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 12",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 13",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 14",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 15",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 16",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 17",
+        "pos": "MID",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 18",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 19",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 20",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 21",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 22",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 23",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 24",
+        "pos": "ATT",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 25",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Honduras Player 26",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Morocco": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Morocco Player 1",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 2",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 3",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 4",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 5",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 6",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 7",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 8",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 9",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 10",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 11",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 12",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 13",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 14",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 15",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 16",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 17",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 18",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 19",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 20",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 21",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 22",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 23",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 24",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 25",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Morocco Player 26",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Japan": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Japan Player 1",
+        "pos": "GK",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 2",
+        "pos": "GK",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 3",
+        "pos": "GK",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 4",
+        "pos": "DEF",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 5",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 6",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 7",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 8",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 9",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 10",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 11",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 12",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 13",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 14",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 15",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 16",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 17",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 18",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 19",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 20",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 21",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 22",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 23",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 24",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 25",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Japan Player 26",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Paraguay": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Paraguay Player 1",
+        "pos": "GK",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 2",
+        "pos": "GK",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 3",
+        "pos": "GK",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 4",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 5",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 6",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 7",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 8",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 9",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 10",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 11",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 12",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 13",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 14",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 15",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 16",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 17",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 18",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 19",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 20",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 21",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 22",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 23",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 24",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 25",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Paraguay Player 26",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Chile": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Chile Player 1",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 2",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 3",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 4",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 5",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 6",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 7",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 8",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 9",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 10",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 11",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 12",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 13",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 14",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 15",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 16",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 17",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 18",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 19",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 20",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 21",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 22",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 23",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 24",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 25",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Chile Player 26",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Albania": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Albania Player 1",
+        "pos": "GK",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 2",
+        "pos": "GK",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 3",
+        "pos": "GK",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 4",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 5",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 6",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 7",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 8",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 9",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 10",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 11",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 12",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 13",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 14",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 15",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 16",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 17",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 18",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 19",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 20",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 21",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 22",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 23",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 24",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 25",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Albania Player 26",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Switzerland": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Switzerland Player 1",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 2",
+        "pos": "GK",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 3",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 4",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 5",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 6",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 7",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 8",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 9",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 10",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 11",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 12",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 13",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 14",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 15",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 16",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 17",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 18",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 19",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 20",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 21",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 22",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 23",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 24",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 25",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Switzerland Player 26",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Cameroon": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Cameroon Player 1",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 2",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 3",
+        "pos": "GK",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 4",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 5",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 6",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 7",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 8",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 9",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 10",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 11",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 12",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 13",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 14",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 15",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 16",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 17",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 18",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 19",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 20",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 21",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 22",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 23",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 24",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 25",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Cameroon Player 26",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Saudi Arabia": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Saudi Arabia Player 1",
+        "pos": "GK",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 2",
+        "pos": "GK",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 3",
+        "pos": "GK",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 4",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 5",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 6",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 7",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 8",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 9",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 10",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 11",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 12",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 13",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 14",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 15",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 16",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 17",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 18",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 19",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 20",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 21",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 22",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 23",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 24",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 25",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Saudi Arabia Player 26",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Australia": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Australia Player 1",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 2",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 3",
+        "pos": "GK",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 4",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 5",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 6",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 7",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 8",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 9",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 10",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 11",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 12",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 13",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 14",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 15",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 16",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 17",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 18",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 19",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 20",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 21",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 22",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 23",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 24",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 25",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Australia Player 26",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Uruguay": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Uruguay Player 1",
+        "pos": "GK",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 2",
+        "pos": "GK",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 3",
+        "pos": "GK",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 4",
+        "pos": "DEF",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 5",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 6",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 7",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 8",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 9",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 10",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 11",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 12",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 13",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 14",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 15",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 16",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 17",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 18",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 19",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 20",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 21",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 22",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 23",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 24",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 25",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Uruguay Player 26",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Senegal": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Senegal Player 1",
+        "pos": "GK",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 2",
+        "pos": "GK",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 3",
+        "pos": "GK",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 4",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 5",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 6",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 7",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 8",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 9",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 10",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 11",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 12",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 13",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 14",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 15",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 16",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 17",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 18",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 19",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 20",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 21",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 22",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 23",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 24",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 25",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Senegal Player 26",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "South Korea": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "South Korea Player 1",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 2",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 3",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 4",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 5",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 6",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 7",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 8",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 9",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 10",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 11",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 12",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 13",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 14",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 15",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 16",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 17",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 18",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 19",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 20",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 21",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 22",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 23",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 24",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 25",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "South Korea Player 26",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Denmark": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Denmark Player 1",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 2",
+        "pos": "GK",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 3",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 4",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 5",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 6",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 7",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 8",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 9",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 10",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 11",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 12",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 13",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 14",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 15",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 16",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 17",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 18",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 19",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 20",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 21",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 22",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 23",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 24",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 25",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Denmark Player 26",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Italy": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Italy Player 1",
+        "pos": "GK",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 2",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 3",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 4",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 19,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 5",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 6",
+        "pos": "DEF",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 7",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 8",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 9",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 10",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 11",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 12",
+        "pos": "MID",
+        "fifa": 83,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 13",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 14",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 15",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 16",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 17",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 18",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 19",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 19,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 20",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 21",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 22",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 23",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 24",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 25",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Italy Player 26",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Colombia": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Colombia Player 1",
+        "pos": "GK",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 2",
+        "pos": "GK",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 3",
+        "pos": "GK",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 4",
+        "pos": "DEF",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 5",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 6",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 7",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 8",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 9",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 10",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 11",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 12",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 13",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 14",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 15",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 16",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 17",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 18",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 19",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 20",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 21",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 22",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 23",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 24",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 25",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Colombia Player 26",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Costa Rica": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Costa Rica Player 1",
+        "pos": "GK",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 2",
+        "pos": "GK",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 3",
+        "pos": "GK",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 4",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 5",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 6",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 7",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 8",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 9",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 10",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 11",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 12",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 13",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 14",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 15",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 16",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 17",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 18",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 19",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 20",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 21",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 22",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 23",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 24",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 25",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Costa Rica Player 26",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Egypt": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Egypt Player 1",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 2",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 3",
+        "pos": "GK",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 4",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 5",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 6",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 7",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 8",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 9",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 10",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 11",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 12",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 13",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 14",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 15",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 16",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 17",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 18",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 19",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 20",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 21",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 22",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 23",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 24",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 25",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Egypt Player 26",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Belgium": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Belgium Player 1",
+        "pos": "GK",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 2",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 3",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 4",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 19,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 5",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 6",
+        "pos": "DEF",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 7",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 8",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 9",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 10",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 11",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 12",
+        "pos": "MID",
+        "fifa": 83,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 13",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 14",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 15",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 16",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 17",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 18",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 19",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 19,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 20",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 21",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 22",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 23",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 24",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 25",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Belgium Player 26",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Ukraine": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Ukraine Player 1",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 2",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 3",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 4",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 5",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 6",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 7",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 8",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 9",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 10",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 11",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 12",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 13",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 14",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 15",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 16",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 17",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 18",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 19",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 20",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 21",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 22",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 23",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 24",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 25",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Ukraine Player 26",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Guatemala": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Guatemala Player 1",
+        "pos": "GK",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 2",
+        "pos": "GK",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 3",
+        "pos": "GK",
+        "fifa": 64,
+        "value_m": 3,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 4",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 5",
+        "pos": "DEF",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 6",
+        "pos": "DEF",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 7",
+        "pos": "DEF",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 8",
+        "pos": "DEF",
+        "fifa": 65,
+        "value_m": 4,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 9",
+        "pos": "DEF",
+        "fifa": 64,
+        "value_m": 3,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 10",
+        "pos": "DEF",
+        "fifa": 65,
+        "value_m": 4,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 11",
+        "pos": "DEF",
+        "fifa": 64,
+        "value_m": 3,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 12",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 13",
+        "pos": "MID",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 14",
+        "pos": "MID",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 15",
+        "pos": "MID",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 16",
+        "pos": "MID",
+        "fifa": 65,
+        "value_m": 4,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 17",
+        "pos": "MID",
+        "fifa": 64,
+        "value_m": 3,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 18",
+        "pos": "MID",
+        "fifa": 65,
+        "value_m": 4,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 19",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 20",
+        "pos": "ATT",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 21",
+        "pos": "ATT",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 22",
+        "pos": "ATT",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 23",
+        "pos": "ATT",
+        "fifa": 65,
+        "value_m": 4,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 24",
+        "pos": "ATT",
+        "fifa": 64,
+        "value_m": 3,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 25",
+        "pos": "ATT",
+        "fifa": 65,
+        "value_m": 4,
+        "club": "Domestic"
+      },
+      {
+        "name": "Guatemala Player 26",
+        "pos": "ATT",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Croatia": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Croatia Player 1",
+        "pos": "GK",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 2",
+        "pos": "GK",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 3",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 4",
+        "pos": "DEF",
+        "fifa": 84,
+        "value_m": 19,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 5",
+        "pos": "DEF",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 6",
+        "pos": "DEF",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 7",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 8",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 9",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 10",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 11",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 12",
+        "pos": "MID",
+        "fifa": 83,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 13",
+        "pos": "MID",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 14",
+        "pos": "MID",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 15",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 16",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 17",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 18",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 19",
+        "pos": "MID",
+        "fifa": 84,
+        "value_m": 19,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 20",
+        "pos": "ATT",
+        "fifa": 82,
+        "value_m": 18,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 21",
+        "pos": "ATT",
+        "fifa": 81,
+        "value_m": 17,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 22",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 23",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 24",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 25",
+        "pos": "ATT",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Croatia Player 26",
+        "pos": "ATT",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "IR Iran": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "IR Iran Player 1",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 2",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 3",
+        "pos": "GK",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 4",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 5",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 6",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 7",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 8",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 9",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 10",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 11",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 12",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 13",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 14",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 15",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 16",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 17",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 18",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 19",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 20",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 21",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 22",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 23",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 24",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 25",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "IR Iran Player 26",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Turkey": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Turkey Player 1",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 2",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 3",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 4",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 5",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 6",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 7",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 8",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 9",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 10",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 11",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 12",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 13",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 14",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 15",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 16",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 17",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 18",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 19",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 20",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 21",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 22",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 23",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 24",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 25",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Turkey Player 26",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Czechia": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Czechia Player 1",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 2",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 3",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 4",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 5",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 6",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 7",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 8",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 9",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 10",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 11",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 12",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 13",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 14",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 15",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 16",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 17",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 18",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 19",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 20",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 21",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 22",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 23",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 24",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 25",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Czechia Player 26",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Peru": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Peru Player 1",
+        "pos": "GK",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 2",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 3",
+        "pos": "GK",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 4",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 5",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 6",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 7",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 8",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 9",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 10",
+        "pos": "DEF",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 11",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 12",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 13",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 14",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 15",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 16",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 17",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 18",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 19",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 20",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 21",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 22",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 23",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 24",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 25",
+        "pos": "ATT",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Peru Player 26",
+        "pos": "ATT",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Poland": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Poland Player 1",
+        "pos": "GK",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 2",
+        "pos": "GK",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 3",
+        "pos": "GK",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 4",
+        "pos": "DEF",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 5",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 6",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 7",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 8",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 9",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 10",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 11",
+        "pos": "DEF",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 12",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 13",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 14",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 15",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 16",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 17",
+        "pos": "MID",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 18",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 19",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 20",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 21",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 22",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 23",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 24",
+        "pos": "ATT",
+        "fifa": 73,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 25",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Poland Player 26",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Austria": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Austria Player 1",
+        "pos": "GK",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 2",
+        "pos": "GK",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 3",
+        "pos": "GK",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 4",
+        "pos": "DEF",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 5",
+        "pos": "DEF",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 6",
+        "pos": "DEF",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 7",
+        "pos": "DEF",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 8",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 9",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 10",
+        "pos": "DEF",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 11",
+        "pos": "DEF",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 12",
+        "pos": "MID",
+        "fifa": 79,
+        "value_m": 15,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 13",
+        "pos": "MID",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 14",
+        "pos": "MID",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 15",
+        "pos": "MID",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 16",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 17",
+        "pos": "MID",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 18",
+        "pos": "MID",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 19",
+        "pos": "MID",
+        "fifa": 80,
+        "value_m": 16,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 20",
+        "pos": "ATT",
+        "fifa": 78,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 21",
+        "pos": "ATT",
+        "fifa": 77,
+        "value_m": 14,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 22",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 23",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 24",
+        "pos": "ATT",
+        "fifa": 74,
+        "value_m": 11,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 25",
+        "pos": "ATT",
+        "fifa": 75,
+        "value_m": 12,
+        "club": "Domestic"
+      },
+      {
+        "name": "Austria Player 26",
+        "pos": "ATT",
+        "fifa": 76,
+        "value_m": 13,
+        "club": "Domestic"
+      }
+    ]
+  },
+  "Qatar": {
+    "formation": "4-3-3",
+    "players": [
+      {
+        "name": "Qatar Player 1",
+        "pos": "GK",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 2",
+        "pos": "GK",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 3",
+        "pos": "GK",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 4",
+        "pos": "DEF",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 5",
+        "pos": "DEF",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 6",
+        "pos": "DEF",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 7",
+        "pos": "DEF",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 8",
+        "pos": "DEF",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 9",
+        "pos": "DEF",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 10",
+        "pos": "DEF",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 11",
+        "pos": "DEF",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 12",
+        "pos": "MID",
+        "fifa": 71,
+        "value_m": 9,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 13",
+        "pos": "MID",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 14",
+        "pos": "MID",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 15",
+        "pos": "MID",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 16",
+        "pos": "MID",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 17",
+        "pos": "MID",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 18",
+        "pos": "MID",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 19",
+        "pos": "MID",
+        "fifa": 72,
+        "value_m": 10,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 20",
+        "pos": "ATT",
+        "fifa": 70,
+        "value_m": 8,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 21",
+        "pos": "ATT",
+        "fifa": 69,
+        "value_m": 7,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 22",
+        "pos": "ATT",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 23",
+        "pos": "ATT",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 24",
+        "pos": "ATT",
+        "fifa": 66,
+        "value_m": 5,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 25",
+        "pos": "ATT",
+        "fifa": 67,
+        "value_m": 6,
+        "club": "Domestic"
+      },
+      {
+        "name": "Qatar Player 26",
+        "pos": "ATT",
+        "fifa": 68,
+        "value_m": 6,
+        "club": "Domestic"
+      }
+    ]
+  }
+}

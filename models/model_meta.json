@@ -1,0 +1,27 @@
+{
+  "features": [
+    "home_elo",
+    "away_elo",
+    "elo_diff",
+    "home_form",
+    "away_form",
+    "form_diff",
+    "home_avg_scored",
+    "home_avg_conceded",
+    "away_avg_scored",
+    "away_avg_conceded",
+    "home_xg",
+    "away_xg",
+    "h2h_home_win_rate",
+    "neutral"
+  ],
+  "accuracy": 0.606,
+  "log_loss": 0.8669,
+  "n_train": 25839,
+  "n_test": 6460,
+  "labels": {
+    "0": "away_win",
+    "1": "draw",
+    "2": "home_win"
+  }
+}

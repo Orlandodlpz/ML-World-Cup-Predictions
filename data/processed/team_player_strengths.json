@@ -1,0 +1,442 @@
+{
+  "Brazil": {
+    "attack_strength": 74.5,
+    "midfield_strength": 54.5,
+    "defense_strength": 50.7,
+    "overall_strength": 60.2,
+    "squad_depth": 20.0,
+    "top_player_score": 94.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Argentina": {
+    "attack_strength": 61.9,
+    "midfield_strength": 54.7,
+    "defense_strength": 49.1,
+    "overall_strength": 55.3,
+    "squad_depth": 19.2,
+    "top_player_score": 66.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "France": {
+    "attack_strength": 68.9,
+    "midfield_strength": 53.3,
+    "defense_strength": 56.3,
+    "overall_strength": 59.8,
+    "squad_depth": 17.2,
+    "top_player_score": 92.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Spain": {
+    "attack_strength": 64.0,
+    "midfield_strength": 67.9,
+    "defense_strength": 45.7,
+    "overall_strength": 58.8,
+    "squad_depth": 15.8,
+    "top_player_score": 80.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "England": {
+    "attack_strength": 78.0,
+    "midfield_strength": 58.5,
+    "defense_strength": 46.9,
+    "overall_strength": 61.3,
+    "squad_depth": 12.5,
+    "top_player_score": 88.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Germany": {
+    "attack_strength": 51.0,
+    "midfield_strength": 58.2,
+    "defense_strength": 48.2,
+    "overall_strength": 52.2,
+    "squad_depth": 14.3,
+    "top_player_score": 76.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Portugal": {
+    "attack_strength": 53.0,
+    "midfield_strength": 58.0,
+    "defense_strength": 53.4,
+    "overall_strength": 54.6,
+    "squad_depth": 14.0,
+    "top_player_score": 64.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Netherlands": {
+    "attack_strength": 44.7,
+    "midfield_strength": 53.7,
+    "defense_strength": 46.4,
+    "overall_strength": 48.0,
+    "squad_depth": 10.1,
+    "top_player_score": 56.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "USA": {
+    "attack_strength": 35.4,
+    "midfield_strength": 34.4,
+    "defense_strength": 30.5,
+    "overall_strength": 33.4,
+    "squad_depth": 6.9,
+    "top_player_score": 42.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Mexico": {
+    "attack_strength": 38.2,
+    "midfield_strength": 34.9,
+    "defense_strength": 29.3,
+    "overall_strength": 34.1,
+    "squad_depth": 7.6,
+    "top_player_score": 43.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Jamaica": {
+    "attack_strength": 14.1,
+    "midfield_strength": 18.3,
+    "defense_strength": 15.9,
+    "overall_strength": 16.0,
+    "squad_depth": 6.5,
+    "top_player_score": 20.2,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Venezuela": {
+    "attack_strength": 18.3,
+    "midfield_strength": 22.7,
+    "defense_strength": 20.2,
+    "overall_strength": 20.3,
+    "squad_depth": 6.4,
+    "top_player_score": 24.6,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Panama": {
+    "attack_strength": 16.2,
+    "midfield_strength": 20.5,
+    "defense_strength": 18.0,
+    "overall_strength": 18.1,
+    "squad_depth": 6.4,
+    "top_player_score": 22.4,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Bolivia": {
+    "attack_strength": 11.9,
+    "midfield_strength": 16.2,
+    "defense_strength": 13.7,
+    "overall_strength": 13.8,
+    "squad_depth": 6.4,
+    "top_player_score": 18.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Canada": {
+    "attack_strength": 22.7,
+    "midfield_strength": 27.0,
+    "defense_strength": 24.5,
+    "overall_strength": 24.6,
+    "squad_depth": 6.4,
+    "top_player_score": 28.8,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Honduras": {
+    "attack_strength": 14.1,
+    "midfield_strength": 18.3,
+    "defense_strength": 15.9,
+    "overall_strength": 16.0,
+    "squad_depth": 6.5,
+    "top_player_score": 20.2,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Morocco": {
+    "attack_strength": 27.0,
+    "midfield_strength": 31.3,
+    "defense_strength": 28.8,
+    "overall_strength": 28.9,
+    "squad_depth": 6.4,
+    "top_player_score": 33.2,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Japan": {
+    "attack_strength": 29.1,
+    "midfield_strength": 33.5,
+    "defense_strength": 31.0,
+    "overall_strength": 31.1,
+    "squad_depth": 6.4,
+    "top_player_score": 35.4,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Paraguay": {
+    "attack_strength": 20.5,
+    "midfield_strength": 24.9,
+    "defense_strength": 22.3,
+    "overall_strength": 22.5,
+    "squad_depth": 6.4,
+    "top_player_score": 26.8,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Chile": {
+    "attack_strength": 22.7,
+    "midfield_strength": 27.0,
+    "defense_strength": 24.5,
+    "overall_strength": 24.6,
+    "squad_depth": 6.4,
+    "top_player_score": 28.8,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Albania": {
+    "attack_strength": 16.2,
+    "midfield_strength": 20.5,
+    "defense_strength": 18.0,
+    "overall_strength": 18.1,
+    "squad_depth": 6.4,
+    "top_player_score": 22.4,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Switzerland": {
+    "attack_strength": 31.3,
+    "midfield_strength": 35.7,
+    "defense_strength": 33.1,
+    "overall_strength": 33.3,
+    "squad_depth": 6.4,
+    "top_player_score": 37.6,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Cameroon": {
+    "attack_strength": 18.3,
+    "midfield_strength": 22.7,
+    "defense_strength": 20.2,
+    "overall_strength": 20.3,
+    "squad_depth": 6.4,
+    "top_player_score": 24.6,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Saudi Arabia": {
+    "attack_strength": 16.2,
+    "midfield_strength": 20.5,
+    "defense_strength": 18.0,
+    "overall_strength": 18.1,
+    "squad_depth": 6.4,
+    "top_player_score": 22.4,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Australia": {
+    "attack_strength": 18.3,
+    "midfield_strength": 22.7,
+    "defense_strength": 20.2,
+    "overall_strength": 20.3,
+    "squad_depth": 6.4,
+    "top_player_score": 24.6,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Uruguay": {
+    "attack_strength": 29.1,
+    "midfield_strength": 33.5,
+    "defense_strength": 31.0,
+    "overall_strength": 31.1,
+    "squad_depth": 6.4,
+    "top_player_score": 35.4,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Senegal": {
+    "attack_strength": 24.9,
+    "midfield_strength": 29.1,
+    "defense_strength": 26.7,
+    "overall_strength": 26.8,
+    "squad_depth": 6.5,
+    "top_player_score": 31.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "South Korea": {
+    "attack_strength": 27.0,
+    "midfield_strength": 31.3,
+    "defense_strength": 28.8,
+    "overall_strength": 28.9,
+    "squad_depth": 6.4,
+    "top_player_score": 33.2,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Denmark": {
+    "attack_strength": 31.3,
+    "midfield_strength": 35.7,
+    "defense_strength": 33.1,
+    "overall_strength": 33.3,
+    "squad_depth": 6.4,
+    "top_player_score": 37.6,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Italy": {
+    "attack_strength": 35.7,
+    "midfield_strength": 39.9,
+    "defense_strength": 37.5,
+    "overall_strength": 37.6,
+    "squad_depth": 6.5,
+    "top_player_score": 41.8,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Colombia": {
+    "attack_strength": 29.1,
+    "midfield_strength": 33.5,
+    "defense_strength": 31.0,
+    "overall_strength": 31.1,
+    "squad_depth": 6.4,
+    "top_player_score": 35.4,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Costa Rica": {
+    "attack_strength": 16.2,
+    "midfield_strength": 20.5,
+    "defense_strength": 18.0,
+    "overall_strength": 18.1,
+    "squad_depth": 6.4,
+    "top_player_score": 22.4,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Egypt": {
+    "attack_strength": 18.3,
+    "midfield_strength": 22.7,
+    "defense_strength": 20.2,
+    "overall_strength": 20.3,
+    "squad_depth": 6.4,
+    "top_player_score": 24.6,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Belgium": {
+    "attack_strength": 35.7,
+    "midfield_strength": 39.9,
+    "defense_strength": 37.5,
+    "overall_strength": 37.6,
+    "squad_depth": 6.5,
+    "top_player_score": 41.8,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Ukraine": {
+    "attack_strength": 27.0,
+    "midfield_strength": 31.3,
+    "defense_strength": 28.8,
+    "overall_strength": 28.9,
+    "squad_depth": 6.4,
+    "top_player_score": 33.2,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Guatemala": {
+    "attack_strength": 5.4,
+    "midfield_strength": 9.7,
+    "defense_strength": 7.2,
+    "overall_strength": 7.3,
+    "squad_depth": 6.4,
+    "top_player_score": 11.6,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Croatia": {
+    "attack_strength": 35.7,
+    "midfield_strength": 39.9,
+    "defense_strength": 37.5,
+    "overall_strength": 37.6,
+    "squad_depth": 6.5,
+    "top_player_score": 41.8,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "IR Iran": {
+    "attack_strength": 18.3,
+    "midfield_strength": 22.7,
+    "defense_strength": 20.2,
+    "overall_strength": 20.3,
+    "squad_depth": 6.4,
+    "top_player_score": 24.6,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Turkey": {
+    "attack_strength": 27.0,
+    "midfield_strength": 31.3,
+    "defense_strength": 28.8,
+    "overall_strength": 28.9,
+    "squad_depth": 6.4,
+    "top_player_score": 33.2,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Czechia": {
+    "attack_strength": 27.0,
+    "midfield_strength": 31.3,
+    "defense_strength": 28.8,
+    "overall_strength": 28.9,
+    "squad_depth": 6.4,
+    "top_player_score": 33.2,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Peru": {
+    "attack_strength": 18.3,
+    "midfield_strength": 22.7,
+    "defense_strength": 20.2,
+    "overall_strength": 20.3,
+    "squad_depth": 6.4,
+    "top_player_score": 24.6,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Poland": {
+    "attack_strength": 24.9,
+    "midfield_strength": 29.1,
+    "defense_strength": 26.7,
+    "overall_strength": 26.8,
+    "squad_depth": 6.5,
+    "top_player_score": 31.0,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Austria": {
+    "attack_strength": 27.0,
+    "midfield_strength": 31.3,
+    "defense_strength": 28.8,
+    "overall_strength": 28.9,
+    "squad_depth": 6.4,
+    "top_player_score": 33.2,
+    "n_available": 26,
+    "n_absent": 0
+  },
+  "Qatar": {
+    "attack_strength": 9.7,
+    "midfield_strength": 14.1,
+    "defense_strength": 11.5,
+    "overall_strength": 11.7,
+    "squad_depth": 6.4,
+    "top_player_score": 16.0,
+    "n_available": 26,
+    "n_absent": 0
+  }
+}

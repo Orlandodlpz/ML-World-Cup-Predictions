@@ -1,0 +1,597 @@
+{
+  "tournament": "2026 FIFA World Cup",
+  "hosts": [
+    "USA",
+    "Canada",
+    "Mexico"
+  ],
+  "start_date": "2026-06-11",
+  "final_date": "2026-07-19",
+  "format": {
+    "groups": 12,
+    "teams_per_group": 4,
+    "advance_per_group": 2,
+    "best_third_place": 8,
+    "total_advancing": 32
+  },
+  "groups": {
+    "A": [
+      "Mexico",
+      "South Korea",
+      "South Africa",
+      "Czechia"
+    ],
+    "B": [
+      "Canada",
+      "Switzerland",
+      "Qatar",
+      "Bosnia & Herzegovina"
+    ],
+    "C": [
+      "Brazil",
+      "Morocco",
+      "Scotland",
+      "Haiti"
+    ],
+    "D": [
+      "USA",
+      "Australia",
+      "Paraguay",
+      "Turkey"
+    ],
+    "E": [
+      "Germany",
+      "Ecuador",
+      "Ivory Coast",
+      "Curacao"
+    ],
+    "F": [
+      "Netherlands",
+      "Japan",
+      "Tunisia",
+      "Sweden"
+    ],
+    "G": [
+      "Belgium",
+      "Iran",
+      "Egypt",
+      "New Zealand"
+    ],
+    "H": [
+      "Spain",
+      "Uruguay",
+      "Saudi Arabia",
+      "Cape Verde"
+    ],
+    "I": [
+      "France",
+      "Senegal",
+      "Norway",
+      "Iraq"
+    ],
+    "J": [
+      "Argentina",
+      "Austria",
+      "Algeria",
+      "Jordan"
+    ],
+    "K": [
+      "Portugal",
+      "Colombia",
+      "Uzbekistan",
+      "DR Congo"
+    ],
+    "L": [
+      "England",
+      "Croatia",
+      "Panama",
+      "Ghana"
+    ]
+  },
+  "group_matches": [
+    [
+      "Mexico",
+      "South Africa",
+      2,
+      0,
+      "2026-06-11"
+    ],
+    [
+      "South Korea",
+      "Czechia",
+      2,
+      1,
+      "2026-06-11"
+    ],
+    [
+      "Mexico",
+      "South Korea",
+      null,
+      null,
+      "2026-06-18"
+    ],
+    [
+      "South Africa",
+      "Czechia",
+      null,
+      null,
+      "2026-06-18"
+    ],
+    [
+      "South Africa",
+      "South Korea",
+      null,
+      null,
+      "2026-06-24"
+    ],
+    [
+      "Czechia",
+      "Mexico",
+      null,
+      null,
+      "2026-06-24"
+    ],
+    [
+      "Canada",
+      "Bosnia & Herzegovina",
+      1,
+      1,
+      "2026-06-12"
+    ],
+    [
+      "Qatar",
+      "Switzerland",
+      1,
+      1,
+      "2026-06-13"
+    ],
+    [
+      "Switzerland",
+      "Bosnia & Herzegovina",
+      null,
+      null,
+      "2026-06-18"
+    ],
+    [
+      "Canada",
+      "Qatar",
+      null,
+      null,
+      "2026-06-18"
+    ],
+    [
+      "Switzerland",
+      "Canada",
+      null,
+      null,
+      "2026-06-24"
+    ],
+    [
+      "Bosnia & Herzegovina",
+      "Qatar",
+      null,
+      null,
+      "2026-06-24"
+    ],
+    [
+      "Brazil",
+      "Morocco",
+      1,
+      1,
+      "2026-06-13"
+    ],
+    [
+      "Haiti",
+      "Scotland",
+      0,
+      1,
+      "2026-06-13"
+    ],
+    [
+      "Scotland",
+      "Morocco",
+      null,
+      null,
+      "2026-06-19"
+    ],
+    [
+      "Brazil",
+      "Haiti",
+      null,
+      null,
+      "2026-06-19"
+    ],
+    [
+      "Scotland",
+      "Brazil",
+      null,
+      null,
+      "2026-06-24"
+    ],
+    [
+      "Morocco",
+      "Haiti",
+      null,
+      null,
+      "2026-06-24"
+    ],
+    [
+      "USA",
+      "Paraguay",
+      4,
+      1,
+      "2026-06-12"
+    ],
+    [
+      "Australia",
+      "Turkey",
+      2,
+      0,
+      "2026-06-13"
+    ],
+    [
+      "USA",
+      "Australia",
+      null,
+      null,
+      "2026-06-19"
+    ],
+    [
+      "Turkey",
+      "Paraguay",
+      null,
+      null,
+      "2026-06-19"
+    ],
+    [
+      "Turkey",
+      "USA",
+      null,
+      null,
+      "2026-06-25"
+    ],
+    [
+      "Paraguay",
+      "Australia",
+      null,
+      null,
+      "2026-06-25"
+    ],
+    [
+      "Germany",
+      "Curacao",
+      7,
+      1,
+      "2026-06-14"
+    ],
+    [
+      "Ivory Coast",
+      "Ecuador",
+      1,
+      0,
+      "2026-06-14"
+    ],
+    [
+      "Germany",
+      "Ivory Coast",
+      null,
+      null,
+      "2026-06-20"
+    ],
+    [
+      "Ecuador",
+      "Curacao",
+      null,
+      null,
+      "2026-06-20"
+    ],
+    [
+      "Ecuador",
+      "Germany",
+      null,
+      null,
+      "2026-06-25"
+    ],
+    [
+      "Curacao",
+      "Ivory Coast",
+      null,
+      null,
+      "2026-06-25"
+    ],
+    [
+      "Netherlands",
+      "Japan",
+      2,
+      2,
+      "2026-06-14"
+    ],
+    [
+      "Sweden",
+      "Tunisia",
+      5,
+      1,
+      "2026-06-14"
+    ],
+    [
+      "Netherlands",
+      "Sweden",
+      null,
+      null,
+      "2026-06-20"
+    ],
+    [
+      "Tunisia",
+      "Japan",
+      null,
+      null,
+      "2026-06-21"
+    ],
+    [
+      "Japan",
+      "Sweden",
+      null,
+      null,
+      "2026-06-25"
+    ],
+    [
+      "Tunisia",
+      "Netherlands",
+      null,
+      null,
+      "2026-06-25"
+    ],
+    [
+      "Belgium",
+      "Egypt",
+      1,
+      1,
+      "2026-06-15"
+    ],
+    [
+      "Iran",
+      "New Zealand",
+      2,
+      2,
+      "2026-06-15"
+    ],
+    [
+      "Belgium",
+      "Iran",
+      null,
+      null,
+      "2026-06-21"
+    ],
+    [
+      "New Zealand",
+      "Egypt",
+      null,
+      null,
+      "2026-06-21"
+    ],
+    [
+      "New Zealand",
+      "Belgium",
+      null,
+      null,
+      "2026-06-26"
+    ],
+    [
+      "Egypt",
+      "Iran",
+      null,
+      null,
+      "2026-06-26"
+    ],
+    [
+      "Spain",
+      "Cape Verde",
+      0,
+      0,
+      "2026-06-15"
+    ],
+    [
+      "Saudi Arabia",
+      "Uruguay",
+      1,
+      1,
+      "2026-06-15"
+    ],
+    [
+      "Spain",
+      "Saudi Arabia",
+      null,
+      null,
+      "2026-06-21"
+    ],
+    [
+      "Uruguay",
+      "Cape Verde",
+      null,
+      null,
+      "2026-06-21"
+    ],
+    [
+      "Uruguay",
+      "Spain",
+      null,
+      null,
+      "2026-06-26"
+    ],
+    [
+      "Cape Verde",
+      "Saudi Arabia",
+      null,
+      null,
+      "2026-06-26"
+    ],
+    [
+      "France",
+      "Senegal",
+      null,
+      null,
+      "2026-06-16"
+    ],
+    [
+      "Iraq",
+      "Norway",
+      null,
+      null,
+      "2026-06-16"
+    ],
+    [
+      "France",
+      "Iraq",
+      null,
+      null,
+      "2026-06-22"
+    ],
+    [
+      "Norway",
+      "Senegal",
+      null,
+      null,
+      "2026-06-22"
+    ],
+    [
+      "Norway",
+      "France",
+      null,
+      null,
+      "2026-06-26"
+    ],
+    [
+      "Senegal",
+      "Iraq",
+      null,
+      null,
+      "2026-06-26"
+    ],
+    [
+      "Argentina",
+      "Algeria",
+      null,
+      null,
+      "2026-06-16"
+    ],
+    [
+      "Austria",
+      "Jordan",
+      null,
+      null,
+      "2026-06-17"
+    ],
+    [
+      "Argentina",
+      "Austria",
+      null,
+      null,
+      "2026-06-22"
+    ],
+    [
+      "Jordan",
+      "Algeria",
+      null,
+      null,
+      "2026-06-22"
+    ],
+    [
+      "Jordan",
+      "Argentina",
+      null,
+      null,
+      "2026-06-27"
+    ],
+    [
+      "Algeria",
+      "Austria",
+      null,
+      null,
+      "2026-06-27"
+    ],
+    [
+      "Portugal",
+      "DR Congo",
+      null,
+      null,
+      "2026-06-17"
+    ],
+    [
+      "Uzbekistan",
+      "Colombia",
+      null,
+      null,
+      "2026-06-17"
+    ],
+    [
+      "Portugal",
+      "Uzbekistan",
+      null,
+      null,
+      "2026-06-23"
+    ],
+    [
+      "Colombia",
+      "DR Congo",
+      null,
+      null,
+      "2026-06-23"
+    ],
+    [
+      "Colombia",
+      "Portugal",
+      null,
+      null,
+      "2026-06-27"
+    ],
+    [
+      "DR Congo",
+      "Uzbekistan",
+      null,
+      null,
+      "2026-06-27"
+    ],
+    [
+      "England",
+      "Croatia",
+      null,
+      null,
+      "2026-06-17"
+    ],
+    [
+      "Ghana",
+      "Panama",
+      null,
+      null,
+      "2026-06-17"
+    ],
+    [
+      "England",
+      "Ghana",
+      null,
+      null,
+      "2026-06-23"
+    ],
+    [
+      "Panama",
+      "Croatia",
+      null,
+      null,
+      "2026-06-23"
+    ],
+    [
+      "Panama",
+      "England",
+      null,
+      null,
+      "2026-06-27"
+    ],
+    [
+      "Croatia",
+      "Ghana",
+      null,
+      null,
+      "2026-06-27"
+    ]
+  ]
+}
