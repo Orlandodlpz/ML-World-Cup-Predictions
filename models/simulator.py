@@ -343,7 +343,47 @@ def run_simulation(
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
-    # Load fixtures
+    # ══════════════════════════════════════════════════════════════════════════
+    # STEP 0 — Auto-fetch latest WC26 results + print what's new since last run
+    # ══════════════════════════════════════════════════════════════════════════
+    print("\n" + "─" * 60)
+    print("  🌍 2026 WC Live Results Update")
+    print("─" * 60)
+
+    try:
+        from data.fetch_results import update_results, save_run_snapshot
+        report = update_results(verbose=True)
+
+        new_since_last = report.get("new_since_last", [])
+        all_results    = report.get("all_results", [])
+
+        if new_since_last:
+            print(f"\n  🆕 {len(new_since_last)} match(es) added since your last simulation:\n")
+            for m in new_since_last:
+                hg, ag = m.get("home_goals", "?"), m.get("away_goals", "?")
+                d = m.get("date", "")
+                print(f"     {flag(m['home'])} {m['home']} {hg}–{ag} {m['away']} {flag(m['away'])}"
+                      + (f"  [{d}]" if d else ""))
+        else:
+            print("\n  ✓ No new matches since last simulation.")
+
+        print(f"\n  📋 Total WC26 matches on record: {report['total']}")
+
+    except Exception as exc:
+        print(f"\n  ⚠️  Live fetch skipped ({exc})")
+        print("     Proceeding with existing real_results.json data.\n")
+        all_results = []
+        try:
+            live_path = os.path.join(BASE, "data", "live", "real_results.json")
+            if os.path.exists(live_path):
+                with open(live_path) as f:
+                    all_results = json.load(f)
+        except Exception:
+            pass
+
+    print("─" * 60 + "\n")
+
+    # ── Load fixtures ─────────────────────────────────────────────────────────
     fixtures_path = os.path.join(RAW, "wc2026_fixtures.json")
     if not os.path.exists(fixtures_path):
         print("❌ wc2026_fixtures.json not found. Run: python data/download_data.py")
@@ -352,58 +392,73 @@ def main():
     with open(fixtures_path) as f:
         fixtures = json.load(f)
 
-    # Load team stats (or use defaults)
+    # ── Load base team stats ──────────────────────────────────────────────────
     stats_path = os.path.join(PROCESSED, "team_stats.json")
     if os.path.exists(stats_path):
         with open(stats_path) as f:
             team_stats = json.load(f)
-        print("✓ Loaded real team stats from feature engineering")
+        print("✓ Loaded historical team stats")
     else:
-        print("⚠️  No team_stats.json found — using Elo-only fallback")
+        print("⚠️  No team_stats.json — using Elo-only fallback")
         team_stats = _default_team_stats(fixtures["groups"])
 
-    # ── Blend player strength into team stats ────────────────────────────────
-    # If team_player_strengths.json exists, adjust each team's expected goals
-    # based on their squad quality (attack/defense strength scores).
-    # This makes predictions player-aware without changing the core Elo logic.
+    # ── Blend player strength ─────────────────────────────────────────────────
     player_path = os.path.join(PROCESSED, "team_player_strengths.json")
     if os.path.exists(player_path):
         with open(player_path) as f:
             player_strengths = json.load(f)
-        AVERAGE_STRENGTH = 55.0   # baseline overall strength (0-100 scale)
+        AVERAGE_STRENGTH = 55.0
         for team, stats in team_stats.items():
             ps = player_strengths.get(team)
             if ps:
                 atk = ps.get("attack_strength",  AVERAGE_STRENGTH)
                 dfd = ps.get("defense_strength",  AVERAGE_STRENGTH)
-                # Scale factor: each 10pts above avg = +5% goals scored / -5% conceded
                 atk_mult = 1.0 + (atk - AVERAGE_STRENGTH) / 200.0
-                dfd_mult = 1.0 - (dfd - AVERAGE_STRENGTH) / 200.0   # stronger def → fewer conceded
+                dfd_mult = 1.0 - (dfd - AVERAGE_STRENGTH) / 200.0
                 stats["avg_goals_scored"]   = round(stats.get("avg_goals_scored",   1.2) * atk_mult, 3)
                 stats["avg_goals_conceded"] = round(stats.get("avg_goals_conceded", 1.2) * max(0.5, dfd_mult), 3)
-        print(f"✓ Player strength data blended into team stats ({len(player_strengths)} teams)")
+        print(f"✓ Player strength blended ({len(player_strengths)} teams)")
     else:
-        print("ℹ️  No player strength data found — run: python features/player_features.py")
+        print("ℹ️  No player strength data — run: python features/player_features.py")
 
-    # Try to load XGBoost predictor
+    # ══════════════════════════════════════════════════════════════════════════
+    # STEP 1 — Apply live Elo + goal calibration from real WC26 results
+    # ══════════════════════════════════════════════════════════════════════════
+    if all_results:
+        try:
+            from data.live_calibration import calibrate_team_stats
+            team_stats = calibrate_team_stats(team_stats, all_results, verbose=False)
+            print(f"✓ Live calibration applied ({len(all_results)} WC26 matches)")
+        except Exception as exc:
+            print(f"⚠️  Live calibration skipped ({exc})")
+    else:
+        print("ℹ️  No WC26 results yet — running on historical stats only")
+
+    # ── Try to load XGBoost predictor ─────────────────────────────────────────
     predictor = None
     try:
         from models.match_predictor import MatchPredictor
         predictor = MatchPredictor()
         print("✓ XGBoost predictor loaded")
     except Exception:
-        print("⚠️  XGBoost model not found — using Elo fallback for predictions")
+        print("⚠️  XGBoost model not found — using Elo fallback")
 
-    # Run simulation
+    # ── Run simulation ────────────────────────────────────────────────────────
     results = run_simulation(fixtures, team_stats, predictor, n_simulations=10_000)
 
-    # Save results
+    # ── Save results ──────────────────────────────────────────────────────────
     out_path = os.path.join(OUTPUTS, "simulation_results.json")
     with open(out_path, "w") as f:
         json.dump(results, f, indent=2)
     print(f"\n💾 Results saved → {out_path}")
 
-    # Print top 15 World Cup winner probabilities
+    # ── Mark this run in the snapshot (so next run knows what's "new") ────────
+    try:
+        save_run_snapshot(all_results)
+    except Exception:
+        pass
+
+    # ── Print results ─────────────────────────────────────────────────────────
     print("\n🏆 World Cup Winner Probabilities (Top 15):\n")
     champ = results.get("Champion", {})
     for i, (team, prob) in enumerate(list(champ.items())[:15], 1):
@@ -415,7 +470,7 @@ def main():
     for team, prob in list(final.items())[:10]:
         print(f"  {team_str(team, 24)} {prob:.1%}")
 
-    print("\n✅ Simulation complete! Next: python analysis/explainability.py")
+    print("\n✅ Simulation complete! Next: python outputs/report_generator.py")
 
 
 def _default_team_stats(groups: dict) -> dict:

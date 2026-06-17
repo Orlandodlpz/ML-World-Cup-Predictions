@@ -127,17 +127,29 @@ Reads `simulation_results.json` and generates `outputs/wc2026_predictions.html` 
 
 ## How to Run — Daily During the Tournament
 
-After each real World Cup match:
+Just run the simulator — it auto-fetches new results from ESPN, updates Elo ratings and goal averages, and prints what changed since last time:
 
 ```bash
-# Feed in the result (updates model + recalculates SHAP)
-python3 analysis/explainability.py --update "Brazil" "Morocco" 1 1
-
-# Re-run simulation to update remaining probabilities
 python3 models/simulator.py
-
-# Regenerate the dashboard
 python3 outputs/report_generator.py
+```
+
+On startup the simulator prints a report like:
+```
+🆕 3 match(es) added since your last simulation:
+   🇫🇷 France 3–1 Senegal 🇸🇳  [2026-06-16]
+   🇳🇴 Norway 4–1 Iraq 🇮🇶     [2026-06-16]
+   🇮🇷 Iran 2–2 New Zealand 🇳🇿 [2026-06-16]
+```
+
+To fetch results only (without simulating):
+```bash
+python3 data/fetch_results.py
+```
+
+To see how each WC result moved team Elo and goal averages:
+```bash
+python3 data/live_calibration.py
 ```
 
 ---

@@ -206,5 +206,39 @@
       0.2781331539154053,
       0.5282810926437378
     ]
+  },
+  {
+    "home": "France",
+    "away": "Senegal",
+    "home_goals": 3,
+    "away_goals": 1,
+    "actual_outcome": 2,
+    "actual_label": "France Win",
+    "predicted_proba": [
+      0.16756674647331238,
+      0.22483445703983307,
+      0.6075987815856934
+    ]
+  },
+  {
+    "home": "Norway",
+    "away": "Iraq",
+    "home_goals": 4,
+    "away_goals": 1,
+    "actual_outcome": 2,
+    "actual_label": "Norway Win",
+    "predicted_proba": [
+      0.1395062357187271,
+      0.23733152449131012,
+      0.6231622099876404
+    ]
+  },
+  {
+    "home": "Canada",
+    "away": "Bosnia-Herzegovina",
+    "home_goals": 1,
+    "away_goals": 1,
+    "date": "2026-06-12",
+    "source": "espn_auto"
   }
 ]
