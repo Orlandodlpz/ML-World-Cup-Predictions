@@ -1,7 +1,7 @@
 # CLAUDE.md — ML World Cup Predictions
 
 > This file is the project brain. Updated every 5 prompts or on topic change.
-> Last updated: 2026-06-15 | Phase: Full System — Ready to Run ✅
+> Last updated: 2026-06-16 | Phase: Full System + Live Calibration ✅
 
 ---
 
@@ -30,17 +30,20 @@ ML World Cup Predictions/
 ├── data/
 │   ├── download_data.py             ← Downloads results.csv + writes real 2026 WC fixtures
 │   ├── download_players.py          ← Embeds 26-man squads for all 48 teams
+│   ├── fetch_results.py             ← Auto-fetches live WC26 scores from ESPN API
+│   ├── live_calibration.py          ← Updates Elo + goal averages from real WC26 results
 │   ├── raw/
 │   │   ├── results.csv              ← 50,000+ international matches (1872–2026)
 │   │   ├── wc2026_fixtures.json     ← Real 2026 WC groups A–L, 72 matches, known scores
 │   │   └── fifa_rankings.csv        ← Optional FIFA rankings (may 404, not required)
 │   ├── processed/
 │   │   ├── match_features.csv       ← Feature-engineered training data
-│   │   ├── team_stats.json          ← Per-team Elo, form, goals (used by simulator)
+│   │   ├── team_stats.json          ← Per-team Elo, form, goals (historical base — never overwritten)
 │   │   ├── team_elos.json           ← Final Elo ratings for all teams
 │   │   └── team_player_strengths.json ← Player-based strength scores (attack/mid/def)
 │   ├── live/
-│   │   └── real_results.json        ← 2026 WC real match results fed in by user
+│   │   ├── real_results.json        ← Auto-populated WC26 match results (via ESPN API)
+│   │   └── last_run_snapshot.json   ← Tracks which matches were seen in last simulator run
 │   └── players/
 │       ├── wc2026_squads.json       ← 26-man squads for all 48 teams
 │       └── merged_players.csv       ← Optional extended player data
@@ -115,7 +118,7 @@ Trains an XGBoost classifier on `match_features.csv` to predict Win / Draw / Los
 ```bash
 python3 models/simulator.py
 ```
-Runs 10,000 Monte Carlo simulations of the full 2026 WC. Each run simulates every match using the XGBoost model (or Elo fallback). Applies player strength adjustments from Step 4. Saves `outputs/simulation_results.json` and prints winner probabilities with emoji flags.
+Runs 10,000 Monte Carlo simulations of the full 2026 WC. On startup, auto-fetches the latest results from the ESPN API, applies live Elo + goal calibration, then simulates. Saves `outputs/simulation_results.json` and prints winner probabilities with emoji flags.
 
 ### Step 7 — Generate HTML report
 ```bash
@@ -199,6 +202,10 @@ python3 analysis/explainability.py --explain "Brazil" "Morocco"
 | Monte Carlo with 10,000 runs | Enough to get stable probabilities without being slow (~1 sec) |
 | Elo computed from scratch | Avoids broken/outdated download URLs; gives us full control |
 | Player strength as xG modifier | Keeps Elo as the anchor, player data fine-tunes it (±40% max) |
+| ESPN API for live results | Public, no auth required, reliable JSON — avoids fragile HTML scraping |
+| Calibration in-memory only | Never overwrites team_stats.json — prevents double-applying calibration across runs |
+| Opponent-adjusted goals | Raw WC goals weighted by opponent defence quality (Germany 7-1 vs Curacao ≠ 7-1 vs France) |
+| Bayesian goal blend (8–30%) | Small WC sample can't override 150 years of history — weight grows with games played |
 | Flags via Unicode emoji | Works in terminal + HTML without any external dependencies |
 
 ---
@@ -208,9 +215,10 @@ python3 analysis/explainability.py --explain "Brazil" "Morocco"
 | Dataset | Source | What it gives us |
 |---|---|---|
 | Historical results (1872–2026) | github.com/martj42/international_results | Training data for XGBoost + Elo calculation |
+| Live WC26 match results | ESPN public API (`site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard`) | Real scores fetched automatically on every simulator run |
 | FIFA Rankings | FIFA.com / Kaggle (optional) | Secondary signal — we use computed Elo instead |
 | Player squad data | Embedded in `download_players.py` | FIFA ratings + market values for all 48 squads |
-| 2026 WC fixtures | Embedded in `download_data.py` | Real groups A–L, 72 match slots, 16 known results |
+| 2026 WC fixtures | Embedded in `download_data.py` | Real groups A–L, 72 match slots |
 
 ---
 
@@ -229,26 +237,30 @@ python3 analysis/explainability.py --explain "Brazil" "Morocco"
 
 ---
 
-## Known Results (as of 2026-06-15)
+## Known Results (as of 2026-06-16)
 
-| Match | Score |
-|---|---|
-| 🇲🇽 Mexico vs 🇿🇦 South Africa | 2–0 |
-| 🇰🇷 South Korea vs 🇨🇿 Czechia | 2–1 |
-| 🇨🇦 Canada vs 🇧🇦 Bosnia & Herz. | 1–1 |
-| 🇶🇦 Qatar vs 🇨🇭 Switzerland | 1–1 |
-| 🇧🇷 Brazil vs 🇲🇦 Morocco | 1–1 |
-| 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland vs 🇭🇹 Haiti | 1–0 (Haiti home) |
-| 🇺🇸 USA vs 🇵🇾 Paraguay | 4–1 |
-| 🇦🇺 Australia vs 🇹🇷 Turkey | 2–0 |
-| 🇩🇪 Germany vs 🇨🇼 Curacao | 7–1 |
-| 🇨🇮 Ivory Coast vs 🇪🇨 Ecuador | 1–0 |
-| 🇳🇱 Netherlands vs 🇯🇵 Japan | 2–2 |
-| 🇸🇪 Sweden vs 🇹🇳 Tunisia | 5–1 |
-| 🇧🇪 Belgium vs 🇪🇬 Egypt | 1–1 |
-| 🇮🇷 Iran vs 🇳🇿 New Zealand | 2–2 |
-| 🇪🇸 Spain vs 🇨🇻 Cape Verde | 0–0 |
-| 🇸🇦 Saudi Arabia vs 🇺🇾 Uruguay | 1–1 |
+> ⚡ From June 12 onward, results are auto-fetched from ESPN on every simulator run. This table shows the seed results embedded in `real_results.json`.
+
+| Match | Score | Date |
+|---|---|---|
+| 🇲🇽 Mexico vs 🇿🇦 South Africa | 2–0 | 2026-06-12 |
+| 🇰🇷 South Korea vs 🇨🇿 Czechia | 2–1 | 2026-06-12 |
+| 🇨🇦 Canada vs 🇧🇦 Bosnia & Herz. | 1–1 | 2026-06-13 |
+| 🇶🇦 Qatar vs 🇨🇭 Switzerland | 1–1 | 2026-06-13 |
+| 🇧🇷 Brazil vs 🇲🇦 Morocco | 1–1 | 2026-06-13 |
+| 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland vs 🇭🇹 Haiti | 1–0 | 2026-06-14 |
+| 🇺🇸 USA vs 🇵🇾 Paraguay | 4–1 | 2026-06-14 |
+| 🇦🇺 Australia vs 🇹🇷 Turkey | 2–0 | 2026-06-14 |
+| 🇩🇪 Germany vs 🇨🇼 Curacao | 7–1 | 2026-06-15 |
+| 🇨🇮 Ivory Coast vs 🇪🇨 Ecuador | 1–0 | 2026-06-15 |
+| 🇳🇱 Netherlands vs 🇯🇵 Japan | 2–2 | 2026-06-15 |
+| 🇸🇪 Sweden vs 🇹🇳 Tunisia | 5–1 | 2026-06-15 |
+| 🇧🇪 Belgium vs 🇪🇬 Egypt | 1–1 | 2026-06-15 |
+| 🇮🇷 Iran vs 🇳🇿 New Zealand | 2–2 | 2026-06-16 |
+| 🇪🇸 Spain vs 🇨🇻 Cape Verde | 0–0 | 2026-06-15 |
+| 🇸🇦 Saudi Arabia vs 🇺🇾 Uruguay | 1–1 | 2026-06-15 |
+| 🇫🇷 France vs 🇸🇳 Senegal | 3–1 | 2026-06-16 |
+| 🇳🇴 Norway vs 🇮🇶 Iraq | 4–1 | 2026-06-16 |
 
 ---
 
@@ -256,4 +268,4 @@ python3 analysis/explainability.py --explain "Brazil" "Morocco"
 
 **All code complete and tested. Ready to run on your machine.**
 
-Completed components: Data pipeline · Feature engineering · XGBoost match predictor · Poisson goal model · Monte Carlo tournament simulator · SHAP explainability + post-match learning · Player squad data · Player strength engine · Lineup scenario simulator · Flag emoji support · HTML predictions dashboard · Real 2026 WC fixtures (12 groups × 4 teams) · Correct R32 bracket logic (32 teams, best-8-third-place)
+Completed components: Data pipeline · Feature engineering · XGBoost match predictor · Poisson goal model · Monte Carlo tournament simulator · SHAP explainability + post-match learning · Player squad data · Player strength engine · Lineup scenario simulator · Flag emoji support · HTML predictions dashboard · Real 2026 WC fixtures (12 groups × 4 teams) · Correct R32 bracket logic (32 teams, best-8-third-place) · Live results auto-fetch (ESPN API) · Elo recalibration from WC26 results · Opponent-adjusted goal calibration · Bayesian blend (8–30%) · New-match terminal report on each simulator run

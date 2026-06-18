@@ -26,9 +26,36 @@ sys.path.insert(0, BASE)
 
 RAW       = os.path.join(BASE, "data", "raw")
 PROCESSED = os.path.join(BASE, "data", "processed")
+LIVE_DIR  = os.path.join(BASE, "data", "live")
 OUTPUTS   = os.path.join(BASE, "outputs")
 
 from utils.flags import flag, TEAM_FLAGS
+
+
+# ── Name normalization (mirrors fetch_results.py) ─────────────────────────────
+
+_TEAM_ALIASES = {
+    "Bosnia and Herzegovina": "Bosnia & Herzegovina",
+    "Bosnia-Herzegovina":     "Bosnia & Herzegovina",
+    "Bosnia And Herzegovina": "Bosnia & Herzegovina",
+    "United States":          "USA",
+    "Türkiye":                "Turkey",
+    "Turkiye":                "Turkey",
+    "Czech Republic":         "Czechia",
+    "Korea Republic":         "South Korea",
+    "Republic of Korea":      "South Korea",
+    "IR Iran":                "Iran",
+    "Curaçao":                "Curacao",
+    "Cape Verde Islands":     "Cape Verde",
+    "Cabo Verde":             "Cape Verde",
+    "Côte d'Ivoire":          "Ivory Coast",
+    "Cote d'Ivoire":          "Ivory Coast",
+    "Congo DR":               "DR Congo",
+    "Democratic Republic of Congo": "DR Congo",
+}
+
+def _norm(name: str) -> str:
+    return _TEAM_ALIASES.get(name, name)
 
 
 # ── Load data ─────────────────────────────────────────────────────────────────
@@ -54,9 +81,60 @@ def load_team_stats():
     return None
 
 
+def build_live_lookup():
+    """
+    Load real_results.json and return a dict keyed by frozenset({home, away})
+    → (home_name, away_name, home_goals, away_goals).
+
+    This fills in scores for matches that have been played but whose fixture
+    entry still has null (e.g. ESPN-fetched results added after the fixture
+    file was written).
+    """
+    path = os.path.join(LIVE_DIR, "real_results.json")
+    if not os.path.exists(path):
+        return {}
+    with open(path) as f:
+        live = json.load(f)
+
+    lookup = {}
+    seen   = set()
+    for r in live:
+        h  = _norm(r.get("home", ""))
+        a  = _norm(r.get("away", ""))
+        hg = r.get("home_goals")
+        ag = r.get("away_goals")
+        if not h or not a or hg is None or ag is None:
+            continue
+        key = frozenset([h, a])
+        if key in seen:
+            continue   # deduplicate
+        seen.add(key)
+        lookup[key] = (h, a, int(hg), int(ag))
+    return lookup
+
+
+def _resolve_score(home, away, fix_hs, fix_as, live_lookup):
+    """
+    Return (home_goals, away_goals) using the fixture score if known,
+    otherwise falling back to the live lookup.  Returns (None, None) if
+    neither source has a result yet.
+    """
+    if fix_hs is not None and fix_as is not None:
+        return int(fix_hs), int(fix_as)
+    key = frozenset([_norm(home), _norm(away)])
+    if key in live_lookup:
+        lh, la, lhg, lag = live_lookup[key]
+        # Re-align goals to the fixture's home/away order
+        if _norm(home) == lh:
+            return lhg, lag
+        else:
+            return lag, lhg   # live result had teams reversed
+    return None, None
+
+
 # ── Group standings from known results ────────────────────────────────────────
 
-def compute_standings(fixtures):
+def compute_standings(fixtures, live_lookup):
     groups        = fixtures["groups"]
     group_matches = fixtures["group_matches"]
 
@@ -70,10 +148,10 @@ def compute_standings(fixtures):
     losses = defaultdict(int)
 
     for match in group_matches:
-        home, away, hs, as_ = match[0], match[1], match[2], match[3]
-        if hs is None or as_ is None:
+        home, away, fix_hs, fix_as = match[0], match[1], match[2], match[3]
+        hs, as_ = _resolve_score(home, away, fix_hs, fix_as, live_lookup)
+        if hs is None:
             continue
-        hs, as_ = int(hs), int(as_)
         played[home] += 1; played[away] += 1
         gf[home] += hs;    gf[away] += as_
         ga[home] += as_;   ga[away] += hs
@@ -102,13 +180,14 @@ def compute_standings(fixtures):
 
 # ── Upcoming matches ───────────────────────────────────────────────────────────
 
-def get_upcoming(fixtures, team_stats, limit=30):
+def get_upcoming(fixtures, team_stats, live_lookup, limit=30):
     matches = []
     for m in fixtures["group_matches"]:
-        home, away, hs, as_, *rest = m
-        date = rest[0] if rest else "TBD"
+        home, away, fix_hs, fix_as = m[0], m[1], m[2], m[3]
+        date = m[4] if len(m) > 4 else "TBD"
+        hs, as_ = _resolve_score(home, away, fix_hs, fix_as, live_lookup)
         if hs is not None:
-            continue
+            continue   # already played — skip
         h_elo = (team_stats or {}).get(home, {}).get("elo", 1700)
         a_elo = (team_stats or {}).get(away, {}).get("elo", 1700)
         diff    = h_elo - a_elo
@@ -532,8 +611,15 @@ def main():
     fixtures    = load_fixtures()
     sim_results = load_results()
     team_stats  = load_team_stats()
-    standings   = compute_standings(fixtures)
-    upcoming    = get_upcoming(fixtures, team_stats, limit=30)
+    live_lookup = build_live_lookup()
+    standings   = compute_standings(fixtures, live_lookup)
+    upcoming    = get_upcoming(fixtures, team_stats, live_lookup, limit=30)
+
+    played_count = sum(
+        1 for m in fixtures["group_matches"]
+        if _resolve_score(m[0], m[1], m[2], m[3], live_lookup)[0] is not None
+    )
+    print(f"  ✅ {played_count} group matches played so far (standings updated)")
 
     if sim_results:
         champ = sim_results.get("Champion", {})

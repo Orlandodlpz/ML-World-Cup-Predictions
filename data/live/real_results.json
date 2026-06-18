@@ -240,5 +240,61 @@
     "away_goals": 1,
     "date": "2026-06-12",
     "source": "espn_auto"
+  },
+  {
+    "home": "Argentina",
+    "away": "Algeria",
+    "home_goals": 3,
+    "away_goals": 0,
+    "date": "2026-06-17",
+    "source": "espn_auto"
+  },
+  {
+    "home": "Austria",
+    "away": "Jordan",
+    "home_goals": 3,
+    "away_goals": 1,
+    "date": "2026-06-17",
+    "source": "espn_auto"
+  },
+  {
+    "home": "Portugal",
+    "away": "DR Congo",
+    "home_goals": 1,
+    "away_goals": 1,
+    "date": "2026-06-17",
+    "source": "espn_auto"
+  },
+  {
+    "home": "England",
+    "away": "Croatia",
+    "home_goals": 4,
+    "away_goals": 2,
+    "date": "2026-06-17",
+    "source": "espn_auto"
+  },
+  {
+    "home": "Ghana",
+    "away": "Panama",
+    "home_goals": 1,
+    "away_goals": 0,
+    "date": "2026-06-17",
+    "source": "espn_auto"
+  },
+  {
+    "home": "Uzbekistan",
+    "away": "Colombia",
+    "home_goals": 1,
+    "away_goals": 3,
+    "date": "2026-06-17",
+    "source": "espn_auto"
+  },
+  {
+    "home": "Czechia",
+    "away": "South Africa",
+    "home_goals": 1,
+    "away_goals": 1,
+    "date": "2026-06-18",
+    "source": "espn_auto"
   }
 ]
