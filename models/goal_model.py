@@ -42,6 +42,8 @@ class PoissonGoalModel:
 
     HOME_ADVANTAGE = 1.1   # home teams score ~10% more than on neutral ground
     AVG_GOALS      = 1.35  # global average goals scored per team per game
+    ET_GOAL_FACTOR = 0.30  # extra time: 30 minutes at a slightly tired pace
+                           # (matches the factor simulate_match already uses)
 
     def __init__(self, team_stats: Optional[dict] = None):
         if team_stats is None:
@@ -153,6 +155,88 @@ class PoissonGoalModel:
                     ag += 1
 
         return int(hg), int(ag)
+
+    def _extra_time_split(self, lam_h: float, lam_a: float) -> tuple[float, float, float]:
+        """
+        Given a match level after 90 minutes, model extra time as a mini
+        Poisson match at ET_GOAL_FACTOR of each team's full-match rate.
+        Returns (P(home wins in ET), P(away wins in ET), P(still level)).
+        """
+        et_h = np.array([poisson.pmf(g, lam_h * self.ET_GOAL_FACTOR)
+                         for g in range(MAX_GOALS + 1)])
+        et_a = np.array([poisson.pmf(g, lam_a * self.ET_GOAL_FACTOR)
+                         for g in range(MAX_GOALS + 1)])
+        mat = np.outer(et_h, et_a)
+        home  = float(np.sum(np.tril(mat, -1)))
+        away  = float(np.sum(np.triu(mat, 1)))
+        level = float(np.sum(np.diag(mat)))
+        total = max(1e-9, home + away + level)
+        return home / total, away / total, level / total
+
+    def penalty_win_prob(self, home_team: str, away_team: str) -> float:
+        """
+        P(home wins a shootout). Real-world shootouts are close to random,
+        so the stronger team only gets a small Elo-based edge (max ±5%).
+        """
+        h_elo = self.stats.get(home_team, {}).get("elo", 1500)
+        a_elo = self.stats.get(away_team, {}).get("elo", 1500)
+        edge  = max(-0.05, min(0.05, (h_elo - a_elo) / 4000.0))
+        return 0.5 + edge
+
+    def knockout_breakdown(
+        self,
+        home_team: str,
+        away_team: str,
+        neutral: bool = True,
+        p90: Optional[dict] = None,
+        top_n: int = 3,
+    ) -> dict:
+        """
+        Full prediction for a knockout match: expected goals, likely scorelines,
+        and how the match ends (regulation / extra time / penalties).
+
+        p90 optionally overrides the 90-minute win/draw/loss probabilities
+        (e.g. from the XGBoost predictor). The Poisson model still supplies
+        expected goals, scorelines, and the extra-time split.
+        """
+        lam_h, lam_a = self.expected_goals(home_team, away_team, neutral)
+
+        if p90 is None:
+            p = self.outcome_probs(home_team, away_team, neutral)
+            p90 = {"home_win": p["home_win"], "draw": p["draw"],
+                   "away_win": p["away_win"]}
+
+        p_h90, p_draw, p_a90 = p90["home_win"], p90["draw"], p90["away_win"]
+
+        # Conditional on being level after 90 minutes:
+        et_h, et_a, et_level = self._extra_time_split(lam_h, lam_a)
+        p_pens_home = self.penalty_win_prob(home_team, away_team)
+
+        p_extra_time = p_draw                       # any 90' draw goes to ET
+        p_penalties  = p_draw * et_level            # ...and stays level in ET
+        p_home_total = p_h90 + p_draw * (et_h + et_level * p_pens_home)
+        p_away_total = p_a90 + p_draw * (et_a + et_level * (1 - p_pens_home))
+
+        return {
+            "home": home_team,
+            "away": away_team,
+            "home_xg": lam_h,
+            "away_xg": lam_a,
+            "p_home_90":     round(p_h90, 4),
+            "p_draw_90":     round(p_draw, 4),
+            "p_away_90":     round(p_a90, 4),
+            "p_regulation":  round(1 - p_draw, 4),
+            "p_extra_time":  round(p_extra_time, 4),
+            "p_penalties":   round(p_penalties, 4),
+            "p_home_et":     round(p_draw * et_h, 4),
+            "p_away_et":     round(p_draw * et_a, 4),
+            "p_home_pens":   round(p_penalties * p_pens_home, 4),
+            "p_away_pens":   round(p_penalties * (1 - p_pens_home), 4),
+            "p_home_total":  round(p_home_total, 4),
+            "p_away_total":  round(p_away_total, 4),
+            "top_scorelines": self.top_scorelines(home_team, away_team,
+                                                  neutral, top_n=top_n),
+        }
 
     def top_scorelines(
         self,

@@ -279,6 +279,50 @@ def _ko_match_html(m):
     </div>"""
 
 
+def _pred_panel_html(pred):
+    """
+    Match prediction panel: expected goals, most likely scorelines, and how
+    the match ends. The three path percentages (decided in 90 minutes,
+    decided in extra time, penalties) always sum to 100.
+    """
+    if not pred:
+        return ""
+    home, away = pred["home"], pred["away"]
+    p_reg  = pred["p_regulation"] * 100
+    p_etd  = (pred["p_home_et"] + pred["p_away_et"]) * 100
+    p_pens = pred["p_penalties"] * 100
+    scores = " · ".join(
+        f'<span class="score-chip">{s["score"]} <em>{s["prob"]*100:.0f}%</em></span>'
+        for s in pred.get("top_scorelines", [])[:3]
+    )
+    return f"""
+          <div class="pred-panel">
+            <div class="pred-row xg-row">
+              <span class="pred-label">⚽ Expected goals</span>
+              <span>{flag(home)} <strong>{pred["home_xg"]:.1f}</strong>
+                &nbsp;·&nbsp; {flag(away)} <strong>{pred["away_xg"]:.1f}</strong></span>
+            </div>
+            <div class="pred-row">
+              <span class="pred-label">🎯 Likely scorelines</span>
+              <span>{scores}</span>
+            </div>
+            <div class="path-pills">
+              <div class="pill path-pill">
+                <span class="pill-label">Decided in 90&prime;</span>
+                <span class="pill-pct">{p_reg:.0f}%</span>
+              </div>
+              <div class="pill path-pill">
+                <span class="pill-label">Extra time winner</span>
+                <span class="pill-pct">{p_etd:.0f}%</span>
+              </div>
+              <div class="pill path-pill pens">
+                <span class="pill-label">Penalties 🎲</span>
+                <span class="pill-pct">{p_pens:.0f}%</span>
+              </div>
+            </div>
+          </div>"""
+
+
 def build_bracket_html(bracket):
     """Round-by-round knockout view with real results and live predictions."""
     icons = {"Round of 32": "3️⃣2️⃣", "Round of 16": "1️⃣6️⃣",
@@ -454,6 +498,7 @@ def build_html(fixtures, sim_results, standings, upcoming, team_stats):
               <span class="pill-pct">{aw}%</span>
             </div>
           </div>
+          {_pred_panel_html(m.get("pred"))}
         </div>"""
         if current_date:
             upcoming_html += "</div>"
@@ -753,6 +798,29 @@ def _finish_html(now, champ_rows, group_html, upcoming_html,
   .pill-draw .pill-pct {{ color: #94a3b8; }}
   .pill-away  {{ background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.25); }}
   .pill-away .pill-pct {{ color: #f87171; }}
+
+  /* ── Match prediction panel (xG, scorelines, how it ends) ── */
+  .pred-panel {{
+    margin-top: 0.6rem; padding-top: 0.6rem;
+    border-top: 1px dashed var(--border);
+  }}
+  .pred-row {{
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 0.6rem; font-size: 0.78rem; margin-bottom: 0.35rem;
+    flex-wrap: wrap;
+  }}
+  .pred-label {{ color: var(--muted); font-size: 0.7rem; white-space: nowrap; }}
+  .score-chip {{
+    background: var(--card2); border: 1px solid var(--border);
+    border-radius: 5px; padding: 0.1rem 0.4rem; font-weight: 700;
+    font-size: 0.75rem; white-space: nowrap;
+  }}
+  .score-chip em {{ font-style: normal; font-weight: 500; color: var(--muted); font-size: 0.68rem; }}
+  .path-pills {{ display: flex; gap: 0.4rem; margin-top: 0.45rem; }}
+  .path-pill {{ background: rgba(100,116,139,0.10); border: 1px solid rgba(100,116,139,0.22); }}
+  .path-pill .pill-pct {{ color: #cbd5e1; }}
+  .path-pill.pens {{ background: rgba(234,179,8,0.10); border-color: rgba(234,179,8,0.25); }}
+  .path-pill.pens .pill-pct {{ color: var(--gold); }}
 
   /* ── Knockout bracket ── */
   .phase-note {{ color: var(--muted); font-size: 0.82rem; margin-bottom: 1rem; }}

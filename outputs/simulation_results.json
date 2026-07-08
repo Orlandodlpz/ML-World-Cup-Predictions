@@ -96,34 +96,34 @@
     "Switzerland": 1.0
   },
   "Semi-Finals": {
-    "Spain": 0.8068,
-    "Argentina": 0.7746,
-    "France": 0.6228,
-    "England": 0.6011,
-    "Norway": 0.3989,
-    "Morocco": 0.3772,
-    "Switzerland": 0.2254,
-    "Belgium": 0.1932
+    "Spain": 0.7596,
+    "Argentina": 0.7437,
+    "England": 0.6097,
+    "France": 0.5937,
+    "Morocco": 0.4063,
+    "Norway": 0.3903,
+    "Switzerland": 0.2563,
+    "Belgium": 0.2404
   },
   "Final": {
-    "Spain": 0.4769,
-    "Argentina": 0.4421,
-    "France": 0.3224,
-    "England": 0.321,
-    "Norway": 0.1741,
-    "Morocco": 0.1458,
-    "Switzerland": 0.0628,
-    "Belgium": 0.0549
+    "Spain": 0.458,
+    "Argentina": 0.4217,
+    "England": 0.3323,
+    "France": 0.2986,
+    "Norway": 0.1682,
+    "Morocco": 0.1617,
+    "Belgium": 0.0817,
+    "Switzerland": 0.0778
   },
   "Champion": {
-    "Spain": 0.3125,
-    "Argentina": 0.2072,
-    "France": 0.1831,
-    "England": 0.1486,
-    "Morocco": 0.0592,
-    "Norway": 0.0584,
-    "Belgium": 0.0179,
-    "Switzerland": 0.0131
+    "Spain": 0.3018,
+    "Argentina": 0.2066,
+    "France": 0.1659,
+    "England": 0.1565,
+    "Morocco": 0.0645,
+    "Norway": 0.0562,
+    "Belgium": 0.0295,
+    "Switzerland": 0.019
   },
   "bracket": {
     "rounds": [
@@ -489,8 +489,46 @@
             "home_pens": null,
             "away_pens": null,
             "date": "2026-07-09",
-            "p_home": 0.6193,
-            "p_away": 0.3807
+            "p_home": 0.5965,
+            "p_away": 0.4035,
+            "pred": {
+              "home": "France",
+              "away": "Morocco",
+              "home_xg": 1.21,
+              "away_xg": 1.19,
+              "p_home_90": 0.483,
+              "p_draw_90": 0.2201,
+              "p_away_90": 0.2969,
+              "p_regulation": 0.7799,
+              "p_extra_time": 0.2201,
+              "p_penalties": 0.1215,
+              "p_home_et": 0.0498,
+              "p_away_et": 0.0488,
+              "p_home_pens": 0.0637,
+              "p_away_pens": 0.0578,
+              "p_home_total": 0.5965,
+              "p_away_total": 0.4035,
+              "top_scorelines": [
+                {
+                  "score": "1-1",
+                  "home_goals": 1,
+                  "away_goals": 1,
+                  "prob": 0.1306
+                },
+                {
+                  "score": "1-0",
+                  "home_goals": 1,
+                  "away_goals": 0,
+                  "prob": 0.1098
+                },
+                {
+                  "score": "0-1",
+                  "home_goals": 0,
+                  "away_goals": 1,
+                  "prob": 0.108
+                }
+              ]
+            }
           },
           {
             "home": "Spain",
@@ -505,8 +543,46 @@
             "home_pens": null,
             "away_pens": null,
             "date": "2026-07-10",
-            "p_home": 0.7993,
-            "p_away": 0.2007
+            "p_home": 0.7655,
+            "p_away": 0.2345,
+            "pred": {
+              "home": "Spain",
+              "away": "Belgium",
+              "home_xg": 1.661,
+              "away_xg": 0.664,
+              "p_home_90": 0.6317,
+              "p_draw_90": 0.2097,
+              "p_away_90": 0.1586,
+              "p_regulation": 0.7903,
+              "p_extra_time": 0.2097,
+              "p_penalties": 0.115,
+              "p_home_et": 0.0705,
+              "p_away_et": 0.0241,
+              "p_home_pens": 0.0633,
+              "p_away_pens": 0.0518,
+              "p_home_total": 0.7655,
+              "p_away_total": 0.2345,
+              "top_scorelines": [
+                {
+                  "score": "1-0",
+                  "home_goals": 1,
+                  "away_goals": 0,
+                  "prob": 0.1624
+                },
+                {
+                  "score": "2-0",
+                  "home_goals": 2,
+                  "away_goals": 0,
+                  "prob": 0.1349
+                },
+                {
+                  "score": "1-1",
+                  "home_goals": 1,
+                  "away_goals": 1,
+                  "prob": 0.1078
+                }
+              ]
+            }
           },
           {
             "home": "Norway",
@@ -521,8 +597,46 @@
             "home_pens": null,
             "away_pens": null,
             "date": "2026-07-11",
-            "p_home": 0.4012,
-            "p_away": 0.5988
+            "p_home": 0.3887,
+            "p_away": 0.6114,
+            "pred": {
+              "home": "Norway",
+              "away": "England",
+              "home_xg": 1.052,
+              "away_xg": 2.542,
+              "p_home_90": 0.3073,
+              "p_draw_90": 0.2342,
+              "p_away_90": 0.4586,
+              "p_regulation": 0.7658,
+              "p_extra_time": 0.2342,
+              "p_penalties": 0.1,
+              "p_home_et": 0.0331,
+              "p_away_et": 0.1011,
+              "p_home_pens": 0.0483,
+              "p_away_pens": 0.0517,
+              "p_home_total": 0.3887,
+              "p_away_total": 0.6114,
+              "top_scorelines": [
+                {
+                  "score": "1-2",
+                  "home_goals": 1,
+                  "away_goals": 2,
+                  "prob": 0.0934
+                },
+                {
+                  "score": "0-2",
+                  "home_goals": 0,
+                  "away_goals": 2,
+                  "prob": 0.0888
+                },
+                {
+                  "score": "1-3",
+                  "home_goals": 1,
+                  "away_goals": 3,
+                  "prob": 0.0792
+                }
+              ]
+            }
           },
           {
             "home": "Argentina",
@@ -537,8 +651,46 @@
             "home_pens": null,
             "away_pens": null,
             "date": "2026-07-12",
-            "p_home": 0.7759,
-            "p_away": 0.2241
+            "p_home": 0.7463,
+            "p_away": 0.2537,
+            "pred": {
+              "home": "Argentina",
+              "away": "Switzerland",
+              "home_xg": 2.192,
+              "away_xg": 0.799,
+              "p_home_90": 0.5648,
+              "p_draw_90": 0.2721,
+              "p_away_90": 0.1631,
+              "p_regulation": 0.7279,
+              "p_extra_time": 0.2721,
+              "p_penalties": 0.1291,
+              "p_home_et": 0.1106,
+              "p_away_et": 0.0324,
+              "p_home_pens": 0.0709,
+              "p_away_pens": 0.0583,
+              "p_home_total": 0.7463,
+              "p_away_total": 0.2537,
+              "top_scorelines": [
+                {
+                  "score": "2-0",
+                  "home_goals": 2,
+                  "away_goals": 0,
+                  "prob": 0.1207
+                },
+                {
+                  "score": "1-0",
+                  "home_goals": 1,
+                  "away_goals": 0,
+                  "prob": 0.1101
+                },
+                {
+                  "score": "2-1",
+                  "home_goals": 2,
+                  "away_goals": 1,
+                  "prob": 0.0964
+                }
+              ]
+            }
           }
         ]
       },

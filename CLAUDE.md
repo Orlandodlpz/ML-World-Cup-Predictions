@@ -229,6 +229,8 @@ python3 analysis/explainability.py --explain "Brazil" "Morocco"
 | Opponent-adjusted goals | Raw WC goals weighted by opponent defence quality (Germany 7-1 vs Curacao ≠ 7-1 vs France) |
 | Bayesian goal blend (8–30%) | Small WC sample can't override 150 years of history — weight grows with games played |
 | Flags via Unicode emoji | Works in terminal + HTML without any external dependencies |
+| Extra time as mini Poisson (30% rate) | Reuses the goal model; 30 tired minutes produce roughly a third of normal-pace goals |
+| Penalties as near coin flip (±5% max) | Real shootout data is close to random; proportional redistribution would overrate favorites |
 
 ---
 
@@ -275,6 +277,16 @@ Once the group stage is complete, the simulator becomes **bracket-aware** instea
 - Eliminated teams show 0% champion probability. `simulation_results.json` carries a `meta` block with `phase`, `alive`, and `eliminated`.
 - The dashboard shows final group tables, the real bracket with played results filled in, and predictions only for matches still to come.
 - The pre-knockout simulation path still works unchanged if run on a state where groups are not finished.
+
+### Per-match predictions (added 2026-07-08)
+
+Every remaining match gets a full prediction panel on the dashboard, computed analytically from the Poisson scoreline matrix (no extra simulation cost):
+
+- Expected goals for each team
+- Top 3 most likely scorelines with probabilities
+- How the match ends: decided in 90 minutes / extra time winner / penalties (the three always sum to 100%)
+
+The bracket simulator uses the same three-stage math to resolve unplayed matches: 90-minute result from XGBoost, extra time as a mini Poisson at 30% of each team's scoring rate, penalties as a near coin flip (max ±5% Elo edge). This replaced the old proportional coin flip, which quietly assumed the favorite keeps its full edge in a shootout. Net effect: underdogs gained a little (Belgium and Switzerland each roughly +2 points to reach the final).
 
 Current top champion odds (July 8): 🇪🇸 Spain ~32%, 🇦🇷 Argentina ~21%, 🇫🇷 France ~18%, 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England ~14%.
 

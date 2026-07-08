@@ -189,6 +189,29 @@
   .pill-away  { background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.25); }
   .pill-away .pill-pct { color: #f87171; }
 
+  /* ── Match prediction panel (xG, scorelines, how it ends) ── */
+  .pred-panel {
+    margin-top: 0.6rem; padding-top: 0.6rem;
+    border-top: 1px dashed var(--border);
+  }
+  .pred-row {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 0.6rem; font-size: 0.78rem; margin-bottom: 0.35rem;
+    flex-wrap: wrap;
+  }
+  .pred-label { color: var(--muted); font-size: 0.7rem; white-space: nowrap; }
+  .score-chip {
+    background: var(--card2); border: 1px solid var(--border);
+    border-radius: 5px; padding: 0.1rem 0.4rem; font-weight: 700;
+    font-size: 0.75rem; white-space: nowrap;
+  }
+  .score-chip em { font-style: normal; font-weight: 500; color: var(--muted); font-size: 0.68rem; }
+  .path-pills { display: flex; gap: 0.4rem; margin-top: 0.45rem; }
+  .path-pill { background: rgba(100,116,139,0.10); border: 1px solid rgba(100,116,139,0.22); }
+  .path-pill .pill-pct { color: #cbd5e1; }
+  .path-pill.pens { background: rgba(234,179,8,0.10); border-color: rgba(234,179,8,0.25); }
+  .path-pill.pens .pill-pct { color: var(--gold); }
+
   /* ── Knockout bracket ── */
   .phase-note { color: var(--muted); font-size: 0.82rem; margin-bottom: 1rem; }
   .ko-round { margin-bottom: 1.6rem; }
@@ -256,7 +279,7 @@
 <header>
   <h1>🌍 2026 FIFA World Cup</h1>
   <div class="subtitle">ML Predictions Dashboard</div>
-  <p>Knockout Stage LIVE 🔴 &nbsp;·&nbsp; Generated July 08, 2026 08:01 &nbsp;·&nbsp; Monte Carlo simulation (10,000 runs) &nbsp;·&nbsp; XGBoost + Elo + Player Stats</p>
+  <p>Knockout Stage LIVE 🔴 &nbsp;·&nbsp; Generated July 08, 2026 09:00 &nbsp;·&nbsp; Monte Carlo simulation (10,000 runs) &nbsp;·&nbsp; XGBoost + Elo + Player Stats</p>
 </header>
 
 <div class="container">
@@ -285,10 +308,10 @@
                 <div class="prob-bar-track">
                   <div class="prob-bar" style="width:100.0%"></div>
                 </div>
-                <span class="prob-label">31.2%</span>
+                <span class="prob-label">30.2%</span>
               </td>
-              <td class="stage-prob">47.7%</td>
-              <td class="stage-prob">80.7%</td>
+              <td class="stage-prob">45.8%</td>
+              <td class="stage-prob">76.0%</td>
               <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
@@ -296,12 +319,12 @@
               <td class="team-name">🇦🇷 Argentina</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:82.9%"></div>
+                  <div class="prob-bar" style="width:82.6%"></div>
                 </div>
                 <span class="prob-label">20.7%</span>
               </td>
-              <td class="stage-prob">44.2%</td>
-              <td class="stage-prob">77.5%</td>
+              <td class="stage-prob">42.2%</td>
+              <td class="stage-prob">74.4%</td>
               <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
@@ -309,12 +332,12 @@
               <td class="team-name">🇫🇷 France</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:73.2%"></div>
+                  <div class="prob-bar" style="width:66.4%"></div>
                 </div>
-                <span class="prob-label">18.3%</span>
+                <span class="prob-label">16.6%</span>
               </td>
-              <td class="stage-prob">32.2%</td>
-              <td class="stage-prob">62.3%</td>
+              <td class="stage-prob">29.9%</td>
+              <td class="stage-prob">59.4%</td>
               <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
@@ -322,12 +345,12 @@
               <td class="team-name">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:59.4%"></div>
+                  <div class="prob-bar" style="width:62.6%"></div>
                 </div>
-                <span class="prob-label">14.9%</span>
+                <span class="prob-label">15.7%</span>
               </td>
-              <td class="stage-prob">32.1%</td>
-              <td class="stage-prob">60.1%</td>
+              <td class="stage-prob">33.2%</td>
+              <td class="stage-prob">61.0%</td>
               <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
@@ -335,12 +358,12 @@
               <td class="team-name">🇲🇦 Morocco</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:23.7%"></div>
+                  <div class="prob-bar" style="width:25.8%"></div>
                 </div>
-                <span class="prob-label">5.9%</span>
+                <span class="prob-label">6.5%</span>
               </td>
-              <td class="stage-prob">14.6%</td>
-              <td class="stage-prob">37.7%</td>
+              <td class="stage-prob">16.2%</td>
+              <td class="stage-prob">40.6%</td>
               <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
@@ -348,12 +371,12 @@
               <td class="team-name">🇳🇴 Norway</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:23.4%"></div>
+                  <div class="prob-bar" style="width:22.5%"></div>
                 </div>
-                <span class="prob-label">5.8%</span>
+                <span class="prob-label">5.6%</span>
               </td>
-              <td class="stage-prob">17.4%</td>
-              <td class="stage-prob">39.9%</td>
+              <td class="stage-prob">16.8%</td>
+              <td class="stage-prob">39.0%</td>
               <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
@@ -361,12 +384,12 @@
               <td class="team-name">🇧🇪 Belgium</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:7.2%"></div>
+                  <div class="prob-bar" style="width:11.8%"></div>
                 </div>
-                <span class="prob-label">1.8%</span>
+                <span class="prob-label">2.9%</span>
               </td>
-              <td class="stage-prob">5.5%</td>
-              <td class="stage-prob">19.3%</td>
+              <td class="stage-prob">8.2%</td>
+              <td class="stage-prob">24.0%</td>
               <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
@@ -374,12 +397,12 @@
               <td class="team-name">🇨🇭 Switzerland</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:5.2%"></div>
+                  <div class="prob-bar" style="width:7.6%"></div>
                 </div>
-                <span class="prob-label">1.3%</span>
+                <span class="prob-label">1.9%</span>
               </td>
-              <td class="stage-prob">6.3%</td>
-              <td class="stage-prob">22.5%</td>
+              <td class="stage-prob">7.8%</td>
+              <td class="stage-prob">25.6%</td>
               <td class="stage-prob">100.0%</td>
             </tr>
         </tbody>
@@ -620,10 +643,10 @@
             <span class="ko-team right">Morocco 🇲🇦</span>
           </div>
           <div class="prob-bar-stacked ko-bar">
-            <div class="seg seg-home" style="width:61.9%"></div>
-            <div class="seg seg-away" style="width:38.1%"></div>
+            <div class="seg seg-home" style="width:59.7%"></div>
+            <div class="seg seg-away" style="width:40.3%"></div>
           </div>
-          <div class="ko-pcts"><span>62%</span><span>38%</span></div>
+          <div class="ko-pcts"><span>60%</span><span>40%</span></div>
           <div class="ko-date">📅 Jul 9</div>
         </div>
         <div class="ko-match upcoming">
@@ -633,10 +656,10 @@
             <span class="ko-team right">Belgium 🇧🇪</span>
           </div>
           <div class="prob-bar-stacked ko-bar">
-            <div class="seg seg-home" style="width:79.9%"></div>
-            <div class="seg seg-away" style="width:20.1%"></div>
+            <div class="seg seg-home" style="width:76.5%"></div>
+            <div class="seg seg-away" style="width:23.5%"></div>
           </div>
-          <div class="ko-pcts"><span>80%</span><span>20%</span></div>
+          <div class="ko-pcts"><span>77%</span><span>23%</span></div>
           <div class="ko-date">📅 Jul 10</div>
         </div>
         <div class="ko-match upcoming">
@@ -646,10 +669,10 @@
             <span class="ko-team right">England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
           </div>
           <div class="prob-bar-stacked ko-bar">
-            <div class="seg seg-home" style="width:40.1%"></div>
-            <div class="seg seg-away" style="width:59.9%"></div>
+            <div class="seg seg-home" style="width:38.9%"></div>
+            <div class="seg seg-away" style="width:61.1%"></div>
           </div>
-          <div class="ko-pcts"><span>40%</span><span>60%</span></div>
+          <div class="ko-pcts"><span>39%</span><span>61%</span></div>
           <div class="ko-date">📅 Jul 11</div>
         </div>
         <div class="ko-match upcoming">
@@ -659,10 +682,10 @@
             <span class="ko-team right">Switzerland 🇨🇭</span>
           </div>
           <div class="prob-bar-stacked ko-bar">
-            <div class="seg seg-home" style="width:77.6%"></div>
-            <div class="seg seg-away" style="width:22.4%"></div>
+            <div class="seg seg-home" style="width:74.6%"></div>
+            <div class="seg seg-away" style="width:25.4%"></div>
           </div>
-          <div class="ko-pcts"><span>78%</span><span>22%</span></div>
+          <div class="ko-pcts"><span>75%</span><span>25%</span></div>
           <div class="ko-date">📅 Jul 12</div>
         </div></div></div><div class="ko-round"><h3>🔥 Semi-Finals <span class="ko-status">0/2 played</span></h3><div class="ko-grid">
     <div class="ko-match tbd-match">
@@ -724,17 +747,43 @@
             <span class="team-b">Morocco 🇲🇦</span>
           </div>
           <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:62%"></div>
-            <div class="seg seg-away" style="width:38%"></div>
+            <div class="seg seg-home" style="width:60%"></div>
+            <div class="seg seg-away" style="width:40%"></div>
           </div>
           <div class="outcome-pills">
             <div class="pill pill-home">
               <span class="pill-label">France advance</span>
-              <span class="pill-pct">62%</span>
+              <span class="pill-pct">60%</span>
             </div>
             <div class="pill pill-away">
               <span class="pill-label">Morocco advance</span>
-              <span class="pill-pct">38%</span>
+              <span class="pill-pct">40%</span>
+            </div>
+          </div>
+          
+          <div class="pred-panel">
+            <div class="pred-row xg-row">
+              <span class="pred-label">⚽ Expected goals</span>
+              <span>🇫🇷 <strong>1.2</strong>
+                &nbsp;·&nbsp; 🇲🇦 <strong>1.2</strong></span>
+            </div>
+            <div class="pred-row">
+              <span class="pred-label">🎯 Likely scorelines</span>
+              <span><span class="score-chip">1-1 <em>13%</em></span> · <span class="score-chip">1-0 <em>11%</em></span> · <span class="score-chip">0-1 <em>11%</em></span></span>
+            </div>
+            <div class="path-pills">
+              <div class="pill path-pill">
+                <span class="pill-label">Decided in 90&prime;</span>
+                <span class="pill-pct">78%</span>
+              </div>
+              <div class="pill path-pill">
+                <span class="pill-label">Extra time winner</span>
+                <span class="pill-pct">10%</span>
+              </div>
+              <div class="pill path-pill pens">
+                <span class="pill-label">Penalties 🎲</span>
+                <span class="pill-pct">12%</span>
+              </div>
             </div>
           </div>
         </div></div><div class="date-section"><h4>📅 2026-07-10 · Quarter-Finals</h4>
@@ -745,17 +794,43 @@
             <span class="team-b">Belgium 🇧🇪</span>
           </div>
           <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:80%"></div>
-            <div class="seg seg-away" style="width:20%"></div>
+            <div class="seg seg-home" style="width:77%"></div>
+            <div class="seg seg-away" style="width:23%"></div>
           </div>
           <div class="outcome-pills">
             <div class="pill pill-home">
               <span class="pill-label">Spain advance</span>
-              <span class="pill-pct">80%</span>
+              <span class="pill-pct">77%</span>
             </div>
             <div class="pill pill-away">
               <span class="pill-label">Belgium advance</span>
-              <span class="pill-pct">20%</span>
+              <span class="pill-pct">23%</span>
+            </div>
+          </div>
+          
+          <div class="pred-panel">
+            <div class="pred-row xg-row">
+              <span class="pred-label">⚽ Expected goals</span>
+              <span>🇪🇸 <strong>1.7</strong>
+                &nbsp;·&nbsp; 🇧🇪 <strong>0.7</strong></span>
+            </div>
+            <div class="pred-row">
+              <span class="pred-label">🎯 Likely scorelines</span>
+              <span><span class="score-chip">1-0 <em>16%</em></span> · <span class="score-chip">2-0 <em>13%</em></span> · <span class="score-chip">1-1 <em>11%</em></span></span>
+            </div>
+            <div class="path-pills">
+              <div class="pill path-pill">
+                <span class="pill-label">Decided in 90&prime;</span>
+                <span class="pill-pct">79%</span>
+              </div>
+              <div class="pill path-pill">
+                <span class="pill-label">Extra time winner</span>
+                <span class="pill-pct">9%</span>
+              </div>
+              <div class="pill path-pill pens">
+                <span class="pill-label">Penalties 🎲</span>
+                <span class="pill-pct">12%</span>
+              </div>
             </div>
           </div>
         </div></div><div class="date-section"><h4>📅 2026-07-11 · Quarter-Finals</h4>
@@ -766,17 +841,43 @@
             <span class="team-b">England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
           </div>
           <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:40%"></div>
-            <div class="seg seg-away" style="width:60%"></div>
+            <div class="seg seg-home" style="width:39%"></div>
+            <div class="seg seg-away" style="width:61%"></div>
           </div>
           <div class="outcome-pills">
             <div class="pill pill-home">
               <span class="pill-label">Norway advance</span>
-              <span class="pill-pct">40%</span>
+              <span class="pill-pct">39%</span>
             </div>
             <div class="pill pill-away">
               <span class="pill-label">England advance</span>
-              <span class="pill-pct">60%</span>
+              <span class="pill-pct">61%</span>
+            </div>
+          </div>
+          
+          <div class="pred-panel">
+            <div class="pred-row xg-row">
+              <span class="pred-label">⚽ Expected goals</span>
+              <span>🇳🇴 <strong>1.1</strong>
+                &nbsp;·&nbsp; 🏴󠁧󠁢󠁥󠁮󠁧󠁿 <strong>2.5</strong></span>
+            </div>
+            <div class="pred-row">
+              <span class="pred-label">🎯 Likely scorelines</span>
+              <span><span class="score-chip">1-2 <em>9%</em></span> · <span class="score-chip">0-2 <em>9%</em></span> · <span class="score-chip">1-3 <em>8%</em></span></span>
+            </div>
+            <div class="path-pills">
+              <div class="pill path-pill">
+                <span class="pill-label">Decided in 90&prime;</span>
+                <span class="pill-pct">77%</span>
+              </div>
+              <div class="pill path-pill">
+                <span class="pill-label">Extra time winner</span>
+                <span class="pill-pct">13%</span>
+              </div>
+              <div class="pill path-pill pens">
+                <span class="pill-label">Penalties 🎲</span>
+                <span class="pill-pct">10%</span>
+              </div>
             </div>
           </div>
         </div></div><div class="date-section"><h4>📅 2026-07-12 · Quarter-Finals</h4>
@@ -787,17 +888,43 @@
             <span class="team-b">Switzerland 🇨🇭</span>
           </div>
           <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:78%"></div>
-            <div class="seg seg-away" style="width:22%"></div>
+            <div class="seg seg-home" style="width:75%"></div>
+            <div class="seg seg-away" style="width:25%"></div>
           </div>
           <div class="outcome-pills">
             <div class="pill pill-home">
               <span class="pill-label">Argentina advance</span>
-              <span class="pill-pct">78%</span>
+              <span class="pill-pct">75%</span>
             </div>
             <div class="pill pill-away">
               <span class="pill-label">Switzerland advance</span>
-              <span class="pill-pct">22%</span>
+              <span class="pill-pct">25%</span>
+            </div>
+          </div>
+          
+          <div class="pred-panel">
+            <div class="pred-row xg-row">
+              <span class="pred-label">⚽ Expected goals</span>
+              <span>🇦🇷 <strong>2.2</strong>
+                &nbsp;·&nbsp; 🇨🇭 <strong>0.8</strong></span>
+            </div>
+            <div class="pred-row">
+              <span class="pred-label">🎯 Likely scorelines</span>
+              <span><span class="score-chip">2-0 <em>12%</em></span> · <span class="score-chip">1-0 <em>11%</em></span> · <span class="score-chip">2-1 <em>10%</em></span></span>
+            </div>
+            <div class="path-pills">
+              <div class="pill path-pill">
+                <span class="pill-label">Decided in 90&prime;</span>
+                <span class="pill-pct">73%</span>
+              </div>
+              <div class="pill path-pill">
+                <span class="pill-label">Extra time winner</span>
+                <span class="pill-pct">14%</span>
+              </div>
+              <div class="pill path-pill pens">
+                <span class="pill-label">Penalties 🎲</span>
+                <span class="pill-pct">13%</span>
+              </div>
             </div>
           </div>
         </div></div>

@@ -484,13 +484,18 @@ def alive_and_eliminated(fixtures: dict, bracket: dict) -> tuple:
     return alive, eliminated
 
 
-def knockout_probs(home, away, team_stats, predictor, cache):
-    """Two-way (no draw) win probabilities for a knockout match, cached."""
+def knockout_prediction(home, away, team_stats, predictor, goal_model, cache):
+    """
+    Full knockout-match prediction, cached. The 90-minute win/draw/loss comes
+    from the XGBoost predictor (or Elo fallback); the Poisson goal model turns
+    the draw into extra time and penalties and supplies xG and scorelines.
+    Returns the breakdown dict from PoissonGoalModel.knockout_breakdown.
+    """
     key = (home, away)
     if key not in cache:
-        p = match_win_prob(home, away, team_stats, predictor, neutral=True)
-        total = max(1e-9, p["home_win"] + p["away_win"])
-        cache[key] = (p["home_win"] / total, p["away_win"] / total)
+        p90 = match_win_prob(home, away, team_stats, predictor, neutral=True)
+        cache[key] = goal_model.knockout_breakdown(home, away, neutral=True,
+                                                   p90=p90)
     return cache[key]
 
 
@@ -505,19 +510,27 @@ def run_bracket_simulation(
       - played knockout matches always advance their real winner
       - only unplayed matches are simulated (no draws, per knockout rules)
       - eliminated teams can never appear past the round they lost in
-    Returns the same stage-probability dict shape as run_simulation, plus
-    per-match win probabilities attached to the bracket's unplayed matches.
+    Unplayed matches resolve in three stages (90 minutes, extra time,
+    penalties) instead of a proportional coin flip, so shootouts are nearly
+    random and underdogs keep their honest upset chance.
+    Returns the same stage-probability dict shape as run_simulation, plus a
+    full prediction (xG, scorelines, regulation/ET/pens path probabilities)
+    attached to each of the bracket's unplayed matches under "pred".
     """
-    rounds = bracket["rounds"]
-    prob_cache = {}
+    from models.goal_model import PoissonGoalModel
+    goal_model = PoissonGoalModel(team_stats)
 
-    # Attach two-way probabilities to unplayed matches with known teams
+    rounds = bracket["rounds"]
+    pred_cache = {}
+
+    # Attach full predictions to unplayed matches with known teams
     for rnd in rounds:
         for m in rnd["matches"]:
             if not m["played"] and m["home"] and m["away"]:
-                ph, pa = knockout_probs(m["home"], m["away"],
-                                        team_stats, predictor, prob_cache)
-                m["p_home"], m["p_away"] = round(ph, 4), round(pa, 4)
+                bd = knockout_prediction(m["home"], m["away"], team_stats,
+                                         predictor, goal_model, pred_cache)
+                m["p_home"], m["p_away"] = bd["p_home_total"], bd["p_away_total"]
+                m["pred"] = bd
 
     stage_counts = defaultdict(lambda: defaultdict(int))
 
@@ -538,9 +551,11 @@ def run_bracket_simulation(
                 if m["played"] and m["winner"]:
                     w = m["winner"]
                 else:
-                    ph, _ = knockout_probs(home, away, team_stats,
-                                           predictor, prob_cache)
-                    w = home if random.random() < ph else away
+                    bd = knockout_prediction(home, away, team_stats,
+                                             predictor, goal_model, pred_cache)
+                    # p_home_total already folds in 90 minutes, extra time,
+                    # and penalties, so one draw decides the advancer
+                    w = home if random.random() < bd["p_home_total"] else away
                 winners.append(w)
             prev_winners = winners
         stage_counts["Champion"][prev_winners[0]] += 1

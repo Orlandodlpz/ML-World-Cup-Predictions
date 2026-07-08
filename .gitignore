@@ -4,3 +4,7 @@
 /data/*.pyd
 /data/.Python
 learning.md
+*.pyc
+
+.venv
+*.log
