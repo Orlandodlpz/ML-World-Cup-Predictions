@@ -1,0 +1,58 @@
+[
+  {
+    "home": "France",
+    "away": "Morocco",
+    "date": "2026-07-09",
+    "round": "Quarter-Finals",
+    "placeholder": false
+  },
+  {
+    "home": "Spain",
+    "away": "Belgium",
+    "date": "2026-07-10",
+    "round": "Quarter-Finals",
+    "placeholder": false
+  },
+  {
+    "home": "Norway",
+    "away": "England",
+    "date": "2026-07-11",
+    "round": "Quarter-Finals",
+    "placeholder": false
+  },
+  {
+    "home": "Argentina",
+    "away": "Switzerland",
+    "date": "2026-07-12",
+    "round": "Quarter-Finals",
+    "placeholder": false
+  },
+  {
+    "home": "Quarterfinal 1 Winner",
+    "away": "Quarterfinal 2 Winner",
+    "date": "2026-07-14",
+    "round": "Semi-Finals",
+    "placeholder": true
+  },
+  {
+    "home": "Quarterfinal 3 Winner",
+    "away": "Quarterfinal 4 Winner",
+    "date": "2026-07-15",
+    "round": "Semi-Finals",
+    "placeholder": true
+  },
+  {
+    "home": "Semifinal 1 Loser",
+    "away": "Semifinal 2 Loser",
+    "date": "2026-07-18",
+    "round": "Third Place",
+    "placeholder": true
+  },
+  {
+    "home": "Semifinal 1 Winner",
+    "away": "Semifinal 2 Winner",
+    "date": "2026-07-19",
+    "round": "Final",
+    "placeholder": true
+  }
+]

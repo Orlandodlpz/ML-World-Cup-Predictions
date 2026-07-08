@@ -252,12 +252,15 @@ def simulate_knockout_stage(
         r32_matches.append((qualifiers[g][1], thirds[j + 4]))        # e.g. I2 vs 3rd
 
     # ── Simulate R32 → R16 → QF → SF → Final ────────────────────────────────
+    # stage_results[stage] = teams that PLAYED in that stage (reached it),
+    # so "Final" = the two finalists and "Champion" = the single winner.
     stage_results = {}
     current_round = r32_matches
     stage_names   = ["Round of 32", "Round of 16", "Quarter-Finals",
                      "Semi-Finals", "Final"]
 
     for stage in stage_names:
+        stage_results[stage] = [t for match in current_round for t in match]
         winners = []
         for home, away in current_round:
             winner = simulate_match(
@@ -265,7 +268,6 @@ def simulate_knockout_stage(
                 neutral=True, allow_draw=False,
             )
             winners.append(winner)
-        stage_results[stage] = winners
 
         if stage == "Final":
             stage_results["Champion"] = [winners[0]]
@@ -280,6 +282,320 @@ def simulate_knockout_stage(
 
 
 # ══════════════════════════════════════════════════════════════════════════════
+# LIVE BRACKET (used once the group stage is complete)
+# ══════════════════════════════════════════════════════════════════════════════
+
+KO_ROUNDS   = ["Round of 32", "Round of 16", "Quarter-Finals",
+               "Semi-Finals", "Final"]
+ROUND_SIZE  = {"Round of 32": 16, "Round of 16": 8, "Quarter-Finals": 4,
+               "Semi-Finals": 2, "Final": 1}
+ROUND_SHORT = {"Round of 32": "R32", "Round of 16": "R16",
+               "Quarter-Finals": "QF", "Semi-Finals": "SF", "Final": "F"}
+
+
+def load_upcoming_fixtures() -> list:
+    """Scheduled (not yet played) fixtures written by data/fetch_results.py."""
+    path = os.path.join(BASE, "data", "live", "upcoming_fixtures.json")
+    if os.path.exists(path):
+        with open(path) as f:
+            return json.load(f)
+    return []
+
+
+def classify_results(fixtures: dict, all_results: list) -> dict:
+    """
+    Split real results into group-stage and knockout rounds.
+
+    Returns {
+      "group_played":   {(home, away): (hg, ag)}  keyed like the fixture list,
+      "ko_results":     {round_name: [result dicts sorted by date]},
+      "group_complete": bool,
+    }
+    """
+    group_pairs = {
+        frozenset((m[0], m[1])) for m in fixtures["group_matches"]
+    }
+
+    group_played = {}
+    ko_results   = defaultdict(list)
+
+    for r in all_results:
+        h, a = r.get("home"), r.get("away")
+        hg, ag = r.get("home_goals"), r.get("away_goals")
+        if not h or not a or hg is None or ag is None:
+            continue
+        rd = r.get("round")
+        if rd is None:
+            rd = "Group Stage" if frozenset((h, a)) in group_pairs else None
+        if rd == "Group Stage":
+            group_played[(h, a)] = (int(hg), int(ag))
+        elif rd is not None:
+            ko_results[rd].append(r)
+
+    for rd in ko_results:
+        ko_results[rd].sort(key=lambda r: r.get("date", ""))
+
+    # Group stage is complete when every fixture pairing has a real score
+    played_pairs = {frozenset(k) for k in group_played}
+    group_complete = all(
+        frozenset((m[0], m[1])) in played_pairs
+        for m in fixtures["group_matches"]
+    )
+
+    return {
+        "group_played":   group_played,
+        "ko_results":     dict(ko_results),
+        "group_complete": group_complete,
+    }
+
+
+def build_bracket(ko_results: dict, upcoming: list) -> dict:
+    """
+    Build the REAL knockout bracket from played results + ESPN's scheduled
+    pairings. Rounds that ESPN has not yet paired are chained from the
+    previous round's matches in chronological order (match i of a round is
+    fed by matches 2i and 2i+1 of the previous round, which matches FIFA's
+    bracket and ESPN's own "Quarterfinal 1 Winner" placeholders). As soon
+    as ESPN publishes the real pairing, the daily refresh replaces the
+    chained placeholder with it.
+
+    Returns {"rounds": [{"name": ..., "matches": [...]}, ...],
+             "third_place": match dict or None}
+    Each match dict:
+      home / away        real team names, or None when still undecided
+      home_label / away_label  e.g. "Winner QF1" when undecided
+      played, winner, home_goals, away_goals, status, home_pens, away_pens
+      date, feeds        (feeds = indices into the previous round)
+    """
+    rounds = []
+
+    for ri, rd in enumerate(KO_ROUNDS):
+        n = ROUND_SIZE[rd]
+        matches = []
+        seen_pairs = set()
+
+        for r in ko_results.get(rd, []):
+            matches.append({
+                "home": r["home"], "away": r["away"],
+                "home_label": r["home"], "away_label": r["away"],
+                "played": True,
+                "home_goals": int(r["home_goals"]),
+                "away_goals": int(r["away_goals"]),
+                "status": r.get("status", "FT"),
+                "home_pens": r.get("home_pens"),
+                "away_pens": r.get("away_pens"),
+                "winner": r.get("winner"),
+                "date": r.get("date", ""),
+            })
+            seen_pairs.add(frozenset((r["home"], r["away"])))
+
+        for u in upcoming:
+            if u.get("round") != rd or u.get("placeholder"):
+                continue
+            if frozenset((u["home"], u["away"])) in seen_pairs:
+                continue
+            matches.append({
+                "home": u["home"], "away": u["away"],
+                "home_label": u["home"], "away_label": u["away"],
+                "played": False, "winner": None,
+                "home_goals": None, "away_goals": None,
+                "status": None, "home_pens": None, "away_pens": None,
+                "date": u.get("date", ""),
+            })
+            seen_pairs.add(frozenset((u["home"], u["away"])))
+
+        matches.sort(key=lambda m: m.get("date", ""))
+
+        prev_short = ROUND_SHORT[KO_ROUNDS[ri - 1]] if ri > 0 else "?"
+        while len(matches) < n:
+            i = len(matches)
+            matches.append({
+                "home": None, "away": None,
+                "home_label": f"Winner {prev_short}{2 * i + 1}",
+                "away_label": f"Winner {prev_short}{2 * i + 2}",
+                "played": False, "winner": None,
+                "home_goals": None, "away_goals": None,
+                "status": None, "home_pens": None, "away_pens": None,
+                "date": "", "feeds": [2 * i, 2 * i + 1],
+            })
+
+        # Every undecided slot needs to know which previous-round matches
+        # feed it, so per-simulation winners can be routed correctly.
+        for i, m in enumerate(matches):
+            if m.get("home") is None or m.get("away") is None:
+                m.setdefault("feeds", [2 * i, 2 * i + 1])
+
+        rounds.append({"name": rd, "matches": matches})
+
+    # Third-place match: display only (does not affect champion odds)
+    third = None
+    tp_results = ko_results.get("Third Place", [])
+    if tp_results:
+        r = tp_results[0]
+        third = {
+            "home": r["home"], "away": r["away"],
+            "home_label": r["home"], "away_label": r["away"],
+            "played": True,
+            "home_goals": int(r["home_goals"]), "away_goals": int(r["away_goals"]),
+            "status": r.get("status", "FT"),
+            "home_pens": r.get("home_pens"), "away_pens": r.get("away_pens"),
+            "winner": r.get("winner"), "date": r.get("date", ""),
+        }
+    else:
+        for u in upcoming:
+            if u.get("round") == "Third Place":
+                third = {
+                    "home": None if u.get("placeholder") else u["home"],
+                    "away": None if u.get("placeholder") else u["away"],
+                    "home_label": "Loser SF1" if u.get("placeholder") else u["home"],
+                    "away_label": "Loser SF2" if u.get("placeholder") else u["away"],
+                    "played": False, "winner": None,
+                    "home_goals": None, "away_goals": None,
+                    "status": None, "home_pens": None, "away_pens": None,
+                    "date": u.get("date", ""),
+                }
+                break
+
+    return {"rounds": rounds, "third_place": third}
+
+
+def bracket_is_seeded(bracket: dict) -> bool:
+    """True when every R32 slot has two real teams (played or scheduled)."""
+    r32 = bracket["rounds"][0]["matches"]
+    return len(r32) == ROUND_SIZE["Round of 32"] and all(
+        m["home"] and m["away"] for m in r32
+    )
+
+
+def alive_and_eliminated(fixtures: dict, bracket: dict) -> tuple:
+    """Teams still able to win vs teams already out (after group completion)."""
+    all_teams = {t for teams in fixtures["groups"].values() for t in teams}
+    r32_teams = {
+        t for m in bracket["rounds"][0]["matches"]
+        for t in (m["home"], m["away"]) if t
+    }
+    losers = set()
+    for rnd in bracket["rounds"]:
+        for m in rnd["matches"]:
+            if m["played"] and m["winner"]:
+                losers.add(m["home"] if m["winner"] == m["away"] else m["away"])
+    alive = r32_teams - losers
+    eliminated = (all_teams - r32_teams) | losers
+    return alive, eliminated
+
+
+def knockout_probs(home, away, team_stats, predictor, cache):
+    """Two-way (no draw) win probabilities for a knockout match, cached."""
+    key = (home, away)
+    if key not in cache:
+        p = match_win_prob(home, away, team_stats, predictor, neutral=True)
+        total = max(1e-9, p["home_win"] + p["away_win"])
+        cache[key] = (p["home_win"] / total, p["away_win"] / total)
+    return cache[key]
+
+
+def run_bracket_simulation(
+    bracket: dict,
+    team_stats: dict,
+    predictor=None,
+    n_simulations: int = 10_000,
+) -> dict:
+    """
+    Monte Carlo simulation CONDITIONED on the real tournament state:
+      - played knockout matches always advance their real winner
+      - only unplayed matches are simulated (no draws, per knockout rules)
+      - eliminated teams can never appear past the round they lost in
+    Returns the same stage-probability dict shape as run_simulation, plus
+    per-match win probabilities attached to the bracket's unplayed matches.
+    """
+    rounds = bracket["rounds"]
+    prob_cache = {}
+
+    # Attach two-way probabilities to unplayed matches with known teams
+    for rnd in rounds:
+        for m in rnd["matches"]:
+            if not m["played"] and m["home"] and m["away"]:
+                ph, pa = knockout_probs(m["home"], m["away"],
+                                        team_stats, predictor, prob_cache)
+                m["p_home"], m["p_away"] = round(ph, 4), round(pa, 4)
+
+    stage_counts = defaultdict(lambda: defaultdict(int))
+
+    print(f"\n🎲 Running {n_simulations:,} bracket-conditioned simulations...\n")
+
+    for _ in tqdm(range(n_simulations), ncols=70):
+        prev_winners = []
+        for rnd in rounds:
+            winners = []
+            for m in rnd["matches"]:
+                home, away = m["home"], m["away"]
+                if home is None or away is None:
+                    f0, f1 = m["feeds"]
+                    home = home or prev_winners[f0]
+                    away = away or prev_winners[f1]
+                stage_counts[rnd["name"]][home] += 1
+                stage_counts[rnd["name"]][away] += 1
+                if m["played"] and m["winner"]:
+                    w = m["winner"]
+                else:
+                    ph, _ = knockout_probs(home, away, team_stats,
+                                           predictor, prob_cache)
+                    w = home if random.random() < ph else away
+                winners.append(w)
+            prev_winners = winners
+        stage_counts["Champion"][prev_winners[0]] += 1
+
+    # The 32 real R32 participants advanced from the group stage for sure
+    for m in rounds[0]["matches"]:
+        for t in (m["home"], m["away"]):
+            if t:
+                stage_counts["Group Stage"][t] = n_simulations
+
+    results = {}
+    stages = ["Group Stage"] + KO_ROUNDS + ["Champion"]
+    for stage in stages:
+        counts = stage_counts[stage]
+        results[stage] = {
+            team: round(count / n_simulations, 4)
+            for team, count in sorted(counts.items(), key=lambda x: -x[1])
+        }
+    return results
+
+
+def compute_final_standings(fixtures: dict, group_played: dict) -> dict:
+    """
+    Final group tables from real results.
+    Returns {group: [{team, p, w, d, l, gf, ga, gd, pts}, ...ranked...]}.
+    """
+    points, gd, gf, ga = (defaultdict(int) for _ in range(4))
+    played, wins, draws, losses = (defaultdict(int) for _ in range(4))
+
+    for (h, a), (hg, ag) in group_played.items():
+        played[h] += 1; played[a] += 1
+        gf[h] += hg;    gf[a] += ag
+        ga[h] += ag;    ga[a] += hg
+        gd[h] += hg - ag; gd[a] += ag - hg
+        if hg > ag:
+            points[h] += 3; wins[h] += 1; losses[a] += 1
+        elif hg == ag:
+            points[h] += 1; points[a] += 1; draws[h] += 1; draws[a] += 1
+        else:
+            points[a] += 3; wins[a] += 1; losses[h] += 1
+
+    standings = {}
+    for grp, teams in fixtures["groups"].items():
+        ranked = sorted(teams, key=lambda t: (points[t], gd[t], gf[t]),
+                        reverse=True)
+        standings[grp] = [
+            {"team": t, "p": played[t], "w": wins[t], "d": draws[t],
+             "l": losses[t], "gf": gf[t], "ga": ga[t], "gd": gd[t],
+             "pts": points[t]}
+            for t in ranked
+        ]
+    return standings
+
+
+# ══════════════════════════════════════════════════════════════════════════════
 # MONTE CARLO SIMULATOR
 # ══════════════════════════════════════════════════════════════════════════════
 
@@ -288,13 +604,17 @@ def run_simulation(
     team_stats: dict,
     predictor=None,
     n_simulations: int = 10_000,
+    known_results: Optional[list] = None,
 ) -> dict:
     """
     Run the tournament N times. Returns win probabilities per team per stage.
+    known_results: optional [home, away, hg, ag] list of real group results
+    (defaults to whatever scores are embedded in the fixtures file).
     """
     groups        = fixtures["groups"]
     group_matches = fixtures["group_matches"]
-    known         = [m for m in group_matches if m[2] is not None]
+    known         = known_results if known_results is not None else \
+                    [m for m in group_matches if m[2] is not None]
 
     # Accumulators
     stage_counts = defaultdict(lambda: defaultdict(int))
@@ -443,8 +763,67 @@ def main():
     except Exception:
         print("⚠️  XGBoost model not found — using Elo fallback")
 
-    # ── Run simulation ────────────────────────────────────────────────────────
-    results = run_simulation(fixtures, team_stats, predictor, n_simulations=10_000)
+    # ══════════════════════════════════════════════════════════════════════════
+    # STEP 2 — Branch on tournament state:
+    #   group stage still running  → simulate full tournament (historical path)
+    #   group stage complete       → simulate only the REMAINING bracket,
+    #                                conditioned on every real result so far
+    # ══════════════════════════════════════════════════════════════════════════
+    state    = classify_results(fixtures, all_results)
+    upcoming = load_upcoming_fixtures()
+
+    bracket = None
+    if state["group_complete"]:
+        bracket = build_bracket(state["ko_results"], upcoming)
+        if not bracket_is_seeded(bracket):
+            print("⚠️  Group stage complete but R32 pairings unknown yet —")
+            print("    falling back to full-tournament simulation.")
+            bracket = None
+
+    if bracket is not None:
+        alive, eliminated = alive_and_eliminated(fixtures, bracket)
+        ko_played = sum(
+            1 for rnd in bracket["rounds"] for m in rnd["matches"] if m["played"]
+        )
+        print(f"\n🏟️  Group stage COMPLETE — live knockout bracket active")
+        print(f"    Knockout matches played: {ko_played} · "
+              f"Teams still alive: {len(alive)} · Eliminated: {len(eliminated)}")
+
+        results = run_bracket_simulation(
+            bracket, team_stats, predictor, n_simulations=10_000
+        )
+        results["bracket"] = bracket
+        results["standings"] = compute_final_standings(
+            fixtures, state["group_played"]
+        )
+        results["meta"] = {
+            "phase":          "knockout",
+            "group_complete": True,
+            "alive":          sorted(alive),
+            "eliminated":     sorted(eliminated),
+            "n_simulations":  10_000,
+        }
+    else:
+        # Historical path: overlay real group results onto the fixture list
+        known = []
+        seen  = set()
+        for m in fixtures["group_matches"]:
+            h, a = m[0], m[1]
+            if (h, a) in state["group_played"]:
+                hg, ag = state["group_played"][(h, a)]
+                known.append([h, a, hg, ag])
+            elif m[2] is not None:
+                known.append([h, a, m[2], m[3]])
+            seen.add((h, a))
+        results = run_simulation(
+            fixtures, team_stats, predictor,
+            n_simulations=10_000, known_results=known,
+        )
+        results["meta"] = {
+            "phase":          "group",
+            "group_complete": False,
+            "n_simulations":  10_000,
+        }
 
     # ── Save results ──────────────────────────────────────────────────────────
     out_path = os.path.join(OUTPUTS, "simulation_results.json")

@@ -10,7 +10,28 @@
       0.068771131336689,
       0.1955452859401703,
       0.7356836199760437
-    ]
+    ],
+    "date": "2026-06-11",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
+  },
+  {
+    "home": "Canada",
+    "away": "Bosnia & Herzegovina",
+    "home_goals": 1,
+    "away_goals": 1,
+    "actual_outcome": 1,
+    "actual_label": "Draw",
+    "predicted_proba": [
+      0.15371601283550262,
+      0.28701522946357727,
+      0.5592687129974365
+    ],
+    "date": "2026-06-12",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "South Korea",
@@ -23,20 +44,11 @@
       0.04524754360318184,
       0.1258404552936554,
       0.8289120197296143
-    ]
-  },
-  {
-    "home": "Canada",
-    "away": "Bosnia and Herzegovina",
-    "home_goals": 1,
-    "away_goals": 1,
-    "actual_outcome": 1,
-    "actual_label": "Draw",
-    "predicted_proba": [
-      0.15371601283550262,
-      0.28701522946357727,
-      0.5592687129974365
-    ]
+    ],
+    "date": "2026-06-12",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Qatar",
@@ -49,7 +61,11 @@
       0.6554209589958191,
       0.18379518389701843,
       0.16078385710716248
-    ]
+    ],
+    "date": "2026-06-13",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "USA",
@@ -62,7 +78,11 @@
       0.651206910610199,
       0.19885055720806122,
       0.14994248747825623
-    ]
+    ],
+    "date": "2026-06-13",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Brazil",
@@ -75,20 +95,28 @@
       0.41781654953956604,
       0.2634008228778839,
       0.3187826871871948
-    ]
+    ],
+    "date": "2026-06-13",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
-    "home": "Scotland",
-    "away": "Haiti",
-    "home_goals": 1,
-    "away_goals": 0,
+    "home": "Haiti",
+    "away": "Scotland",
+    "home_goals": 0,
+    "away_goals": 1,
     "actual_outcome": 2,
     "actual_label": "Scotland Win",
     "predicted_proba": [
       0.14853230118751526,
       0.23167452216148376,
       0.6197932362556458
-    ]
+    ],
+    "date": "2026-06-14",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Australia",
@@ -101,7 +129,11 @@
       0.34059274196624756,
       0.29866090416908264,
       0.3607463836669922
-    ]
+    ],
+    "date": "2026-06-14",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Germany",
@@ -114,7 +146,11 @@
       0.07135038822889328,
       0.09254570305347443,
       0.8361039161682129
-    ]
+    ],
+    "date": "2026-06-14",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Ivory Coast",
@@ -127,7 +163,11 @@
       0.466960072517395,
       0.25462639331817627,
       0.2784135639667511
-    ]
+    ],
+    "date": "2026-06-14",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Netherlands",
@@ -140,7 +180,11 @@
       0.40061265230178833,
       0.2488706260919571,
       0.350516676902771
-    ]
+    ],
+    "date": "2026-06-14",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Sweden",
@@ -153,7 +197,11 @@
       0.2527909576892853,
       0.2770630419254303,
       0.4701460003852844
-    ]
+    ],
+    "date": "2026-06-15",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Spain",
@@ -166,7 +214,11 @@
       0.03859446942806244,
       0.16556528210639954,
       0.7958402037620544
-    ]
+    ],
+    "date": "2026-06-15",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Belgium",
@@ -179,7 +231,11 @@
       0.22538374364376068,
       0.24617771804332733,
       0.5284385681152344
-    ]
+    ],
+    "date": "2026-06-15",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Saudi Arabia",
@@ -192,7 +248,11 @@
       0.619710385799408,
       0.20863394439220428,
       0.17165569961071014
-    ]
+    ],
+    "date": "2026-06-15",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "Iran",
@@ -205,7 +265,11 @@
       0.19358578324317932,
       0.2781331539154053,
       0.5282810926437378
-    ]
+    ],
+    "date": "2026-06-16",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
     "home": "France",
@@ -218,27 +282,27 @@
       0.16756674647331238,
       0.22483445703983307,
       0.6075987815856934
-    ]
+    ],
+    "date": "2026-06-16",
+    "round": "Group Stage",
+    "status": "FT",
+    "source": "espn_auto"
   },
   {
-    "home": "Norway",
-    "away": "Iraq",
-    "home_goals": 4,
-    "away_goals": 1,
+    "home": "Iraq",
+    "away": "Norway",
+    "home_goals": 1,
+    "away_goals": 4,
     "actual_outcome": 2,
     "actual_label": "Norway Win",
     "predicted_proba": [
       0.1395062357187271,
       0.23733152449131012,
       0.6231622099876404
-    ]
-  },
-  {
-    "home": "Canada",
-    "away": "Bosnia-Herzegovina",
-    "home_goals": 1,
-    "away_goals": 1,
-    "date": "2026-06-12",
+    ],
+    "date": "2026-06-16",
+    "round": "Group Stage",
+    "status": "FT",
     "source": "espn_auto"
   },
   {
@@ -247,7 +311,9 @@
     "home_goals": 3,
     "away_goals": 0,
     "date": "2026-06-17",
-    "source": "espn_auto"
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
   },
   {
     "home": "Austria",
@@ -255,7 +321,9 @@
     "home_goals": 3,
     "away_goals": 1,
     "date": "2026-06-17",
-    "source": "espn_auto"
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
   },
   {
     "home": "Portugal",
@@ -263,7 +331,9 @@
     "home_goals": 1,
     "away_goals": 1,
     "date": "2026-06-17",
-    "source": "espn_auto"
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
   },
   {
     "home": "England",
@@ -271,7 +341,9 @@
     "home_goals": 4,
     "away_goals": 2,
     "date": "2026-06-17",
-    "source": "espn_auto"
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
   },
   {
     "home": "Ghana",
@@ -279,15 +351,19 @@
     "home_goals": 1,
     "away_goals": 0,
     "date": "2026-06-17",
-    "source": "espn_auto"
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
   },
   {
     "home": "Uzbekistan",
     "away": "Colombia",
     "home_goals": 1,
     "away_goals": 3,
-    "date": "2026-06-17",
-    "source": "espn_auto"
+    "date": "2026-06-18",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
   },
   {
     "home": "Czechia",
@@ -295,6 +371,750 @@
     "home_goals": 1,
     "away_goals": 1,
     "date": "2026-06-18",
-    "source": "espn_auto"
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Switzerland",
+    "away": "Bosnia & Herzegovina",
+    "home_goals": 4,
+    "away_goals": 1,
+    "date": "2026-06-18",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Canada",
+    "away": "Qatar",
+    "home_goals": 6,
+    "away_goals": 0,
+    "date": "2026-06-18",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Mexico",
+    "away": "South Korea",
+    "home_goals": 1,
+    "away_goals": 0,
+    "date": "2026-06-19",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "USA",
+    "away": "Australia",
+    "home_goals": 2,
+    "away_goals": 0,
+    "date": "2026-06-19",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Scotland",
+    "away": "Morocco",
+    "home_goals": 0,
+    "away_goals": 1,
+    "date": "2026-06-19",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Brazil",
+    "away": "Haiti",
+    "home_goals": 3,
+    "away_goals": 0,
+    "date": "2026-06-20",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Turkey",
+    "away": "Paraguay",
+    "home_goals": 0,
+    "away_goals": 1,
+    "date": "2026-06-20",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Netherlands",
+    "away": "Sweden",
+    "home_goals": 5,
+    "away_goals": 1,
+    "date": "2026-06-20",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Germany",
+    "away": "Ivory Coast",
+    "home_goals": 2,
+    "away_goals": 1,
+    "date": "2026-06-20",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Ecuador",
+    "away": "Curacao",
+    "home_goals": 0,
+    "away_goals": 0,
+    "date": "2026-06-21",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Tunisia",
+    "away": "Japan",
+    "home_goals": 0,
+    "away_goals": 4,
+    "date": "2026-06-21",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Spain",
+    "away": "Saudi Arabia",
+    "home_goals": 4,
+    "away_goals": 0,
+    "date": "2026-06-21",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Belgium",
+    "away": "Iran",
+    "home_goals": 0,
+    "away_goals": 0,
+    "date": "2026-06-21",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Uruguay",
+    "away": "Cape Verde",
+    "home_goals": 2,
+    "away_goals": 2,
+    "date": "2026-06-21",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "New Zealand",
+    "away": "Egypt",
+    "home_goals": 1,
+    "away_goals": 3,
+    "date": "2026-06-22",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Argentina",
+    "away": "Austria",
+    "home_goals": 2,
+    "away_goals": 0,
+    "date": "2026-06-22",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "France",
+    "away": "Iraq",
+    "home_goals": 3,
+    "away_goals": 0,
+    "date": "2026-06-22",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Norway",
+    "away": "Senegal",
+    "home_goals": 3,
+    "away_goals": 2,
+    "date": "2026-06-23",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Jordan",
+    "away": "Algeria",
+    "home_goals": 1,
+    "away_goals": 2,
+    "date": "2026-06-23",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Portugal",
+    "away": "Uzbekistan",
+    "home_goals": 5,
+    "away_goals": 0,
+    "date": "2026-06-23",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "England",
+    "away": "Ghana",
+    "home_goals": 0,
+    "away_goals": 0,
+    "date": "2026-06-23",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Panama",
+    "away": "Croatia",
+    "home_goals": 0,
+    "away_goals": 1,
+    "date": "2026-06-23",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Colombia",
+    "away": "DR Congo",
+    "home_goals": 1,
+    "away_goals": 0,
+    "date": "2026-06-24",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Bosnia & Herzegovina",
+    "away": "Qatar",
+    "home_goals": 3,
+    "away_goals": 1,
+    "date": "2026-06-24",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Switzerland",
+    "away": "Canada",
+    "home_goals": 2,
+    "away_goals": 1,
+    "date": "2026-06-24",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Morocco",
+    "away": "Haiti",
+    "home_goals": 4,
+    "away_goals": 2,
+    "date": "2026-06-24",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Scotland",
+    "away": "Brazil",
+    "home_goals": 0,
+    "away_goals": 3,
+    "date": "2026-06-24",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Czechia",
+    "away": "Mexico",
+    "home_goals": 0,
+    "away_goals": 3,
+    "date": "2026-06-25",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "South Africa",
+    "away": "South Korea",
+    "home_goals": 1,
+    "away_goals": 0,
+    "date": "2026-06-25",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Curacao",
+    "away": "Ivory Coast",
+    "home_goals": 0,
+    "away_goals": 2,
+    "date": "2026-06-25",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Ecuador",
+    "away": "Germany",
+    "home_goals": 2,
+    "away_goals": 1,
+    "date": "2026-06-25",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Japan",
+    "away": "Sweden",
+    "home_goals": 1,
+    "away_goals": 1,
+    "date": "2026-06-25",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Tunisia",
+    "away": "Netherlands",
+    "home_goals": 1,
+    "away_goals": 3,
+    "date": "2026-06-25",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Paraguay",
+    "away": "Australia",
+    "home_goals": 0,
+    "away_goals": 0,
+    "date": "2026-06-26",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Turkey",
+    "away": "USA",
+    "home_goals": 3,
+    "away_goals": 2,
+    "date": "2026-06-26",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Norway",
+    "away": "France",
+    "home_goals": 1,
+    "away_goals": 4,
+    "date": "2026-06-26",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Senegal",
+    "away": "Iraq",
+    "home_goals": 5,
+    "away_goals": 0,
+    "date": "2026-06-26",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Cape Verde",
+    "away": "Saudi Arabia",
+    "home_goals": 0,
+    "away_goals": 0,
+    "date": "2026-06-27",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Uruguay",
+    "away": "Spain",
+    "home_goals": 0,
+    "away_goals": 1,
+    "date": "2026-06-27",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Egypt",
+    "away": "Iran",
+    "home_goals": 1,
+    "away_goals": 1,
+    "date": "2026-06-27",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "New Zealand",
+    "away": "Belgium",
+    "home_goals": 1,
+    "away_goals": 5,
+    "date": "2026-06-27",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Croatia",
+    "away": "Ghana",
+    "home_goals": 2,
+    "away_goals": 1,
+    "date": "2026-06-27",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Panama",
+    "away": "England",
+    "home_goals": 0,
+    "away_goals": 2,
+    "date": "2026-06-27",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Colombia",
+    "away": "Portugal",
+    "home_goals": 0,
+    "away_goals": 0,
+    "date": "2026-06-27",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "DR Congo",
+    "away": "Uzbekistan",
+    "home_goals": 3,
+    "away_goals": 1,
+    "date": "2026-06-27",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Algeria",
+    "away": "Austria",
+    "home_goals": 3,
+    "away_goals": 3,
+    "date": "2026-06-28",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "Jordan",
+    "away": "Argentina",
+    "home_goals": 1,
+    "away_goals": 3,
+    "date": "2026-06-28",
+    "source": "espn_auto",
+    "round": "Group Stage",
+    "status": "FT"
+  },
+  {
+    "home": "South Africa",
+    "away": "Canada",
+    "home_goals": 0,
+    "away_goals": 1,
+    "date": "2026-06-28",
+    "source": "espn_auto",
+    "round": "Round of 32",
+    "status": "FT",
+    "winner": "Canada"
+  },
+  {
+    "home": "Brazil",
+    "away": "Japan",
+    "home_goals": 2,
+    "away_goals": 1,
+    "date": "2026-06-29",
+    "source": "espn_auto",
+    "round": "Round of 32",
+    "status": "FT",
+    "winner": "Brazil"
+  },
+  {
+    "home": "Germany",
+    "away": "Paraguay",
+    "home_goals": 1,
+    "away_goals": 1,
+    "date": "2026-06-29",
+    "round": "Round of 32",
+    "status": "PEN",
+    "source": "espn_auto",
+    "home_pens": 3,
+    "away_pens": 4,
+    "winner": "Paraguay"
+  },
+  {
+    "home": "Netherlands",
+    "away": "Morocco",
+    "home_goals": 1,
+    "away_goals": 1,
+    "date": "2026-06-30",
+    "round": "Round of 32",
+    "status": "PEN",
+    "source": "espn_auto",
+    "home_pens": 2,
+    "away_pens": 3,
+    "winner": "Morocco"
+  },
+  {
+    "home": "Ivory Coast",
+    "away": "Norway",
+    "home_goals": 1,
+    "away_goals": 2,
+    "date": "2026-06-30",
+    "round": "Round of 32",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Norway"
+  },
+  {
+    "home": "France",
+    "away": "Sweden",
+    "home_goals": 3,
+    "away_goals": 0,
+    "date": "2026-06-30",
+    "round": "Round of 32",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "France"
+  },
+  {
+    "home": "Mexico",
+    "away": "Ecuador",
+    "home_goals": 2,
+    "away_goals": 0,
+    "date": "2026-07-01",
+    "round": "Round of 32",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Mexico"
+  },
+  {
+    "home": "England",
+    "away": "DR Congo",
+    "home_goals": 2,
+    "away_goals": 1,
+    "date": "2026-07-01",
+    "round": "Round of 32",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "England"
+  },
+  {
+    "home": "Belgium",
+    "away": "Senegal",
+    "home_goals": 3,
+    "away_goals": 2,
+    "date": "2026-07-01",
+    "round": "Round of 32",
+    "status": "AET",
+    "source": "espn_auto",
+    "winner": "Belgium"
+  },
+  {
+    "home": "USA",
+    "away": "Bosnia & Herzegovina",
+    "home_goals": 2,
+    "away_goals": 0,
+    "date": "2026-07-02",
+    "round": "Round of 32",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "USA"
+  },
+  {
+    "home": "Spain",
+    "away": "Austria",
+    "home_goals": 3,
+    "away_goals": 0,
+    "date": "2026-07-02",
+    "round": "Round of 32",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Spain"
+  },
+  {
+    "home": "Portugal",
+    "away": "Croatia",
+    "home_goals": 2,
+    "away_goals": 1,
+    "date": "2026-07-02",
+    "round": "Round of 32",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Portugal"
+  },
+  {
+    "home": "Switzerland",
+    "away": "Algeria",
+    "home_goals": 2,
+    "away_goals": 0,
+    "date": "2026-07-03",
+    "round": "Round of 32",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Switzerland"
+  },
+  {
+    "home": "Australia",
+    "away": "Egypt",
+    "home_goals": 1,
+    "away_goals": 1,
+    "date": "2026-07-03",
+    "round": "Round of 32",
+    "status": "PEN",
+    "source": "espn_auto",
+    "home_pens": 2,
+    "away_pens": 4,
+    "winner": "Egypt"
+  },
+  {
+    "home": "Argentina",
+    "away": "Cape Verde",
+    "home_goals": 3,
+    "away_goals": 2,
+    "date": "2026-07-03",
+    "round": "Round of 32",
+    "status": "AET",
+    "source": "espn_auto",
+    "winner": "Argentina"
+  },
+  {
+    "home": "Colombia",
+    "away": "Ghana",
+    "home_goals": 1,
+    "away_goals": 0,
+    "date": "2026-07-04",
+    "round": "Round of 32",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Colombia"
+  },
+  {
+    "home": "Canada",
+    "away": "Morocco",
+    "home_goals": 0,
+    "away_goals": 3,
+    "date": "2026-07-04",
+    "round": "Round of 16",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Morocco"
+  },
+  {
+    "home": "Paraguay",
+    "away": "France",
+    "home_goals": 0,
+    "away_goals": 1,
+    "date": "2026-07-04",
+    "round": "Round of 16",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "France"
+  },
+  {
+    "home": "Brazil",
+    "away": "Norway",
+    "home_goals": 1,
+    "away_goals": 2,
+    "date": "2026-07-05",
+    "round": "Round of 16",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Norway"
+  },
+  {
+    "home": "Mexico",
+    "away": "England",
+    "home_goals": 2,
+    "away_goals": 3,
+    "date": "2026-07-06",
+    "round": "Round of 16",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "England"
+  },
+  {
+    "home": "Portugal",
+    "away": "Spain",
+    "home_goals": 0,
+    "away_goals": 1,
+    "date": "2026-07-06",
+    "round": "Round of 16",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Spain"
+  },
+  {
+    "home": "USA",
+    "away": "Belgium",
+    "home_goals": 1,
+    "away_goals": 4,
+    "date": "2026-07-07",
+    "round": "Round of 16",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Belgium"
+  },
+  {
+    "home": "Argentina",
+    "away": "Egypt",
+    "home_goals": 3,
+    "away_goals": 2,
+    "date": "2026-07-07",
+    "round": "Round of 16",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Argentina"
+  },
+  {
+    "home": "Switzerland",
+    "away": "Colombia",
+    "home_goals": 0,
+    "away_goals": 0,
+    "date": "2026-07-07",
+    "round": "Round of 16",
+    "status": "PEN",
+    "source": "espn_auto",
+    "home_pens": 4,
+    "away_pens": 3,
+    "winner": "Switzerland"
   }
 ]

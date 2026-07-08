@@ -206,10 +206,137 @@ def get_upcoming(fixtures, team_stats, live_lookup, limit=30):
     return matches[:limit]
 
 
+# ── Knockout bracket rendering ─────────────────────────────────────────────────
+
+def _fmt_date(iso: str) -> str:
+    """2026-07-09 → Jul 9 (falls back to raw string)."""
+    try:
+        return datetime.strptime(iso, "%Y-%m-%d").strftime("%b %-d")
+    except Exception:
+        return iso or "TBD"
+
+
+def _team_label(name, label, flag_first=True):
+    """Team name with flag, or a muted placeholder like 'Winner QF1'."""
+    if name:
+        return f"{flag(name)} {name}" if flag_first else f"{name} {flag(name)}"
+    return f'<span class="tbd">{label}</span>'
+
+
+def _ko_match_html(m):
+    """One knockout match card: real result, prediction, or TBD placeholder."""
+    date = _fmt_date(m.get("date", ""))
+
+    if m.get("played"):
+        w = m.get("winner")
+        h_cls = "winner" if w == m["home"] else "loser"
+        a_cls = "winner" if w == m["away"] else "loser"
+        note = ""
+        if m.get("status") == "PEN":
+            wp = max(m.get("home_pens") or 0, m.get("away_pens") or 0)
+            lp = min(m.get("home_pens") or 0, m.get("away_pens") or 0)
+            note = f"{w} advance {wp}-{lp} on penalties"
+        elif m.get("status") == "AET":
+            note = f"{w} win after extra time"
+        note_html = f'<div class="ko-note">🕐 {note}</div>' if note else ""
+        return f"""
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team {h_cls}">{_team_label(m["home"], m["home_label"])}</span>
+            <span class="ko-score">{m["home_goals"]} - {m["away_goals"]}</span>
+            <span class="ko-team right {a_cls}">{_team_label(m["away"], m["away_label"], False)}</span>
+          </div>
+          {note_html}
+          <div class="ko-date">✅ {date}</div>
+        </div>"""
+
+    if m.get("home") and m.get("away") and m.get("p_home") is not None:
+        ph = m["p_home"] * 100
+        pa = 100 - ph
+        return f"""
+        <div class="ko-match upcoming">
+          <div class="ko-line">
+            <span class="ko-team">{_team_label(m["home"], m["home_label"])}</span>
+            <span class="ko-score vs">vs</span>
+            <span class="ko-team right">{_team_label(m["away"], m["away_label"], False)}</span>
+          </div>
+          <div class="prob-bar-stacked ko-bar">
+            <div class="seg seg-home" style="width:{ph:.1f}%"></div>
+            <div class="seg seg-away" style="width:{pa:.1f}%"></div>
+          </div>
+          <div class="ko-pcts"><span>{ph:.0f}%</span><span>{pa:.0f}%</span></div>
+          <div class="ko-date">📅 {date}</div>
+        </div>"""
+
+    return f"""
+    <div class="ko-match tbd-match">
+      <div class="ko-line">
+        <span class="ko-team">{_team_label(m.get("home"), m.get("home_label", "TBD"))}</span>
+        <span class="ko-score vs">vs</span>
+        <span class="ko-team right">{_team_label(m.get("away"), m.get("away_label", "TBD"))}</span>
+      </div>
+      <div class="ko-date">📅 {date}</div>
+    </div>"""
+
+
+def build_bracket_html(bracket):
+    """Round-by-round knockout view with real results and live predictions."""
+    icons = {"Round of 32": "3️⃣2️⃣", "Round of 16": "1️⃣6️⃣",
+             "Quarter-Finals": "🎯", "Semi-Finals": "🔥", "Final": "🏆"}
+    html = ""
+    for rnd in bracket.get("rounds", []):
+        name    = rnd["name"]
+        matches = rnd["matches"]
+        played  = sum(1 for m in matches if m.get("played"))
+        status  = ("all played ✅" if played == len(matches)
+                   else f"{played}/{len(matches)} played")
+        html += (
+            f'<div class="ko-round">'
+            f'<h3>{icons.get(name, "⚽")} {name} '
+            f'<span class="ko-status">{status}</span></h3>'
+            f'<div class="ko-grid">'
+        )
+        for m in matches:
+            html += _ko_match_html(m)
+        html += "</div></div>"
+
+    third = bracket.get("third_place")
+    if third:
+        html += (
+            '<div class="ko-round"><h3>🥉 Third Place Match '
+            '<span class="ko-status">display only</span></h3>'
+            f'<div class="ko-grid">{_ko_match_html(third)}</div></div>'
+        )
+    return html
+
+
+def get_remaining_knockout(bracket):
+    """Unplayed knockout matches with known teams (for the upcoming section)."""
+    remaining = []
+    for rnd in bracket.get("rounds", []):
+        for m in rnd["matches"]:
+            if not m.get("played") and m.get("home") and m.get("away") \
+                    and m.get("p_home") is not None:
+                remaining.append({**m, "round": rnd["name"]})
+    remaining.sort(key=lambda m: m.get("date", ""))
+    return remaining
+
+
 # ── HTML builder ───────────────────────────────────────────────────────────────
 
 def build_html(fixtures, sim_results, standings, upcoming, team_stats):
     now = datetime.now().strftime("%B %d, %Y %H:%M")
+
+    meta     = (sim_results or {}).get("meta", {})
+    bracket  = (sim_results or {}).get("bracket")
+    knockout = bool(bracket) and meta.get("phase") == "knockout"
+
+    # Teams that actually advanced from the group stage (knockout phase)
+    advanced32 = set()
+    if knockout:
+        advanced32 = {
+            t for t, p in sim_results.get("Group Stage", {}).items() if p >= 0.999
+        }
 
     # ── Champion probability rows ──────────────────────────────────────────────
     champ_rows = ""
@@ -266,7 +393,11 @@ def build_html(fixtures, sim_results, standings, upcoming, team_stats):
             f'</tr></thead><tbody>'
         )
         for idx, r in enumerate(rows):
-            cls = "qualify" if idx < 2 else ("third" if idx == 2 else "")
+            if knockout:
+                # Group stage is over — highlight who ACTUALLY advanced
+                cls = "qualify" if r["team"] in advanced32 else ""
+            else:
+                cls = "qualify" if idx < 2 else ("third" if idx == 2 else "")
             gd_str = f"+{r['gd']}" if r['gd'] > 0 else str(r['gd'])
             group_html += (
                 f'<tr class="{cls}">'
@@ -284,6 +415,56 @@ def build_html(fixtures, sim_results, standings, upcoming, team_stats):
     # ── Upcoming matches ───────────────────────────────────────────────────────
     # Bar segments are now purely visual — NO text inside them.
     # Percentages live in clean pill badges below each bar.
+    # Knockout phase: predictions come from the live bracket (no draw pill,
+    # knockout matches always produce a winner).
+    if knockout:
+        upcoming = []   # every group match has been played
+        remaining = get_remaining_knockout(bracket)
+        upcoming_html = ""
+        current_date  = None
+        for m in remaining:
+            if m["date"] != current_date:
+                if current_date is not None:
+                    upcoming_html += "</div>"
+                upcoming_html += (
+                    f'<div class="date-section">'
+                    f'<h4>📅 {m["date"]} · {m["round"]}</h4>'
+                )
+                current_date = m["date"]
+            hw = int(round(m["p_home"] * 100))
+            aw = 100 - hw
+            upcoming_html += f"""
+        <div class="match-card">
+          <div class="match-teams">
+            <span class="team-a">{flag(m["home"])} {m["home"]}</span>
+            <span class="vs">vs</span>
+            <span class="team-b">{m["away"]} {flag(m["away"])}</span>
+          </div>
+          <div class="prob-bar-stacked">
+            <div class="seg seg-home" style="width:{hw}%"></div>
+            <div class="seg seg-away" style="width:{aw}%"></div>
+          </div>
+          <div class="outcome-pills">
+            <div class="pill pill-home">
+              <span class="pill-label">{m["home"]} advance</span>
+              <span class="pill-pct">{hw}%</span>
+            </div>
+            <div class="pill pill-away">
+              <span class="pill-label">{m["away"]} advance</span>
+              <span class="pill-pct">{aw}%</span>
+            </div>
+          </div>
+        </div>"""
+        if current_date:
+            upcoming_html += "</div>"
+        if not remaining:
+            upcoming_html = (
+                '<p class="no-data">No remaining matches with known pairings — '
+                'check the bracket above for upcoming slots.</p>'
+            )
+        return _finish_html(now, champ_rows, group_html, upcoming_html,
+                            knockout=True, bracket=bracket, meta=meta)
+
     upcoming_html = ""
     current_date  = None
     for m in upcoming:
@@ -330,6 +511,56 @@ def build_html(fixtures, sim_results, standings, upcoming, team_stats):
 
     if not upcoming:
         upcoming_html = '<p class="no-data">No upcoming matches — all group stage matches have been played.</p>'
+
+    return _finish_html(now, champ_rows, group_html, upcoming_html,
+                        knockout=False, bracket=None, meta=meta)
+
+
+def _finish_html(now, champ_rows, group_html, upcoming_html,
+                 knockout, bracket, meta):
+    """Assemble the final HTML page (shared by group and knockout phases)."""
+
+    if knockout:
+        phase_badge     = "Knockout Stage LIVE 🔴"
+        bracket_section = f"""
+  <!-- ── Knockout Bracket ────────────────────────────────────── -->
+  <section>
+    <h2>🗺️ Knockout Bracket (Live)</h2>
+    <p class="phase-note">
+      Real results fill the bracket as they happen. Remaining matches show
+      the model's advance probabilities. Eliminated teams sit at 0% champion
+      probability and no longer appear in the table above.
+    </p>
+    {build_bracket_html(bracket)}
+  </section>
+"""
+        standings_title = "📊 Final Group Standings"
+        standings_note  = (
+            '<span><div class="dot dot-qualify"></div> '
+            'Advanced to the Round of 32 (top 2 + best 8 third-place)</span>'
+        )
+        upcoming_title  = "📅 Remaining Match Predictions"
+        upcoming_note   = (
+            'Bar: <span style="color:#60a5fa">■ first team advances</span>'
+            ' &nbsp;·&nbsp; <span style="color:#f87171">■ second team advances</span>'
+            ' &nbsp;·&nbsp; Knockout matches cannot end in a draw:'
+            ' level games go to extra time and penalties.'
+        )
+    else:
+        phase_badge     = "Group Stage"
+        bracket_section = ""
+        standings_title = "📊 Group Stage Standings"
+        standings_note  = (
+            '<span><div class="dot dot-qualify"></div> Top 2 — qualify automatically</span>'
+            '<span><div class="dot dot-third"></div> 3rd place — may qualify as best 8</span>'
+        )
+        upcoming_title  = "📅 Upcoming Match Predictions"
+        upcoming_note   = (
+            'Bar: <span style="color:#60a5fa">■ home win</span>'
+            ' &nbsp;·&nbsp; <span style="color:#94a3b8">■ draw</span>'
+            ' &nbsp;·&nbsp; <span style="color:#f87171">■ away win</span>'
+            ' &nbsp;·&nbsp; Percentages shown in badges below each bar.'
+        )
 
     # ── Full HTML ──────────────────────────────────────────────────────────────
     html = f"""<!DOCTYPE html>
@@ -523,6 +754,57 @@ def build_html(fixtures, sim_results, standings, upcoming, team_stats):
   .pill-away  {{ background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.25); }}
   .pill-away .pill-pct {{ color: #f87171; }}
 
+  /* ── Knockout bracket ── */
+  .phase-note {{ color: var(--muted); font-size: 0.82rem; margin-bottom: 1rem; }}
+  .ko-round {{ margin-bottom: 1.6rem; }}
+  .ko-round h3 {{
+    font-size: 1rem; font-weight: 700; color: var(--accent);
+    margin-bottom: 0.6rem;
+  }}
+  .ko-status {{
+    color: var(--muted); font-size: 0.72rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.5px; margin-left: 0.5rem;
+  }}
+  .ko-grid {{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0.6rem;
+  }}
+  .ko-match {{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.7rem 0.9rem;
+  }}
+  .ko-match.upcoming {{ border-color: rgba(59,130,246,0.35); }}
+  .ko-match.tbd-match {{ opacity: 0.65; border-style: dashed; }}
+  .ko-line {{
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 0.5rem;
+  }}
+  .ko-team {{
+    font-weight: 600; font-size: 0.88rem; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+  }}
+  .ko-team.right {{ text-align: right; }}
+  .ko-team.winner {{ color: var(--green); }}
+  .ko-team.loser  {{ color: var(--muted); font-weight: 500; }}
+  .ko-score {{
+    font-weight: 800; font-size: 0.95rem; flex-shrink: 0;
+    background: var(--card2); border-radius: 6px; padding: 0.15rem 0.5rem;
+  }}
+  .ko-score.vs {{ font-weight: 500; color: var(--muted); font-size: 0.75rem; }}
+  .ko-note {{ color: var(--gold); font-size: 0.75rem; margin-top: 0.4rem; }}
+  .ko-date {{ color: var(--muted); font-size: 0.7rem; margin-top: 0.35rem; }}
+  .ko-bar {{ margin-top: 0.55rem; margin-bottom: 0.25rem; height: 10px; }}
+  .ko-pcts {{
+    display: flex; justify-content: space-between;
+    font-size: 0.72rem; font-weight: 700;
+  }}
+  .ko-pcts span:first-child {{ color: #60a5fa; }}
+  .ko-pcts span:last-child  {{ color: #f87171; }}
+  .tbd {{ color: var(--muted); font-style: italic; font-weight: 500; }}
+
   /* ── Misc ── */
   .no-data {{ color: var(--muted); font-style: italic; padding: 1rem 0; }}
   code {{ background: var(--card2); padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.85em; }}
@@ -539,7 +821,7 @@ def build_html(fixtures, sim_results, standings, upcoming, team_stats):
 <header>
   <h1>🌍 2026 FIFA World Cup</h1>
   <div class="subtitle">ML Predictions Dashboard</div>
-  <p>Generated {now} &nbsp;·&nbsp; Monte Carlo simulation (10,000 runs) &nbsp;·&nbsp; XGBoost + Elo + Player Stats</p>
+  <p>{phase_badge} &nbsp;·&nbsp; Generated {now} &nbsp;·&nbsp; Monte Carlo simulation (10,000 runs) &nbsp;·&nbsp; XGBoost + Elo + Player Stats</p>
 </header>
 
 <div class="container">
@@ -566,12 +848,12 @@ def build_html(fixtures, sim_results, standings, upcoming, team_stats):
     </div>
   </section>
 
+{bracket_section}
   <!-- ── Group Stage Standings ───────────────────────────────── -->
   <section>
-    <h2>📊 Group Stage Standings</h2>
+    <h2>{standings_title}</h2>
     <div class="legend">
-      <span><div class="dot dot-qualify"></div> Top 2 — qualify automatically</span>
-      <span><div class="dot dot-third"></div> 3rd place — may qualify as best 8</span>
+      {standings_note}
     </div>
     <div class="groups-grid">
       {group_html}
@@ -580,12 +862,9 @@ def build_html(fixtures, sim_results, standings, upcoming, team_stats):
 
   <!-- ── Upcoming Matches ────────────────────────────────────── -->
   <section>
-    <h2>📅 Upcoming Match Predictions</h2>
+    <h2>{upcoming_title}</h2>
     <p style="color:var(--muted);font-size:0.8rem;margin-bottom:0.5rem;">
-      Bar: <span style="color:#60a5fa">■ home win</span>
-      &nbsp;·&nbsp; <span style="color:#94a3b8">■ draw</span>
-      &nbsp;·&nbsp; <span style="color:#f87171">■ away win</span>
-      &nbsp;·&nbsp; Percentages shown in badges below each bar.
+      {upcoming_note}
     </p>
     {upcoming_html}
   </section>

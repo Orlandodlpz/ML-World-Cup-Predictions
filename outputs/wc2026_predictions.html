@@ -189,6 +189,57 @@
   .pill-away  { background: rgba(239,68,68,0.12); border: 1px solid rgba(239,68,68,0.25); }
   .pill-away .pill-pct { color: #f87171; }
 
+  /* ── Knockout bracket ── */
+  .phase-note { color: var(--muted); font-size: 0.82rem; margin-bottom: 1rem; }
+  .ko-round { margin-bottom: 1.6rem; }
+  .ko-round h3 {
+    font-size: 1rem; font-weight: 700; color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+  .ko-status {
+    color: var(--muted); font-size: 0.72rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.5px; margin-left: 0.5rem;
+  }
+  .ko-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0.6rem;
+  }
+  .ko-match {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.7rem 0.9rem;
+  }
+  .ko-match.upcoming { border-color: rgba(59,130,246,0.35); }
+  .ko-match.tbd-match { opacity: 0.65; border-style: dashed; }
+  .ko-line {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 0.5rem;
+  }
+  .ko-team {
+    font-weight: 600; font-size: 0.88rem; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+  }
+  .ko-team.right { text-align: right; }
+  .ko-team.winner { color: var(--green); }
+  .ko-team.loser  { color: var(--muted); font-weight: 500; }
+  .ko-score {
+    font-weight: 800; font-size: 0.95rem; flex-shrink: 0;
+    background: var(--card2); border-radius: 6px; padding: 0.15rem 0.5rem;
+  }
+  .ko-score.vs { font-weight: 500; color: var(--muted); font-size: 0.75rem; }
+  .ko-note { color: var(--gold); font-size: 0.75rem; margin-top: 0.4rem; }
+  .ko-date { color: var(--muted); font-size: 0.7rem; margin-top: 0.35rem; }
+  .ko-bar { margin-top: 0.55rem; margin-bottom: 0.25rem; height: 10px; }
+  .ko-pcts {
+    display: flex; justify-content: space-between;
+    font-size: 0.72rem; font-weight: 700;
+  }
+  .ko-pcts span:first-child { color: #60a5fa; }
+  .ko-pcts span:last-child  { color: #f87171; }
+  .tbd { color: var(--muted); font-style: italic; font-weight: 500; }
+
   /* ── Misc ── */
   .no-data { color: var(--muted); font-style: italic; padding: 1rem 0; }
   code { background: var(--card2); padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.85em; }
@@ -205,7 +256,7 @@
 <header>
   <h1>🌍 2026 FIFA World Cup</h1>
   <div class="subtitle">ML Predictions Dashboard</div>
-  <p>Generated June 18, 2026 13:46 &nbsp;·&nbsp; Monte Carlo simulation (10,000 runs) &nbsp;·&nbsp; XGBoost + Elo + Player Stats</p>
+  <p>Knockout Stage LIVE 🔴 &nbsp;·&nbsp; Generated July 08, 2026 08:01 &nbsp;·&nbsp; Monte Carlo simulation (10,000 runs) &nbsp;·&nbsp; XGBoost + Elo + Player Stats</p>
 </header>
 
 <div class="container">
@@ -232,1117 +283,521 @@
               <td class="team-name">🇪🇸 Spain</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:81.5%"></div>
+                  <div class="prob-bar" style="width:100.0%"></div>
                 </div>
-                <span class="prob-label">20.4%</span>
+                <span class="prob-label">31.2%</span>
               </td>
-              <td class="stage-prob">20.4%</td>
-              <td class="stage-prob">31.5%</td>
-              <td class="stage-prob">43.1%</td>
+              <td class="stage-prob">47.7%</td>
+              <td class="stage-prob">80.7%</td>
+              <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
               <td class="rank">🥈</td>
               <td class="team-name">🇦🇷 Argentina</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:69.2%"></div>
+                  <div class="prob-bar" style="width:82.9%"></div>
                 </div>
-                <span class="prob-label">17.3%</span>
+                <span class="prob-label">20.7%</span>
               </td>
-              <td class="stage-prob">17.3%</td>
-              <td class="stage-prob">27.1%</td>
-              <td class="stage-prob">40.2%</td>
+              <td class="stage-prob">44.2%</td>
+              <td class="stage-prob">77.5%</td>
+              <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
               <td class="rank">🥉</td>
-              <td class="team-name">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:53.4%"></div>
-                </div>
-                <span class="prob-label">13.4%</span>
-              </td>
-              <td class="stage-prob">13.4%</td>
-              <td class="stage-prob">22.6%</td>
-              <td class="stage-prob">41.4%</td>
-            </tr>
-            <tr>
-              <td class="rank">4.</td>
               <td class="team-name">🇫🇷 France</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:39.3%"></div>
+                  <div class="prob-bar" style="width:73.2%"></div>
                 </div>
-                <span class="prob-label">9.8%</span>
+                <span class="prob-label">18.3%</span>
               </td>
-              <td class="stage-prob">9.8%</td>
-              <td class="stage-prob">16.9%</td>
-              <td class="stage-prob">28.4%</td>
+              <td class="stage-prob">32.2%</td>
+              <td class="stage-prob">62.3%</td>
+              <td class="stage-prob">100.0%</td>
+            </tr>
+            <tr>
+              <td class="rank">4.</td>
+              <td class="team-name">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</td>
+              <td class="prob-cell">
+                <div class="prob-bar-track">
+                  <div class="prob-bar" style="width:59.4%"></div>
+                </div>
+                <span class="prob-label">14.9%</span>
+              </td>
+              <td class="stage-prob">32.1%</td>
+              <td class="stage-prob">60.1%</td>
+              <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
               <td class="rank">5.</td>
-              <td class="team-name">🇩🇪 Germany</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:23.6%"></div>
-                </div>
-                <span class="prob-label">5.9%</span>
-              </td>
-              <td class="stage-prob">5.9%</td>
-              <td class="stage-prob">12.1%</td>
-              <td class="stage-prob">20.6%</td>
-            </tr>
-            <tr>
-              <td class="rank">6.</td>
-              <td class="team-name">🇲🇽 Mexico</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:17.5%"></div>
-                </div>
-                <span class="prob-label">4.4%</span>
-              </td>
-              <td class="stage-prob">4.4%</td>
-              <td class="stage-prob">11.3%</td>
-              <td class="stage-prob">26.6%</td>
-            </tr>
-            <tr>
-              <td class="rank">7.</td>
               <td class="team-name">🇲🇦 Morocco</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:13.6%"></div>
+                  <div class="prob-bar" style="width:23.7%"></div>
                 </div>
-                <span class="prob-label">3.4%</span>
+                <span class="prob-label">5.9%</span>
               </td>
-              <td class="stage-prob">3.4%</td>
-              <td class="stage-prob">8.5%</td>
-              <td class="stage-prob">19.3%</td>
+              <td class="stage-prob">14.6%</td>
+              <td class="stage-prob">37.7%</td>
+              <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
-              <td class="rank">8.</td>
-              <td class="team-name">🇧🇷 Brazil</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:13.2%"></div>
-                </div>
-                <span class="prob-label">3.3%</span>
-              </td>
-              <td class="stage-prob">3.3%</td>
-              <td class="stage-prob">8.4%</td>
-              <td class="stage-prob">19.0%</td>
-            </tr>
-            <tr>
-              <td class="rank">9.</td>
-              <td class="team-name">🇨🇴 Colombia</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:11.9%"></div>
-                </div>
-                <span class="prob-label">3.0%</span>
-              </td>
-              <td class="stage-prob">3.0%</td>
-              <td class="stage-prob">6.6%</td>
-              <td class="stage-prob">16.7%</td>
-            </tr>
-            <tr>
-              <td class="rank">10.</td>
+              <td class="rank">6.</td>
               <td class="team-name">🇳🇴 Norway</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:10.4%"></div>
+                  <div class="prob-bar" style="width:23.4%"></div>
                 </div>
-                <span class="prob-label">2.6%</span>
+                <span class="prob-label">5.8%</span>
               </td>
-              <td class="stage-prob">2.6%</td>
-              <td class="stage-prob">5.9%</td>
-              <td class="stage-prob">12.1%</td>
+              <td class="stage-prob">17.4%</td>
+              <td class="stage-prob">39.9%</td>
+              <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
-              <td class="rank">11.</td>
-              <td class="team-name">🇳🇱 Netherlands</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:9.8%"></div>
-                </div>
-                <span class="prob-label">2.5%</span>
-              </td>
-              <td class="stage-prob">2.5%</td>
-              <td class="stage-prob">6.0%</td>
-              <td class="stage-prob">11.3%</td>
-            </tr>
-            <tr>
-              <td class="rank">12.</td>
-              <td class="team-name">🇦🇺 Australia</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:8.9%"></div>
-                </div>
-                <span class="prob-label">2.2%</span>
-              </td>
-              <td class="stage-prob">2.2%</td>
-              <td class="stage-prob">6.2%</td>
-              <td class="stage-prob">15.1%</td>
-            </tr>
-            <tr>
-              <td class="rank">13.</td>
-              <td class="team-name">🇯🇵 Japan</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:8.9%"></div>
-                </div>
-                <span class="prob-label">2.2%</span>
-              </td>
-              <td class="stage-prob">2.2%</td>
-              <td class="stage-prob">5.8%</td>
-              <td class="stage-prob">10.8%</td>
-            </tr>
-            <tr>
-              <td class="rank">14.</td>
-              <td class="team-name">🇵🇹 Portugal</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:8.5%"></div>
-                </div>
-                <span class="prob-label">2.1%</span>
-              </td>
-              <td class="stage-prob">2.1%</td>
-              <td class="stage-prob">5.0%</td>
-              <td class="stage-prob">14.2%</td>
-            </tr>
-            <tr>
-              <td class="rank">15.</td>
+              <td class="rank">7.</td>
               <td class="team-name">🇧🇪 Belgium</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:5.1%"></div>
+                  <div class="prob-bar" style="width:7.2%"></div>
                 </div>
-                <span class="prob-label">1.3%</span>
+                <span class="prob-label">1.8%</span>
               </td>
-              <td class="stage-prob">1.3%</td>
-              <td class="stage-prob">3.3%</td>
-              <td class="stage-prob">7.2%</td>
+              <td class="stage-prob">5.5%</td>
+              <td class="stage-prob">19.3%</td>
+              <td class="stage-prob">100.0%</td>
             </tr>
             <tr>
-              <td class="rank">16.</td>
-              <td class="team-name">🇨🇮 Ivory Coast</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:3.2%"></div>
-                </div>
-                <span class="prob-label">0.8%</span>
-              </td>
-              <td class="stage-prob">0.8%</td>
-              <td class="stage-prob">2.6%</td>
-              <td class="stage-prob">5.9%</td>
-            </tr>
-            <tr>
-              <td class="rank">17.</td>
-              <td class="team-name">🇰🇷 South Korea</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:2.9%"></div>
-                </div>
-                <span class="prob-label">0.7%</span>
-              </td>
-              <td class="stage-prob">0.7%</td>
-              <td class="stage-prob">2.6%</td>
-              <td class="stage-prob">8.5%</td>
-            </tr>
-            <tr>
-              <td class="rank">18.</td>
-              <td class="team-name">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:2.3%"></div>
-                </div>
-                <span class="prob-label">0.6%</span>
-              </td>
-              <td class="stage-prob">0.6%</td>
-              <td class="stage-prob">2.1%</td>
-              <td class="stage-prob">6.7%</td>
-            </tr>
-            <tr>
-              <td class="rank">19.</td>
-              <td class="team-name">🇭🇷 Croatia</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:2.3%"></div>
-                </div>
-                <span class="prob-label">0.6%</span>
-              </td>
-              <td class="stage-prob">0.6%</td>
-              <td class="stage-prob">1.7%</td>
-              <td class="stage-prob">6.3%</td>
-            </tr>
-            <tr>
-              <td class="rank">20.</td>
-              <td class="team-name">🇪🇨 Ecuador</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:2.2%"></div>
-                </div>
-                <span class="prob-label">0.5%</span>
-              </td>
-              <td class="stage-prob">0.5%</td>
-              <td class="stage-prob">1.9%</td>
-              <td class="stage-prob">4.9%</td>
-            </tr>
-            <tr>
-              <td class="rank">21.</td>
-              <td class="team-name">🇺🇾 Uruguay</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:2.0%"></div>
-                </div>
-                <span class="prob-label">0.5%</span>
-              </td>
-              <td class="stage-prob">0.5%</td>
-              <td class="stage-prob">2.1%</td>
-              <td class="stage-prob">5.1%</td>
-            </tr>
-            <tr>
-              <td class="rank">22.</td>
-              <td class="team-name">🇦🇹 Austria</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:2.0%"></div>
-                </div>
-                <span class="prob-label">0.5%</span>
-              </td>
-              <td class="stage-prob">0.5%</td>
-              <td class="stage-prob">1.5%</td>
-              <td class="stage-prob">4.1%</td>
-            </tr>
-            <tr>
-              <td class="rank">23.</td>
+              <td class="rank">8.</td>
               <td class="team-name">🇨🇭 Switzerland</td>
               <td class="prob-cell">
                 <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:1.6%"></div>
+                  <div class="prob-bar" style="width:5.2%"></div>
                 </div>
-                <span class="prob-label">0.4%</span>
+                <span class="prob-label">1.3%</span>
               </td>
-              <td class="stage-prob">0.4%</td>
-              <td class="stage-prob">1.8%</td>
-              <td class="stage-prob">6.1%</td>
-            </tr>
-            <tr>
-              <td class="rank">24.</td>
-              <td class="team-name">🇮🇷 Iran</td>
-              <td class="prob-cell">
-                <div class="prob-bar-track">
-                  <div class="prob-bar" style="width:1.3%"></div>
-                </div>
-                <span class="prob-label">0.3%</span>
-              </td>
-              <td class="stage-prob">0.3%</td>
-              <td class="stage-prob">1.3%</td>
-              <td class="stage-prob">3.4%</td>
+              <td class="stage-prob">6.3%</td>
+              <td class="stage-prob">22.5%</td>
+              <td class="stage-prob">100.0%</td>
             </tr>
         </tbody>
       </table>
     </div>
   </section>
 
+
+  <!-- ── Knockout Bracket ────────────────────────────────────── -->
+  <section>
+    <h2>🗺️ Knockout Bracket (Live)</h2>
+    <p class="phase-note">
+      Real results fill the bracket as they happen. Remaining matches show
+      the model's advance probabilities. Eliminated teams sit at 0% champion
+      probability and no longer appear in the table above.
+    </p>
+    <div class="ko-round"><h3>3️⃣2️⃣ Round of 32 <span class="ko-status">all played ✅</span></h3><div class="ko-grid">
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇿🇦 South Africa</span>
+            <span class="ko-score">0 - 1</span>
+            <span class="ko-team right winner">Canada 🇨🇦</span>
+          </div>
+          
+          <div class="ko-date">✅ Jun 28</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇧🇷 Brazil</span>
+            <span class="ko-score">2 - 1</span>
+            <span class="ko-team right loser">Japan 🇯🇵</span>
+          </div>
+          
+          <div class="ko-date">✅ Jun 29</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇩🇪 Germany</span>
+            <span class="ko-score">1 - 1</span>
+            <span class="ko-team right winner">Paraguay 🇵🇾</span>
+          </div>
+          <div class="ko-note">🕐 Paraguay advance 4-3 on penalties</div>
+          <div class="ko-date">✅ Jun 29</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇳🇱 Netherlands</span>
+            <span class="ko-score">1 - 1</span>
+            <span class="ko-team right winner">Morocco 🇲🇦</span>
+          </div>
+          <div class="ko-note">🕐 Morocco advance 3-2 on penalties</div>
+          <div class="ko-date">✅ Jun 30</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇨🇮 Ivory Coast</span>
+            <span class="ko-score">1 - 2</span>
+            <span class="ko-team right winner">Norway 🇳🇴</span>
+          </div>
+          
+          <div class="ko-date">✅ Jun 30</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇫🇷 France</span>
+            <span class="ko-score">3 - 0</span>
+            <span class="ko-team right loser">Sweden 🇸🇪</span>
+          </div>
+          
+          <div class="ko-date">✅ Jun 30</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇲🇽 Mexico</span>
+            <span class="ko-score">2 - 0</span>
+            <span class="ko-team right loser">Ecuador 🇪🇨</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 1</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</span>
+            <span class="ko-score">2 - 1</span>
+            <span class="ko-team right loser">DR Congo 🇨🇩</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 1</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇧🇪 Belgium</span>
+            <span class="ko-score">3 - 2</span>
+            <span class="ko-team right loser">Senegal 🇸🇳</span>
+          </div>
+          <div class="ko-note">🕐 Belgium win after extra time</div>
+          <div class="ko-date">✅ Jul 1</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇺🇸 USA</span>
+            <span class="ko-score">2 - 0</span>
+            <span class="ko-team right loser">Bosnia & Herzegovina 🇧🇦</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 2</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇪🇸 Spain</span>
+            <span class="ko-score">3 - 0</span>
+            <span class="ko-team right loser">Austria 🇦🇹</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 2</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇵🇹 Portugal</span>
+            <span class="ko-score">2 - 1</span>
+            <span class="ko-team right loser">Croatia 🇭🇷</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 2</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇨🇭 Switzerland</span>
+            <span class="ko-score">2 - 0</span>
+            <span class="ko-team right loser">Algeria 🇩🇿</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 3</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇦🇺 Australia</span>
+            <span class="ko-score">1 - 1</span>
+            <span class="ko-team right winner">Egypt 🇪🇬</span>
+          </div>
+          <div class="ko-note">🕐 Egypt advance 4-2 on penalties</div>
+          <div class="ko-date">✅ Jul 3</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇦🇷 Argentina</span>
+            <span class="ko-score">3 - 2</span>
+            <span class="ko-team right loser">Cape Verde 🇨🇻</span>
+          </div>
+          <div class="ko-note">🕐 Argentina win after extra time</div>
+          <div class="ko-date">✅ Jul 3</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇨🇴 Colombia</span>
+            <span class="ko-score">1 - 0</span>
+            <span class="ko-team right loser">Ghana 🇬🇭</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 4</div>
+        </div></div></div><div class="ko-round"><h3>1️⃣6️⃣ Round of 16 <span class="ko-status">all played ✅</span></h3><div class="ko-grid">
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇨🇦 Canada</span>
+            <span class="ko-score">0 - 3</span>
+            <span class="ko-team right winner">Morocco 🇲🇦</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 4</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇵🇾 Paraguay</span>
+            <span class="ko-score">0 - 1</span>
+            <span class="ko-team right winner">France 🇫🇷</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 4</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇧🇷 Brazil</span>
+            <span class="ko-score">1 - 2</span>
+            <span class="ko-team right winner">Norway 🇳🇴</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 5</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇲🇽 Mexico</span>
+            <span class="ko-score">2 - 3</span>
+            <span class="ko-team right winner">England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 6</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇵🇹 Portugal</span>
+            <span class="ko-score">0 - 1</span>
+            <span class="ko-team right winner">Spain 🇪🇸</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 6</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team loser">🇺🇸 USA</span>
+            <span class="ko-score">1 - 4</span>
+            <span class="ko-team right winner">Belgium 🇧🇪</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 7</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇦🇷 Argentina</span>
+            <span class="ko-score">3 - 2</span>
+            <span class="ko-team right loser">Egypt 🇪🇬</span>
+          </div>
+          
+          <div class="ko-date">✅ Jul 7</div>
+        </div>
+        <div class="ko-match played">
+          <div class="ko-line">
+            <span class="ko-team winner">🇨🇭 Switzerland</span>
+            <span class="ko-score">0 - 0</span>
+            <span class="ko-team right loser">Colombia 🇨🇴</span>
+          </div>
+          <div class="ko-note">🕐 Switzerland advance 4-3 on penalties</div>
+          <div class="ko-date">✅ Jul 7</div>
+        </div></div></div><div class="ko-round"><h3>🎯 Quarter-Finals <span class="ko-status">0/4 played</span></h3><div class="ko-grid">
+        <div class="ko-match upcoming">
+          <div class="ko-line">
+            <span class="ko-team">🇫🇷 France</span>
+            <span class="ko-score vs">vs</span>
+            <span class="ko-team right">Morocco 🇲🇦</span>
+          </div>
+          <div class="prob-bar-stacked ko-bar">
+            <div class="seg seg-home" style="width:61.9%"></div>
+            <div class="seg seg-away" style="width:38.1%"></div>
+          </div>
+          <div class="ko-pcts"><span>62%</span><span>38%</span></div>
+          <div class="ko-date">📅 Jul 9</div>
+        </div>
+        <div class="ko-match upcoming">
+          <div class="ko-line">
+            <span class="ko-team">🇪🇸 Spain</span>
+            <span class="ko-score vs">vs</span>
+            <span class="ko-team right">Belgium 🇧🇪</span>
+          </div>
+          <div class="prob-bar-stacked ko-bar">
+            <div class="seg seg-home" style="width:79.9%"></div>
+            <div class="seg seg-away" style="width:20.1%"></div>
+          </div>
+          <div class="ko-pcts"><span>80%</span><span>20%</span></div>
+          <div class="ko-date">📅 Jul 10</div>
+        </div>
+        <div class="ko-match upcoming">
+          <div class="ko-line">
+            <span class="ko-team">🇳🇴 Norway</span>
+            <span class="ko-score vs">vs</span>
+            <span class="ko-team right">England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+          </div>
+          <div class="prob-bar-stacked ko-bar">
+            <div class="seg seg-home" style="width:40.1%"></div>
+            <div class="seg seg-away" style="width:59.9%"></div>
+          </div>
+          <div class="ko-pcts"><span>40%</span><span>60%</span></div>
+          <div class="ko-date">📅 Jul 11</div>
+        </div>
+        <div class="ko-match upcoming">
+          <div class="ko-line">
+            <span class="ko-team">🇦🇷 Argentina</span>
+            <span class="ko-score vs">vs</span>
+            <span class="ko-team right">Switzerland 🇨🇭</span>
+          </div>
+          <div class="prob-bar-stacked ko-bar">
+            <div class="seg seg-home" style="width:77.6%"></div>
+            <div class="seg seg-away" style="width:22.4%"></div>
+          </div>
+          <div class="ko-pcts"><span>78%</span><span>22%</span></div>
+          <div class="ko-date">📅 Jul 12</div>
+        </div></div></div><div class="ko-round"><h3>🔥 Semi-Finals <span class="ko-status">0/2 played</span></h3><div class="ko-grid">
+    <div class="ko-match tbd-match">
+      <div class="ko-line">
+        <span class="ko-team"><span class="tbd">Winner QF1</span></span>
+        <span class="ko-score vs">vs</span>
+        <span class="ko-team right"><span class="tbd">Winner QF2</span></span>
+      </div>
+      <div class="ko-date">📅 TBD</div>
+    </div>
+    <div class="ko-match tbd-match">
+      <div class="ko-line">
+        <span class="ko-team"><span class="tbd">Winner QF3</span></span>
+        <span class="ko-score vs">vs</span>
+        <span class="ko-team right"><span class="tbd">Winner QF4</span></span>
+      </div>
+      <div class="ko-date">📅 TBD</div>
+    </div></div></div><div class="ko-round"><h3>🏆 Final <span class="ko-status">0/1 played</span></h3><div class="ko-grid">
+    <div class="ko-match tbd-match">
+      <div class="ko-line">
+        <span class="ko-team"><span class="tbd">Winner SF1</span></span>
+        <span class="ko-score vs">vs</span>
+        <span class="ko-team right"><span class="tbd">Winner SF2</span></span>
+      </div>
+      <div class="ko-date">📅 TBD</div>
+    </div></div></div><div class="ko-round"><h3>🥉 Third Place Match <span class="ko-status">display only</span></h3><div class="ko-grid">
+    <div class="ko-match tbd-match">
+      <div class="ko-line">
+        <span class="ko-team"><span class="tbd">Loser SF1</span></span>
+        <span class="ko-score vs">vs</span>
+        <span class="ko-team right"><span class="tbd">Loser SF2</span></span>
+      </div>
+      <div class="ko-date">📅 Jul 18</div>
+    </div></div></div>
+  </section>
+
   <!-- ── Group Stage Standings ───────────────────────────────── -->
   <section>
-    <h2>📊 Group Stage Standings</h2>
+    <h2>📊 Final Group Standings</h2>
     <div class="legend">
-      <span><div class="dot dot-qualify"></div> Top 2 — qualify automatically</span>
-      <span><div class="dot dot-third"></div> 3rd place — may qualify as best 8</span>
+      <span><div class="dot dot-qualify"></div> Advanced to the Round of 32 (top 2 + best 8 third-place)</span>
     </div>
     <div class="groups-grid">
-      <div class="group-card"><h3>Group A</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇲🇽</td><td class="col-team" title="Mexico">Mexico</td><td>1</td><td>1</td><td>0</td><td>0</td><td>2</td><td>0</td><td class="col-gd">+2</td><td class="col-pts"><strong>3</strong></td></tr><tr class="qualify"><td class="col-flag">🇰🇷</td><td class="col-team" title="South Korea">South Korea</td><td>1</td><td>1</td><td>0</td><td>0</td><td>2</td><td>1</td><td class="col-gd">+1</td><td class="col-pts"><strong>3</strong></td></tr><tr class="third"><td class="col-flag">🇨🇿</td><td class="col-team" title="Czechia">Czechia</td><td>2</td><td>0</td><td>1</td><td>1</td><td>2</td><td>3</td><td class="col-gd">-1</td><td class="col-pts"><strong>1</strong></td></tr><tr class=""><td class="col-flag">🇿🇦</td><td class="col-team" title="South Africa">South Africa</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>3</td><td class="col-gd">-2</td><td class="col-pts"><strong>1</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group B</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇨🇦</td><td class="col-team" title="Canada">Canada</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class="qualify"><td class="col-flag">🇨🇭</td><td class="col-team" title="Switzerland">Switzerland</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class="third"><td class="col-flag">🇶🇦</td><td class="col-team" title="Qatar">Qatar</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class=""><td class="col-flag">🇧🇦</td><td class="col-team" title="Bosnia & Herzegovina">Bosnia & Herzegovina</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group C</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</td><td class="col-team" title="Scotland">Scotland</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td class="col-gd">+1</td><td class="col-pts"><strong>3</strong></td></tr><tr class="qualify"><td class="col-flag">🇧🇷</td><td class="col-team" title="Brazil">Brazil</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class="third"><td class="col-flag">🇲🇦</td><td class="col-team" title="Morocco">Morocco</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class=""><td class="col-flag">🇭🇹</td><td class="col-team" title="Haiti">Haiti</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td class="col-gd">-1</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group D</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇺🇸</td><td class="col-team" title="USA">USA</td><td>1</td><td>1</td><td>0</td><td>0</td><td>4</td><td>1</td><td class="col-gd">+3</td><td class="col-pts"><strong>3</strong></td></tr><tr class="qualify"><td class="col-flag">🇦🇺</td><td class="col-team" title="Australia">Australia</td><td>1</td><td>1</td><td>0</td><td>0</td><td>2</td><td>0</td><td class="col-gd">+2</td><td class="col-pts"><strong>3</strong></td></tr><tr class="third"><td class="col-flag">🇹🇷</td><td class="col-team" title="Turkey">Turkey</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2</td><td class="col-gd">-2</td><td class="col-pts"><strong>0</strong></td></tr><tr class=""><td class="col-flag">🇵🇾</td><td class="col-team" title="Paraguay">Paraguay</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td class="col-gd">-3</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group E</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇩🇪</td><td class="col-team" title="Germany">Germany</td><td>1</td><td>1</td><td>0</td><td>0</td><td>7</td><td>1</td><td class="col-gd">+6</td><td class="col-pts"><strong>3</strong></td></tr><tr class="qualify"><td class="col-flag">🇨🇮</td><td class="col-team" title="Ivory Coast">Ivory Coast</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td class="col-gd">+1</td><td class="col-pts"><strong>3</strong></td></tr><tr class="third"><td class="col-flag">🇪🇨</td><td class="col-team" title="Ecuador">Ecuador</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td class="col-gd">-1</td><td class="col-pts"><strong>0</strong></td></tr><tr class=""><td class="col-flag">🇨🇼</td><td class="col-team" title="Curacao">Curacao</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>7</td><td class="col-gd">-6</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group F</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇸🇪</td><td class="col-team" title="Sweden">Sweden</td><td>1</td><td>1</td><td>0</td><td>0</td><td>5</td><td>1</td><td class="col-gd">+4</td><td class="col-pts"><strong>3</strong></td></tr><tr class="qualify"><td class="col-flag">🇳🇱</td><td class="col-team" title="Netherlands">Netherlands</td><td>1</td><td>0</td><td>1</td><td>0</td><td>2</td><td>2</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class="third"><td class="col-flag">🇯🇵</td><td class="col-team" title="Japan">Japan</td><td>1</td><td>0</td><td>1</td><td>0</td><td>2</td><td>2</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class=""><td class="col-flag">🇹🇳</td><td class="col-team" title="Tunisia">Tunisia</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>5</td><td class="col-gd">-4</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group G</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇮🇷</td><td class="col-team" title="Iran">Iran</td><td>1</td><td>0</td><td>1</td><td>0</td><td>2</td><td>2</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class="qualify"><td class="col-flag">🇳🇿</td><td class="col-team" title="New Zealand">New Zealand</td><td>1</td><td>0</td><td>1</td><td>0</td><td>2</td><td>2</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class="third"><td class="col-flag">🇧🇪</td><td class="col-team" title="Belgium">Belgium</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class=""><td class="col-flag">🇪🇬</td><td class="col-team" title="Egypt">Egypt</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group H</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇺🇾</td><td class="col-team" title="Uruguay">Uruguay</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class="qualify"><td class="col-flag">🇸🇦</td><td class="col-team" title="Saudi Arabia">Saudi Arabia</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class="third"><td class="col-flag">🇪🇸</td><td class="col-team" title="Spain">Spain</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class=""><td class="col-flag">🇨🇻</td><td class="col-team" title="Cape Verde">Cape Verde</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group I</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇳🇴</td><td class="col-team" title="Norway">Norway</td><td>1</td><td>1</td><td>0</td><td>0</td><td>4</td><td>1</td><td class="col-gd">+3</td><td class="col-pts"><strong>3</strong></td></tr><tr class="qualify"><td class="col-flag">🇫🇷</td><td class="col-team" title="France">France</td><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>1</td><td class="col-gd">+2</td><td class="col-pts"><strong>3</strong></td></tr><tr class="third"><td class="col-flag">🇸🇳</td><td class="col-team" title="Senegal">Senegal</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>3</td><td class="col-gd">-2</td><td class="col-pts"><strong>0</strong></td></tr><tr class=""><td class="col-flag">🇮🇶</td><td class="col-team" title="Iraq">Iraq</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td class="col-gd">-3</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group J</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇦🇷</td><td class="col-team" title="Argentina">Argentina</td><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>0</td><td class="col-gd">+3</td><td class="col-pts"><strong>3</strong></td></tr><tr class="qualify"><td class="col-flag">🇦🇹</td><td class="col-team" title="Austria">Austria</td><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>1</td><td class="col-gd">+2</td><td class="col-pts"><strong>3</strong></td></tr><tr class="third"><td class="col-flag">🇯🇴</td><td class="col-team" title="Jordan">Jordan</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>3</td><td class="col-gd">-2</td><td class="col-pts"><strong>0</strong></td></tr><tr class=""><td class="col-flag">🇩🇿</td><td class="col-team" title="Algeria">Algeria</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>3</td><td class="col-gd">-3</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group K</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇨🇴</td><td class="col-team" title="Colombia">Colombia</td><td>1</td><td>1</td><td>0</td><td>0</td><td>3</td><td>1</td><td class="col-gd">+2</td><td class="col-pts"><strong>3</strong></td></tr><tr class="qualify"><td class="col-flag">🇵🇹</td><td class="col-team" title="Portugal">Portugal</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class="third"><td class="col-flag">🇨🇩</td><td class="col-team" title="DR Congo">DR Congo</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="col-gd">0</td><td class="col-pts"><strong>1</strong></td></tr><tr class=""><td class="col-flag">🇺🇿</td><td class="col-team" title="Uzbekistan">Uzbekistan</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>3</td><td class="col-gd">-2</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group L</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</td><td class="col-team" title="England">England</td><td>1</td><td>1</td><td>0</td><td>0</td><td>4</td><td>2</td><td class="col-gd">+2</td><td class="col-pts"><strong>3</strong></td></tr><tr class="qualify"><td class="col-flag">🇬🇭</td><td class="col-team" title="Ghana">Ghana</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td class="col-gd">+1</td><td class="col-pts"><strong>3</strong></td></tr><tr class="third"><td class="col-flag">🇵🇦</td><td class="col-team" title="Panama">Panama</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td class="col-gd">-1</td><td class="col-pts"><strong>0</strong></td></tr><tr class=""><td class="col-flag">🇭🇷</td><td class="col-team" title="Croatia">Croatia</td><td>1</td><td>0</td><td>0</td><td>1</td><td>2</td><td>4</td><td class="col-gd">-2</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div>
+      <div class="group-card"><h3>Group A</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇲🇽</td><td class="col-team" title="Mexico">Mexico</td><td>3</td><td>3</td><td>0</td><td>0</td><td>6</td><td>0</td><td class="col-gd">+6</td><td class="col-pts"><strong>9</strong></td></tr><tr class="qualify"><td class="col-flag">🇿🇦</td><td class="col-team" title="South Africa">South Africa</td><td>3</td><td>1</td><td>1</td><td>1</td><td>2</td><td>3</td><td class="col-gd">-1</td><td class="col-pts"><strong>4</strong></td></tr><tr class=""><td class="col-flag">🇰🇷</td><td class="col-team" title="South Korea">South Korea</td><td>3</td><td>1</td><td>0</td><td>2</td><td>2</td><td>3</td><td class="col-gd">-1</td><td class="col-pts"><strong>3</strong></td></tr><tr class=""><td class="col-flag">🇨🇿</td><td class="col-team" title="Czechia">Czechia</td><td>3</td><td>0</td><td>1</td><td>2</td><td>2</td><td>6</td><td class="col-gd">-4</td><td class="col-pts"><strong>1</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group B</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇨🇭</td><td class="col-team" title="Switzerland">Switzerland</td><td>3</td><td>2</td><td>1</td><td>0</td><td>7</td><td>3</td><td class="col-gd">+4</td><td class="col-pts"><strong>7</strong></td></tr><tr class="qualify"><td class="col-flag">🇨🇦</td><td class="col-team" title="Canada">Canada</td><td>3</td><td>1</td><td>1</td><td>1</td><td>8</td><td>3</td><td class="col-gd">+5</td><td class="col-pts"><strong>4</strong></td></tr><tr class="qualify"><td class="col-flag">🇧🇦</td><td class="col-team" title="Bosnia & Herzegovina">Bosnia & Herzegovina</td><td>3</td><td>1</td><td>1</td><td>1</td><td>5</td><td>6</td><td class="col-gd">-1</td><td class="col-pts"><strong>4</strong></td></tr><tr class=""><td class="col-flag">🇶🇦</td><td class="col-team" title="Qatar">Qatar</td><td>3</td><td>0</td><td>1</td><td>2</td><td>2</td><td>10</td><td class="col-gd">-8</td><td class="col-pts"><strong>1</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group C</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇧🇷</td><td class="col-team" title="Brazil">Brazil</td><td>3</td><td>2</td><td>1</td><td>0</td><td>7</td><td>1</td><td class="col-gd">+6</td><td class="col-pts"><strong>7</strong></td></tr><tr class="qualify"><td class="col-flag">🇲🇦</td><td class="col-team" title="Morocco">Morocco</td><td>3</td><td>2</td><td>1</td><td>0</td><td>6</td><td>3</td><td class="col-gd">+3</td><td class="col-pts"><strong>7</strong></td></tr><tr class=""><td class="col-flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</td><td class="col-team" title="Scotland">Scotland</td><td>3</td><td>1</td><td>0</td><td>2</td><td>1</td><td>4</td><td class="col-gd">-3</td><td class="col-pts"><strong>3</strong></td></tr><tr class=""><td class="col-flag">🇭🇹</td><td class="col-team" title="Haiti">Haiti</td><td>3</td><td>0</td><td>0</td><td>3</td><td>2</td><td>8</td><td class="col-gd">-6</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group D</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇺🇸</td><td class="col-team" title="USA">USA</td><td>3</td><td>2</td><td>0</td><td>1</td><td>8</td><td>4</td><td class="col-gd">+4</td><td class="col-pts"><strong>6</strong></td></tr><tr class="qualify"><td class="col-flag">🇦🇺</td><td class="col-team" title="Australia">Australia</td><td>3</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td class="col-gd">0</td><td class="col-pts"><strong>4</strong></td></tr><tr class="qualify"><td class="col-flag">🇵🇾</td><td class="col-team" title="Paraguay">Paraguay</td><td>3</td><td>1</td><td>1</td><td>1</td><td>2</td><td>4</td><td class="col-gd">-2</td><td class="col-pts"><strong>4</strong></td></tr><tr class=""><td class="col-flag">🇹🇷</td><td class="col-team" title="Turkey">Turkey</td><td>3</td><td>1</td><td>0</td><td>2</td><td>3</td><td>5</td><td class="col-gd">-2</td><td class="col-pts"><strong>3</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group E</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇩🇪</td><td class="col-team" title="Germany">Germany</td><td>3</td><td>2</td><td>0</td><td>1</td><td>10</td><td>4</td><td class="col-gd">+6</td><td class="col-pts"><strong>6</strong></td></tr><tr class="qualify"><td class="col-flag">🇨🇮</td><td class="col-team" title="Ivory Coast">Ivory Coast</td><td>3</td><td>2</td><td>0</td><td>1</td><td>4</td><td>2</td><td class="col-gd">+2</td><td class="col-pts"><strong>6</strong></td></tr><tr class="qualify"><td class="col-flag">🇪🇨</td><td class="col-team" title="Ecuador">Ecuador</td><td>3</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td class="col-gd">0</td><td class="col-pts"><strong>4</strong></td></tr><tr class=""><td class="col-flag">🇨🇼</td><td class="col-team" title="Curacao">Curacao</td><td>3</td><td>0</td><td>1</td><td>2</td><td>1</td><td>9</td><td class="col-gd">-8</td><td class="col-pts"><strong>1</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group F</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇳🇱</td><td class="col-team" title="Netherlands">Netherlands</td><td>3</td><td>2</td><td>1</td><td>0</td><td>10</td><td>4</td><td class="col-gd">+6</td><td class="col-pts"><strong>7</strong></td></tr><tr class="qualify"><td class="col-flag">🇯🇵</td><td class="col-team" title="Japan">Japan</td><td>3</td><td>1</td><td>2</td><td>0</td><td>7</td><td>3</td><td class="col-gd">+4</td><td class="col-pts"><strong>5</strong></td></tr><tr class="qualify"><td class="col-flag">🇸🇪</td><td class="col-team" title="Sweden">Sweden</td><td>3</td><td>1</td><td>1</td><td>1</td><td>7</td><td>7</td><td class="col-gd">0</td><td class="col-pts"><strong>4</strong></td></tr><tr class=""><td class="col-flag">🇹🇳</td><td class="col-team" title="Tunisia">Tunisia</td><td>3</td><td>0</td><td>0</td><td>3</td><td>2</td><td>12</td><td class="col-gd">-10</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group G</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇧🇪</td><td class="col-team" title="Belgium">Belgium</td><td>3</td><td>1</td><td>2</td><td>0</td><td>6</td><td>2</td><td class="col-gd">+4</td><td class="col-pts"><strong>5</strong></td></tr><tr class="qualify"><td class="col-flag">🇪🇬</td><td class="col-team" title="Egypt">Egypt</td><td>3</td><td>1</td><td>2</td><td>0</td><td>5</td><td>3</td><td class="col-gd">+2</td><td class="col-pts"><strong>5</strong></td></tr><tr class=""><td class="col-flag">🇮🇷</td><td class="col-team" title="Iran">Iran</td><td>3</td><td>0</td><td>3</td><td>0</td><td>3</td><td>3</td><td class="col-gd">0</td><td class="col-pts"><strong>3</strong></td></tr><tr class=""><td class="col-flag">🇳🇿</td><td class="col-team" title="New Zealand">New Zealand</td><td>3</td><td>0</td><td>1</td><td>2</td><td>4</td><td>10</td><td class="col-gd">-6</td><td class="col-pts"><strong>1</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group H</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇪🇸</td><td class="col-team" title="Spain">Spain</td><td>3</td><td>2</td><td>1</td><td>0</td><td>5</td><td>0</td><td class="col-gd">+5</td><td class="col-pts"><strong>7</strong></td></tr><tr class="qualify"><td class="col-flag">🇨🇻</td><td class="col-team" title="Cape Verde">Cape Verde</td><td>3</td><td>0</td><td>3</td><td>0</td><td>2</td><td>2</td><td class="col-gd">0</td><td class="col-pts"><strong>3</strong></td></tr><tr class=""><td class="col-flag">🇺🇾</td><td class="col-team" title="Uruguay">Uruguay</td><td>3</td><td>0</td><td>2</td><td>1</td><td>3</td><td>4</td><td class="col-gd">-1</td><td class="col-pts"><strong>2</strong></td></tr><tr class=""><td class="col-flag">🇸🇦</td><td class="col-team" title="Saudi Arabia">Saudi Arabia</td><td>3</td><td>0</td><td>2</td><td>1</td><td>1</td><td>5</td><td class="col-gd">-4</td><td class="col-pts"><strong>2</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group I</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇫🇷</td><td class="col-team" title="France">France</td><td>3</td><td>3</td><td>0</td><td>0</td><td>10</td><td>2</td><td class="col-gd">+8</td><td class="col-pts"><strong>9</strong></td></tr><tr class="qualify"><td class="col-flag">🇳🇴</td><td class="col-team" title="Norway">Norway</td><td>3</td><td>2</td><td>0</td><td>1</td><td>8</td><td>7</td><td class="col-gd">+1</td><td class="col-pts"><strong>6</strong></td></tr><tr class="qualify"><td class="col-flag">🇸🇳</td><td class="col-team" title="Senegal">Senegal</td><td>3</td><td>1</td><td>0</td><td>2</td><td>8</td><td>6</td><td class="col-gd">+2</td><td class="col-pts"><strong>3</strong></td></tr><tr class=""><td class="col-flag">🇮🇶</td><td class="col-team" title="Iraq">Iraq</td><td>3</td><td>0</td><td>0</td><td>3</td><td>1</td><td>12</td><td class="col-gd">-11</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group J</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇦🇷</td><td class="col-team" title="Argentina">Argentina</td><td>3</td><td>3</td><td>0</td><td>0</td><td>8</td><td>1</td><td class="col-gd">+7</td><td class="col-pts"><strong>9</strong></td></tr><tr class="qualify"><td class="col-flag">🇦🇹</td><td class="col-team" title="Austria">Austria</td><td>3</td><td>1</td><td>1</td><td>1</td><td>6</td><td>6</td><td class="col-gd">0</td><td class="col-pts"><strong>4</strong></td></tr><tr class="qualify"><td class="col-flag">🇩🇿</td><td class="col-team" title="Algeria">Algeria</td><td>3</td><td>1</td><td>1</td><td>1</td><td>5</td><td>7</td><td class="col-gd">-2</td><td class="col-pts"><strong>4</strong></td></tr><tr class=""><td class="col-flag">🇯🇴</td><td class="col-team" title="Jordan">Jordan</td><td>3</td><td>0</td><td>0</td><td>3</td><td>3</td><td>8</td><td class="col-gd">-5</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group K</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🇨🇴</td><td class="col-team" title="Colombia">Colombia</td><td>3</td><td>2</td><td>1</td><td>0</td><td>4</td><td>1</td><td class="col-gd">+3</td><td class="col-pts"><strong>7</strong></td></tr><tr class="qualify"><td class="col-flag">🇵🇹</td><td class="col-team" title="Portugal">Portugal</td><td>3</td><td>1</td><td>2</td><td>0</td><td>6</td><td>1</td><td class="col-gd">+5</td><td class="col-pts"><strong>5</strong></td></tr><tr class="qualify"><td class="col-flag">🇨🇩</td><td class="col-team" title="DR Congo">DR Congo</td><td>3</td><td>1</td><td>1</td><td>1</td><td>4</td><td>3</td><td class="col-gd">+1</td><td class="col-pts"><strong>4</strong></td></tr><tr class=""><td class="col-flag">🇺🇿</td><td class="col-team" title="Uzbekistan">Uzbekistan</td><td>3</td><td>0</td><td>0</td><td>3</td><td>2</td><td>11</td><td class="col-gd">-9</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div><div class="group-card"><h3>Group L</h3><div class="table-scroll"><table class="standings-table"><thead><tr><th></th><th class="col-team">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th><th title="Goals For">GF</th><th title="Goals Against">GA</th><th title="Goal Difference">GD</th><th title="Points">Pts</th></tr></thead><tbody><tr class="qualify"><td class="col-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</td><td class="col-team" title="England">England</td><td>3</td><td>2</td><td>1</td><td>0</td><td>6</td><td>2</td><td class="col-gd">+4</td><td class="col-pts"><strong>7</strong></td></tr><tr class="qualify"><td class="col-flag">🇭🇷</td><td class="col-team" title="Croatia">Croatia</td><td>3</td><td>2</td><td>0</td><td>1</td><td>5</td><td>5</td><td class="col-gd">0</td><td class="col-pts"><strong>6</strong></td></tr><tr class="qualify"><td class="col-flag">🇬🇭</td><td class="col-team" title="Ghana">Ghana</td><td>3</td><td>1</td><td>1</td><td>1</td><td>2</td><td>2</td><td class="col-gd">0</td><td class="col-pts"><strong>4</strong></td></tr><tr class=""><td class="col-flag">🇵🇦</td><td class="col-team" title="Panama">Panama</td><td>3</td><td>0</td><td>0</td><td>3</td><td>0</td><td>4</td><td class="col-gd">-4</td><td class="col-pts"><strong>0</strong></td></tr></tbody></table></div></div>
     </div>
   </section>
 
   <!-- ── Upcoming Matches ────────────────────────────────────── -->
   <section>
-    <h2>📅 Upcoming Match Predictions</h2>
+    <h2>📅 Remaining Match Predictions</h2>
     <p style="color:var(--muted);font-size:0.8rem;margin-bottom:0.5rem;">
-      Bar: <span style="color:#60a5fa">■ home win</span>
-      &nbsp;·&nbsp; <span style="color:#94a3b8">■ draw</span>
-      &nbsp;·&nbsp; <span style="color:#f87171">■ away win</span>
-      &nbsp;·&nbsp; Percentages shown in badges below each bar.
+      Bar: <span style="color:#60a5fa">■ first team advances</span> &nbsp;·&nbsp; <span style="color:#f87171">■ second team advances</span> &nbsp;·&nbsp; Knockout matches cannot end in a draw: level games go to extra time and penalties.
     </p>
-    <div class="date-section"><h4>📅 2026-06-18</h4>
+    <div class="date-section"><h4>📅 2026-07-09 · Quarter-Finals</h4>
         <div class="match-card">
           <div class="match-teams">
-            <span class="team-a">🇲🇽 Mexico</span>
-            <span class="vs">vs</span>
-            <span class="team-b">South Korea 🇰🇷</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:40%"></div>
-            <div class="seg seg-draw" style="width:26%"></div>
-            <div class="seg seg-away" style="width:34%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">41%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">27%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">32%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-24</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇿🇦 South Africa</span>
-            <span class="vs">vs</span>
-            <span class="team-b">South Korea 🇰🇷</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:14%"></div>
-            <div class="seg seg-draw" style="width:20%"></div>
-            <div class="seg seg-away" style="width:66%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">14%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">20%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">66%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇨🇿 Czechia</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Mexico 🇲🇽</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:15%"></div>
-            <div class="seg seg-draw" style="width:20%"></div>
-            <div class="seg seg-away" style="width:65%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">15%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">21%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">64%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-18</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇨🇭 Switzerland</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Bosnia & Herzegovina 🇧🇦</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:57%"></div>
-            <div class="seg seg-draw" style="width:22%"></div>
-            <div class="seg seg-away" style="width:21%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">57%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">23%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">20%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇨🇦 Canada</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Qatar 🇶🇦</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:60%"></div>
-            <div class="seg seg-draw" style="width:21%"></div>
-            <div class="seg seg-away" style="width:19%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">60%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">22%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">18%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-24</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇨🇭 Switzerland</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Canada 🇨🇦</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:39%"></div>
-            <div class="seg seg-draw" style="width:27%"></div>
-            <div class="seg seg-away" style="width:34%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">40%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">27%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">33%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇧🇦 Bosnia & Herzegovina</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Qatar 🇶🇦</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:43%"></div>
-            <div class="seg seg-draw" style="width:26%"></div>
-            <div class="seg seg-away" style="width:31%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">43%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">26%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">31%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-19</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</span>
+            <span class="team-a">🇫🇷 France</span>
             <span class="vs">vs</span>
             <span class="team-b">Morocco 🇲🇦</span>
           </div>
           <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:24%"></div>
-            <div class="seg seg-draw" style="width:24%"></div>
-            <div class="seg seg-away" style="width:52%"></div>
+            <div class="seg seg-home" style="width:62%"></div>
+            <div class="seg seg-away" style="width:38%"></div>
           </div>
           <div class="outcome-pills">
             <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">24%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">24%</span>
+              <span class="pill-label">France advance</span>
+              <span class="pill-pct">62%</span>
             </div>
             <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">52%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇧🇷 Brazil</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Haiti 🇭🇹</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:70%"></div>
-            <div class="seg seg-draw" style="width:18%"></div>
-            <div class="seg seg-away" style="width:12%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">70%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">18%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">11%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-24</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Brazil 🇧🇷</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:25%"></div>
-            <div class="seg seg-draw" style="width:24%"></div>
-            <div class="seg seg-away" style="width:51%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">25%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">24%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">51%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇲🇦 Morocco</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Haiti 🇭🇹</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:71%"></div>
-            <div class="seg seg-draw" style="width:18%"></div>
-            <div class="seg seg-away" style="width:11%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">71%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">18%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">11%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-19</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇺🇸 USA</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Australia 🇦🇺</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:15%"></div>
-            <div class="seg seg-draw" style="width:20%"></div>
-            <div class="seg seg-away" style="width:65%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">16%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">21%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">64%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇹🇷 Turkey</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Paraguay 🇵🇾</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:42%"></div>
-            <div class="seg seg-draw" style="width:26%"></div>
-            <div class="seg seg-away" style="width:32%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">42%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">26%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">31%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-25</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇹🇷 Turkey</span>
-            <span class="vs">vs</span>
-            <span class="team-b">USA 🇺🇸</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:60%"></div>
-            <div class="seg seg-draw" style="width:21%"></div>
-            <div class="seg seg-away" style="width:19%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">61%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">22%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">18%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇵🇾 Paraguay</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Australia 🇦🇺</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:28%"></div>
-            <div class="seg seg-draw" style="width:25%"></div>
-            <div class="seg seg-away" style="width:47%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">28%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">26%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">46%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-20</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇩🇪 Germany</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Ivory Coast 🇨🇮</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:53%"></div>
-            <div class="seg seg-draw" style="width:23%"></div>
-            <div class="seg seg-away" style="width:24%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">54%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">24%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">23%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇪🇨 Ecuador</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Curacao 🇨🇼</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:63%"></div>
-            <div class="seg seg-draw" style="width:20%"></div>
-            <div class="seg seg-away" style="width:17%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">63%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">21%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">16%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-25</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇪🇨 Ecuador</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Germany 🇩🇪</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:31%"></div>
-            <div class="seg seg-draw" style="width:26%"></div>
-            <div class="seg seg-away" style="width:43%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">31%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">26%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">43%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇨🇼 Curacao</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Ivory Coast 🇨🇮</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:23%"></div>
-            <div class="seg seg-draw" style="width:23%"></div>
-            <div class="seg seg-away" style="width:54%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">23%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">24%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">53%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-20</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇳🇱 Netherlands</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Sweden 🇸🇪</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:57%"></div>
-            <div class="seg seg-draw" style="width:22%"></div>
-            <div class="seg seg-away" style="width:21%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">57%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">23%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">20%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-21</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇹🇳 Tunisia</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Japan 🇯🇵</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:12%"></div>
-            <div class="seg seg-draw" style="width:19%"></div>
-            <div class="seg seg-away" style="width:69%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">12%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">19%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">69%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-25</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇯🇵 Japan</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Sweden 🇸🇪</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:59%"></div>
-            <div class="seg seg-draw" style="width:21%"></div>
-            <div class="seg seg-away" style="width:20%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">60%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">22%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">18%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇹🇳 Tunisia</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Netherlands 🇳🇱</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:13%"></div>
-            <div class="seg seg-draw" style="width:19%"></div>
-            <div class="seg seg-away" style="width:68%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">14%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">20%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">67%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-21</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇧🇪 Belgium</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Iran 🇮🇷</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:38%"></div>
-            <div class="seg seg-draw" style="width:27%"></div>
-            <div class="seg seg-away" style="width:35%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
+              <span class="pill-label">Morocco advance</span>
               <span class="pill-pct">38%</span>
             </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">27%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">34%</span>
-            </div>
           </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇳🇿 New Zealand</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Egypt 🇪🇬</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:30%"></div>
-            <div class="seg seg-draw" style="width:26%"></div>
-            <div class="seg seg-away" style="width:44%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">30%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">26%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">44%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-26</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇳🇿 New Zealand</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Belgium 🇧🇪</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:20%"></div>
-            <div class="seg seg-draw" style="width:22%"></div>
-            <div class="seg seg-away" style="width:58%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">20%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">23%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">57%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇪🇬 Egypt</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Iran 🇮🇷</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:27%"></div>
-            <div class="seg seg-draw" style="width:25%"></div>
-            <div class="seg seg-away" style="width:48%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">28%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">25%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">47%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-21</h4>
+        </div></div><div class="date-section"><h4>📅 2026-07-10 · Quarter-Finals</h4>
         <div class="match-card">
           <div class="match-teams">
             <span class="team-a">🇪🇸 Spain</span>
             <span class="vs">vs</span>
-            <span class="team-b">Saudi Arabia 🇸🇦</span>
+            <span class="team-b">Belgium 🇧🇪</span>
+          </div>
+          <div class="prob-bar-stacked">
+            <div class="seg seg-home" style="width:80%"></div>
+            <div class="seg seg-away" style="width:20%"></div>
+          </div>
+          <div class="outcome-pills">
+            <div class="pill pill-home">
+              <span class="pill-label">Spain advance</span>
+              <span class="pill-pct">80%</span>
+            </div>
+            <div class="pill pill-away">
+              <span class="pill-label">Belgium advance</span>
+              <span class="pill-pct">20%</span>
+            </div>
+          </div>
+        </div></div><div class="date-section"><h4>📅 2026-07-11 · Quarter-Finals</h4>
+        <div class="match-card">
+          <div class="match-teams">
+            <span class="team-a">🇳🇴 Norway</span>
+            <span class="vs">vs</span>
+            <span class="team-b">England 🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+          </div>
+          <div class="prob-bar-stacked">
+            <div class="seg seg-home" style="width:40%"></div>
+            <div class="seg seg-away" style="width:60%"></div>
+          </div>
+          <div class="outcome-pills">
+            <div class="pill pill-home">
+              <span class="pill-label">Norway advance</span>
+              <span class="pill-pct">40%</span>
+            </div>
+            <div class="pill pill-away">
+              <span class="pill-label">England advance</span>
+              <span class="pill-pct">60%</span>
+            </div>
+          </div>
+        </div></div><div class="date-section"><h4>📅 2026-07-12 · Quarter-Finals</h4>
+        <div class="match-card">
+          <div class="match-teams">
+            <span class="team-a">🇦🇷 Argentina</span>
+            <span class="vs">vs</span>
+            <span class="team-b">Switzerland 🇨🇭</span>
           </div>
           <div class="prob-bar-stacked">
             <div class="seg seg-home" style="width:78%"></div>
-            <div class="seg seg-draw" style="width:15%"></div>
-            <div class="seg seg-away" style="width:7%"></div>
+            <div class="seg seg-away" style="width:22%"></div>
           </div>
           <div class="outcome-pills">
             <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
+              <span class="pill-label">Argentina advance</span>
               <span class="pill-pct">78%</span>
             </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">15%</span>
-            </div>
             <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">6%</span>
-            </div>
-          </div>
-        </div>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇺🇾 Uruguay</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Cape Verde 🇨🇻</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:64%"></div>
-            <div class="seg seg-draw" style="width:20%"></div>
-            <div class="seg seg-away" style="width:16%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">64%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">20%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">15%</span>
-            </div>
-          </div>
-        </div></div><div class="date-section"><h4>📅 2026-06-26</h4>
-        <div class="match-card">
-          <div class="match-teams">
-            <span class="team-a">🇺🇾 Uruguay</span>
-            <span class="vs">vs</span>
-            <span class="team-b">Spain 🇪🇸</span>
-          </div>
-          <div class="prob-bar-stacked">
-            <div class="seg seg-home" style="width:15%"></div>
-            <div class="seg seg-draw" style="width:20%"></div>
-            <div class="seg seg-away" style="width:65%"></div>
-          </div>
-          <div class="outcome-pills">
-            <div class="pill pill-home">
-              <span class="pill-label">Home win</span>
-              <span class="pill-pct">16%</span>
-            </div>
-            <div class="pill pill-draw">
-              <span class="pill-label">Draw</span>
-              <span class="pill-pct">21%</span>
-            </div>
-            <div class="pill pill-away">
-              <span class="pill-label">Away win</span>
-              <span class="pill-pct">64%</span>
+              <span class="pill-label">Switzerland advance</span>
+              <span class="pill-pct">22%</span>
             </div>
           </div>
         </div></div>

@@ -98,12 +98,17 @@ def calibrate_team_stats(
         key=lambda r: r.get("date", "9999-99-99"),
     )
 
-    # Deduplicate by match key (same match may appear twice in older files)
+    # Deduplicate by match key (same match may appear twice in older files).
+    # The date is part of the key: two teams CAN meet twice in one World Cup
+    # (group stage + knockout), and both matches are real Elo evidence.
+    # A knockout match decided on penalties counts as a DRAW for Elo/goals
+    # (result_actual uses the 120-minute score), which is the standard
+    # convention: the shootout only decides who advances in the bracket.
     seen = set()
     unique_results = []
     for r in sorted_results:
         h, a = r.get("home", ""), r.get("away", "")
-        key  = f"{min(h,a)}||{max(h,a)}"
+        key  = f"{min(h,a)}||{max(h,a)}||{r.get('date','')}"
         if key not in seen and h and a:
             seen.add(key)
             unique_results.append(r)

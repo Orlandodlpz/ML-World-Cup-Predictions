@@ -1,7 +1,18 @@
 # CLAUDE.md — ML World Cup Predictions
 
 > This file is the project brain. Updated every 5 prompts or on topic change.
-> Last updated: 2026-06-16 | Phase: Full System + Live Calibration ✅
+> Last updated: 2026-07-08 | Phase: Knockout Stage, Bracket-Aware Simulation ✅
+
+---
+
+## ⚡ Quick Start (the two commands you always need)
+
+```bash
+.venv/bin/python models/simulator.py          # fetch latest results + re-simulate
+.venv/bin/python outputs/report_generator.py  # regenerate the HTML dashboard
+```
+
+Always use `.venv/bin/python` (the project venv has numpy/xgboost; plain `python3` may not). A launchd job runs both automatically every day at 9:00 AM (see Daily Refresh below), so usually the dashboard is already current: just open `outputs/wc2026_predictions.html`.
 
 ---
 
@@ -130,11 +141,22 @@ Reads `simulation_results.json` and generates `outputs/wc2026_predictions.html` 
 
 ## How to Run — Daily During the Tournament
 
-Just run the simulator — it auto-fetches new results from ESPN, updates Elo ratings and goal averages, and prints what changed since last time:
+**Automatic:** a launchd job (`com.elpato.wc2026-daily-refresh`) runs `scripts/daily_refresh.sh` every day at 9:00 AM. It fetches new results, re-simulates, and regenerates the dashboard. Output is logged to `logs/refresh.log`.
 
 ```bash
-python3 models/simulator.py
-python3 outputs/report_generator.py
+# check it is loaded
+launchctl list | grep wc2026
+# run it manually
+bash scripts/daily_refresh.sh
+# unload it after the tournament
+launchctl bootout gui/$(id -u)/com.elpato.wc2026-daily-refresh
+```
+
+**Manual:** run the simulator yourself. It auto-fetches new results from ESPN, updates Elo ratings and goal averages, and prints what changed since last time:
+
+```bash
+.venv/bin/python models/simulator.py
+.venv/bin/python outputs/report_generator.py
 ```
 
 On startup the simulator prints a report like:
@@ -237,35 +259,29 @@ python3 analysis/explainability.py --explain "Brazil" "Morocco"
 
 ---
 
-## Known Results (as of 2026-06-16)
+## Known Results
 
-> ⚡ From June 12 onward, results are auto-fetched from ESPN on every simulator run. This table shows the seed results embedded in `real_results.json`.
+All real results (full group stage, Round of 32, Round of 16) live in `data/live/real_results.json`, auto-populated from the ESPN API on every simulator run. No table is kept here because it would go stale within a day.
 
-| Match | Score | Date |
-|---|---|---|
-| 🇲🇽 Mexico vs 🇿🇦 South Africa | 2–0 | 2026-06-12 |
-| 🇰🇷 South Korea vs 🇨🇿 Czechia | 2–1 | 2026-06-12 |
-| 🇨🇦 Canada vs 🇧🇦 Bosnia & Herz. | 1–1 | 2026-06-13 |
-| 🇶🇦 Qatar vs 🇨🇭 Switzerland | 1–1 | 2026-06-13 |
-| 🇧🇷 Brazil vs 🇲🇦 Morocco | 1–1 | 2026-06-13 |
-| 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland vs 🇭🇹 Haiti | 1–0 | 2026-06-14 |
-| 🇺🇸 USA vs 🇵🇾 Paraguay | 4–1 | 2026-06-14 |
-| 🇦🇺 Australia vs 🇹🇷 Turkey | 2–0 | 2026-06-14 |
-| 🇩🇪 Germany vs 🇨🇼 Curacao | 7–1 | 2026-06-15 |
-| 🇨🇮 Ivory Coast vs 🇪🇨 Ecuador | 1–0 | 2026-06-15 |
-| 🇳🇱 Netherlands vs 🇯🇵 Japan | 2–2 | 2026-06-15 |
-| 🇸🇪 Sweden vs 🇹🇳 Tunisia | 5–1 | 2026-06-15 |
-| 🇧🇪 Belgium vs 🇪🇬 Egypt | 1–1 | 2026-06-15 |
-| 🇮🇷 Iran vs 🇳🇿 New Zealand | 2–2 | 2026-06-16 |
-| 🇪🇸 Spain vs 🇨🇻 Cape Verde | 0–0 | 2026-06-15 |
-| 🇸🇦 Saudi Arabia vs 🇺🇾 Uruguay | 1–1 | 2026-06-15 |
-| 🇫🇷 France vs 🇸🇳 Senegal | 3–1 | 2026-06-16 |
-| 🇳🇴 Norway vs 🇮🇶 Iraq | 4–1 | 2026-06-16 |
+---
+
+## Knockout Stage Behavior (added 2026-07-07)
+
+Once the group stage is complete, the simulator becomes **bracket-aware** instead of re-simulating the whole tournament:
+
+- Final group standings are computed from real results, not simulated.
+- The real knockout bracket is used, with actual R32 and R16 winners advancing (extra time and penalty outcomes respected, since ESPN reports who advanced).
+- Monte Carlo runs only cover the **remaining** unplayed matches. As of July 8 that means the 8 real quarter-finalists onward.
+- Eliminated teams show 0% champion probability. `simulation_results.json` carries a `meta` block with `phase`, `alive`, and `eliminated`.
+- The dashboard shows final group tables, the real bracket with played results filled in, and predictions only for matches still to come.
+- The pre-knockout simulation path still works unchanged if run on a state where groups are not finished.
+
+Current top champion odds (July 8): 🇪🇸 Spain ~32%, 🇦🇷 Argentina ~21%, 🇫🇷 France ~18%, 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England ~14%.
 
 ---
 
 ## Current Status
 
-**All code complete and tested. Ready to run on your machine.**
+**All code complete and running on a daily schedule.**
 
-Completed components: Data pipeline · Feature engineering · XGBoost match predictor · Poisson goal model · Monte Carlo tournament simulator · SHAP explainability + post-match learning · Player squad data · Player strength engine · Lineup scenario simulator · Flag emoji support · HTML predictions dashboard · Real 2026 WC fixtures (12 groups × 4 teams) · Correct R32 bracket logic (32 teams, best-8-third-place) · Live results auto-fetch (ESPN API) · Elo recalibration from WC26 results · Opponent-adjusted goal calibration · Bayesian blend (8–30%) · New-match terminal report on each simulator run
+Completed components: Data pipeline · Feature engineering · XGBoost match predictor · Poisson goal model · Monte Carlo tournament simulator · SHAP explainability + post-match learning · Player squad data · Player strength engine · Lineup scenario simulator · Flag emoji support · HTML predictions dashboard · Real 2026 WC fixtures (12 groups × 4 teams) · Correct R32 bracket logic (32 teams, best-8-third-place) · Live results auto-fetch (ESPN API) · Elo recalibration from WC26 results · Opponent-adjusted goal calibration · Bayesian blend (8–30%) · New-match terminal report on each simulator run · **Bracket-aware knockout simulation (conditions on real results)** · **Daily 9 AM auto-refresh via launchd**
