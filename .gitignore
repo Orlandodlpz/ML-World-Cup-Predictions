@@ -3,8 +3,6 @@
 /data/*.pyo
 /data/*.pyd
 /data/.Python
-learning.md
 *.pyc
-/docs/
 .venv
 *.log
