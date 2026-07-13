@@ -1116,5 +1116,49 @@
     "home_pens": 4,
     "away_pens": 3,
     "winner": "Switzerland"
+  },
+  {
+    "home": "France",
+    "away": "Morocco",
+    "home_goals": 2,
+    "away_goals": 0,
+    "date": "2026-07-09",
+    "round": "Quarter-Finals",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "France"
+  },
+  {
+    "home": "Spain",
+    "away": "Belgium",
+    "home_goals": 2,
+    "away_goals": 1,
+    "date": "2026-07-10",
+    "round": "Quarter-Finals",
+    "status": "FT",
+    "source": "espn_auto",
+    "winner": "Spain"
+  },
+  {
+    "home": "Norway",
+    "away": "England",
+    "home_goals": 1,
+    "away_goals": 2,
+    "date": "2026-07-11",
+    "round": "Quarter-Finals",
+    "status": "AET",
+    "source": "espn_auto",
+    "winner": "England"
+  },
+  {
+    "home": "Argentina",
+    "away": "Switzerland",
+    "home_goals": 3,
+    "away_goals": 1,
+    "date": "2026-07-12",
+    "round": "Quarter-Finals",
+    "status": "AET",
+    "source": "espn_auto",
+    "winner": "Argentina"
   }
 ]

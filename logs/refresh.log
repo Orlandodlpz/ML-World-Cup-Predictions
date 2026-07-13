@@ -122,3 +122,298 @@
    Open in your browser to see the full predictions dashboard!
 
 ===== 2026-07-08 09:00:06 done =====
+
+===== 2026-07-09 09:16:09 daily refresh =====
+
+────────────────────────────────────────────────────────────
+  🌍 2026 WC Live Results Update
+────────────────────────────────────────────────────────────
+
+  ✓ No new matches since last simulation.
+
+  📋 Total WC26 matches on record: 96
+────────────────────────────────────────────────────────────
+
+✓ Loaded historical team stats
+✓ Player strength blended (44 teams)
+✓ Live calibration applied (96 WC26 matches)
+✓ XGBoost predictor loaded
+
+🏟️  Group stage COMPLETE — live knockout bracket active
+    Knockout matches played: 24 · Teams still alive: 8 · Eliminated: 40
+
+🎲 Running 10,000 bracket-conditioned simulations...
+
+  0%|                                       | 0/10000 [00:00<?, ?it/s]100%|███████████████████████| 10000/10000 [00:00<00:00, 120166.17it/s]
+
+💾 Results saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/simulation_results.json
+
+🏆 World Cup Winner Probabilities (Top 15):
+
+   1. 🇪🇸 Spain                    29.7%  ███████████████████████████████████████████████████████████
+   2. 🇦🇷 Argentina                20.7%  █████████████████████████████████████████
+   3. 🇫🇷 France                   17.6%  ███████████████████████████████████
+   4. 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  15.8%  ███████████████████████████████
+   5. 🇲🇦 Morocco                  5.7%  ███████████
+   6. 🇳🇴 Norway                   5.7%  ███████████
+   7. 🇧🇪 Belgium                  2.7%  █████
+   8. 🇨🇭 Switzerland              1.9%  ███
+
+📊 Teams most likely to reach the Final:
+
+  🇪🇸 Spain                    47.1%
+  🇦🇷 Argentina                42.9%
+  🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  33.1%
+  🇫🇷 France                   30.5%
+  🇳🇴 Norway                   16.8%
+  🇲🇦 Morocco                  15.0%
+  🇧🇪 Belgium                  7.4%
+  🇨🇭 Switzerland              7.2%
+
+✅ Simulation complete! Next: python outputs/report_generator.py
+
+📊 Generating 2026 WC Predictions Report...
+
+  ✅ 72 group matches played so far (standings updated)
+  Top 3 predictions from simulation_results.json:
+    🇪🇸 Spain: 29.7% to win the World Cup
+    🇦🇷 Argentina: 20.7% to win the World Cup
+    🇫🇷 France: 17.6% to win the World Cup
+
+✅ Report saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/wc2026_predictions.html
+   Open in your browser to see the full predictions dashboard!
+
+===== 2026-07-09 09:16:12 done =====
+
+===== 2026-07-10 09:06:04 daily refresh =====
+
+────────────────────────────────────────────────────────────
+  🌍 2026 WC Live Results Update
+────────────────────────────────────────────────────────────
+
+  🆕 1 match(es) added since your last simulation:
+
+     🇫🇷 France 2–0 Morocco 🇲🇦  [2026-07-09]
+
+  📋 Total WC26 matches on record: 97
+────────────────────────────────────────────────────────────
+
+✓ Loaded historical team stats
+✓ Player strength blended (44 teams)
+✓ Live calibration applied (97 WC26 matches)
+✓ XGBoost predictor loaded
+
+🏟️  Group stage COMPLETE — live knockout bracket active
+    Knockout matches played: 25 · Teams still alive: 7 · Eliminated: 41
+
+🎲 Running 10,000 bracket-conditioned simulations...
+
+  0%|                                       | 0/10000 [00:00<?, ?it/s]100%|███████████████████████| 10000/10000 [00:00<00:00, 128140.78it/s]
+
+💾 Results saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/simulation_results.json
+
+🏆 World Cup Winner Probabilities (Top 15):
+
+   1. 🇫🇷 France                   30.1%  ████████████████████████████████████████████████████████████
+   2. 🇪🇸 Spain                    26.4%  ████████████████████████████████████████████████████
+   3. 🇦🇷 Argentina                19.9%  ███████████████████████████████████████
+   4. 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  14.4%  ████████████████████████████
+   5. 🇳🇴 Norway                   5.0%  ██████████
+   6. 🇧🇪 Belgium                  2.4%  ████
+   7. 🇨🇭 Switzerland              1.8%  ███
+
+📊 Teams most likely to reach the Final:
+
+  🇫🇷 France                   53.2%
+  🇦🇷 Argentina                43.0%
+  🇪🇸 Spain                    40.8%
+  🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  32.8%
+  🇳🇴 Norway                   16.4%
+  🇨🇭 Switzerland              7.7%
+  🇧🇪 Belgium                  6.0%
+
+✅ Simulation complete! Next: python outputs/report_generator.py
+
+📊 Generating 2026 WC Predictions Report...
+
+  ✅ 72 group matches played so far (standings updated)
+  Top 3 predictions from simulation_results.json:
+    🇫🇷 France: 30.1% to win the World Cup
+    🇪🇸 Spain: 26.4% to win the World Cup
+    🇦🇷 Argentina: 19.9% to win the World Cup
+
+✅ Report saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/wc2026_predictions.html
+   Open in your browser to see the full predictions dashboard!
+
+===== 2026-07-10 09:06:07 done =====
+
+===== 2026-07-11 09:11:18 daily refresh =====
+
+────────────────────────────────────────────────────────────
+  🌍 2026 WC Live Results Update
+────────────────────────────────────────────────────────────
+
+  🆕 1 match(es) added since your last simulation:
+
+     🇪🇸 Spain 2–1 Belgium 🇧🇪  [2026-07-10]
+
+  📋 Total WC26 matches on record: 98
+────────────────────────────────────────────────────────────
+
+✓ Loaded historical team stats
+✓ Player strength blended (44 teams)
+✓ Live calibration applied (98 WC26 matches)
+✓ XGBoost predictor loaded
+
+🏟️  Group stage COMPLETE — live knockout bracket active
+    Knockout matches played: 26 · Teams still alive: 6 · Eliminated: 42
+
+🎲 Running 10,000 bracket-conditioned simulations...
+
+  0%|                                       | 0/10000 [00:00<?, ?it/s]100%|███████████████████████| 10000/10000 [00:00<00:00, 149923.47it/s]
+
+💾 Results saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/simulation_results.json
+
+🏆 World Cup Winner Probabilities (Top 15):
+
+   1. 🇪🇸 Spain                    34.5%  █████████████████████████████████████████████████████████████████████
+   2. 🇫🇷 France                   26.5%  ████████████████████████████████████████████████████
+   3. 🇦🇷 Argentina                18.5%  █████████████████████████████████████
+   4. 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  14.1%  ████████████████████████████
+   5. 🇳🇴 Norway                   4.7%  █████████
+   6. 🇨🇭 Switzerland              1.7%  ███
+
+📊 Teams most likely to reach the Final:
+
+  🇪🇸 Spain                    53.7%
+  🇫🇷 France                   46.3%
+  🇦🇷 Argentina                42.2%
+  🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  34.1%
+  🇳🇴 Norway                   16.1%
+  🇨🇭 Switzerland              7.6%
+
+✅ Simulation complete! Next: python outputs/report_generator.py
+
+📊 Generating 2026 WC Predictions Report...
+
+  ✅ 72 group matches played so far (standings updated)
+  Top 3 predictions from simulation_results.json:
+    🇪🇸 Spain: 34.5% to win the World Cup
+    🇫🇷 France: 26.5% to win the World Cup
+    🇦🇷 Argentina: 18.5% to win the World Cup
+
+✅ Report saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/wc2026_predictions.html
+   Open in your browser to see the full predictions dashboard!
+
+===== 2026-07-11 09:11:20 done =====
+
+===== 2026-07-12 09:05:56 daily refresh =====
+
+────────────────────────────────────────────────────────────
+  🌍 2026 WC Live Results Update
+────────────────────────────────────────────────────────────
+
+  🆕 2 match(es) added since your last simulation:
+
+     🇳🇴 Norway 1–2 England 🏴󠁧󠁢󠁥󠁮󠁧󠁿  [2026-07-11]
+     🇦🇷 Argentina 3–1 Switzerland 🇨🇭  [2026-07-12]
+
+  📋 Total WC26 matches on record: 100
+────────────────────────────────────────────────────────────
+
+✓ Loaded historical team stats
+✓ Player strength blended (44 teams)
+✓ Live calibration applied (100 WC26 matches)
+✓ XGBoost predictor loaded
+
+🏟️  Group stage COMPLETE — live knockout bracket active
+    Knockout matches played: 28 · Teams still alive: 4 · Eliminated: 44
+
+🎲 Running 10,000 bracket-conditioned simulations...
+
+  0%|                                       | 0/10000 [00:00<?, ?it/s]100%|███████████████████████| 10000/10000 [00:00<00:00, 168520.39it/s]
+
+💾 Results saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/simulation_results.json
+
+🏆 World Cup Winner Probabilities (Top 15):
+
+   1. 🇪🇸 Spain                    31.9%  ███████████████████████████████████████████████████████████████
+   2. 🇫🇷 France                   24.0%  ████████████████████████████████████████████████
+   3. 🇦🇷 Argentina                22.3%  ████████████████████████████████████████████
+   4. 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  21.8%  ███████████████████████████████████████████
+
+📊 Teams most likely to reach the Final:
+
+  🇪🇸 Spain                    54.3%
+  🇦🇷 Argentina                50.2%
+  🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  49.8%
+  🇫🇷 France                   45.7%
+
+✅ Simulation complete! Next: python outputs/report_generator.py
+
+📊 Generating 2026 WC Predictions Report...
+
+  ✅ 72 group matches played so far (standings updated)
+  Top 3 predictions from simulation_results.json:
+    🇪🇸 Spain: 31.9% to win the World Cup
+    🇫🇷 France: 24.0% to win the World Cup
+    🇦🇷 Argentina: 22.3% to win the World Cup
+
+✅ Report saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/wc2026_predictions.html
+   Open in your browser to see the full predictions dashboard!
+
+===== 2026-07-12 09:05:59 done =====
+
+===== 2026-07-12 23:30:28 daily refresh =====
+
+────────────────────────────────────────────────────────────
+  🌍 2026 WC Live Results Update
+────────────────────────────────────────────────────────────
+
+  ✓ No new matches since last simulation.
+
+  📋 Total WC26 matches on record: 100
+────────────────────────────────────────────────────────────
+
+✓ Loaded historical team stats
+✓ Player strength blended (44 teams)
+✓ Live calibration applied (100 WC26 matches)
+✓ XGBoost predictor loaded
+
+🏟️  Group stage COMPLETE — live knockout bracket active
+    Knockout matches played: 28 · Teams still alive: 4 · Eliminated: 44
+
+🎲 Running 10,000 bracket-conditioned simulations...
+
+  0%|                                       | 0/10000 [00:00<?, ?it/s]100%|███████████████████████| 10000/10000 [00:00<00:00, 173395.01it/s]
+
+💾 Results saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/simulation_results.json
+
+🏆 World Cup Winner Probabilities (Top 15):
+
+   1. 🇪🇸 Spain                    31.5%  ███████████████████████████████████████████████████████████████
+   2. 🇫🇷 France                   24.6%  █████████████████████████████████████████████████
+   3. 🇦🇷 Argentina                22.0%  ███████████████████████████████████████████
+   4. 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  21.9%  ███████████████████████████████████████████
+
+📊 Teams most likely to reach the Final:
+
+  🇪🇸 Spain                    53.2%
+  🏴󠁧󠁢󠁥󠁮󠁧󠁿 England                  51.1%
+  🇦🇷 Argentina                48.9%
+  🇫🇷 France                   46.8%
+
+✅ Simulation complete! Next: python outputs/report_generator.py
+
+📊 Generating 2026 WC Predictions Report...
+
+  ✅ 72 group matches played so far (standings updated)
+  Top 3 predictions from simulation_results.json:
+    🇪🇸 Spain: 31.5% to win the World Cup
+    🇫🇷 France: 24.6% to win the World Cup
+    🇦🇷 Argentina: 22.0% to win the World Cup
+
+✅ Report saved → /Users/elpato/Claude/Projects/ML World Cup Predictions/outputs/wc2026_predictions.html
+   Open in your browser to see the full predictions dashboard!
+
+===== 2026-07-12 23:30:29 done =====

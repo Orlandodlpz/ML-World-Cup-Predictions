@@ -1,17 +1,33 @@
 # 🌍 2026 FIFA World Cup — ML Predictions
 
-A machine learning system that predicts the entire 2026 FIFA World Cup. It trains on 150+ years of international football history, simulates the tournament 10,000 times, and generates a live HTML dashboard with championship probabilities, group standings, and upcoming match predictions.
+A machine learning system that predicts the entire 2026 FIFA World Cup. It trains on 150+ years of international football history, auto-fetches real results from the ESPN API as the tournament unfolds, simulates the remaining bracket 10,000 times, and generates a live HTML dashboard with championship probabilities, per-match predictions, and the real knockout bracket.
+
+![Championship probabilities dashboard](docs/championship-probabilities.png)
 
 ---
 
 ## What it does
 
-- **Match prediction** — XGBoost classifier trained on 50,000+ historical matches predicts Win / Draw / Loss probabilities for any matchup
-- **Tournament simulation** — Monte Carlo simulation runs the full 48-team bracket 10,000 times to produce stable championship odds
-- **Player-aware** — FIFA ratings and market values for all 48 squads adjust expected goals, so squad depth and star players matter
-- **Scenario analysis** — Simulate injuries, formation changes, or player removals and instantly see the probability impact
-- **Live learning** — Feed in real 2026 WC results after each match; the model updates and SHAP explains why predictions were right or wrong
-- **HTML dashboard** — Self-contained visual report with flags, probability bars, group standings, and upcoming match predictions
+- **Match prediction:** XGBoost classifier trained on 50,000+ historical matches predicts Win / Draw / Loss probabilities for any matchup
+- **Live results:** every run auto-fetches the latest 2026 WC scores from the ESPN API and recalibrates Elo ratings and goal averages
+- **Bracket-aware simulation:** once the group stage ends, Monte Carlo runs are conditioned on the real bracket: actual standings, actual knockout winners, and only the remaining matches simulated. Eliminated teams show 0%
+- **Per-match predictions:** for every remaining match, expected goals per team, the most likely scorelines, and how it ends (decided in 90 minutes, extra time, or penalties)
+- **Player-aware:** FIFA ratings and market values for all 48 squads adjust expected goals, so squad depth and star players matter
+- **Scenario analysis:** simulate injuries, formation changes, or player removals and instantly see the probability impact
+- **Explainability:** SHAP shows which features drove each prediction, and why wrong predictions were wrong
+- **HTML dashboard:** self-contained visual report with flags, probability bars, the live bracket, and match prediction panels
+
+### The live knockout bracket
+
+Real results fill in as they happen, including extra time and penalty outcomes. Unplayed matches show live advance probabilities.
+
+![Knockout bracket with real results](docs/knockout-bracket.png)
+
+### Per-match prediction panels
+
+Each remaining match gets expected goals, likely scorelines, and the probability it goes to extra time or penalties. All computed analytically from the Poisson scoreline matrix: P(extra time) is the matrix diagonal, extra time is a mini Poisson match at 30% of each team's scoring rate, and penalties are modeled as a near coin flip because real shootouts are close to random.
+
+![Per-match predictions with extra time and penalties](docs/match-predictions.png)
 
 ---
 
@@ -103,12 +119,17 @@ python3 outputs/report_generator.py
 
 ## During the tournament
 
-After each real match, feed in the result and regenerate:
+No manual result entry needed. The simulator fetches all new results from the ESPN API on startup, recalibrates, and re-simulates:
 
 ```bash
-python3 analysis/explainability.py --update "Brazil" "Morocco" 1 1
 python3 models/simulator.py
 python3 outputs/report_generator.py
+```
+
+To fully automate it, schedule those two commands daily. On macOS this repo uses a launchd job that runs `scripts/daily_refresh.sh` every morning at 9:00 AM and logs to `logs/refresh.log` (see the script for the plist details). On Linux, a cron entry does the same:
+
+```cron
+0 9 * * * cd /path/to/repo && python3 models/simulator.py && python3 outputs/report_generator.py
 ```
 
 ---

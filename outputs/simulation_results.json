@@ -96,34 +96,22 @@
     "Switzerland": 1.0
   },
   "Semi-Finals": {
-    "Spain": 0.7596,
-    "Argentina": 0.7437,
-    "England": 0.6097,
-    "France": 0.5937,
-    "Morocco": 0.4063,
-    "Norway": 0.3903,
-    "Switzerland": 0.2563,
-    "Belgium": 0.2404
+    "France": 1.0,
+    "Spain": 1.0,
+    "England": 1.0,
+    "Argentina": 1.0
   },
   "Final": {
-    "Spain": 0.458,
-    "Argentina": 0.4217,
-    "England": 0.3323,
-    "France": 0.2986,
-    "Norway": 0.1682,
-    "Morocco": 0.1617,
-    "Belgium": 0.0817,
-    "Switzerland": 0.0778
+    "Spain": 0.5323,
+    "England": 0.5115,
+    "Argentina": 0.4885,
+    "France": 0.4677
   },
   "Champion": {
-    "Spain": 0.3018,
-    "Argentina": 0.2066,
-    "France": 0.1659,
-    "England": 0.1565,
-    "Morocco": 0.0645,
-    "Norway": 0.0562,
-    "Belgium": 0.0295,
-    "Switzerland": 0.019
+    "Spain": 0.3152,
+    "France": 0.2456,
+    "Argentina": 0.2199,
+    "England": 0.2193
   },
   "bracket": {
     "rounds": [
@@ -481,216 +469,56 @@
             "away": "Morocco",
             "home_label": "France",
             "away_label": "Morocco",
-            "played": false,
-            "winner": null,
-            "home_goals": null,
-            "away_goals": null,
-            "status": null,
+            "played": true,
+            "home_goals": 2,
+            "away_goals": 0,
+            "status": "FT",
             "home_pens": null,
             "away_pens": null,
-            "date": "2026-07-09",
-            "p_home": 0.5965,
-            "p_away": 0.4035,
-            "pred": {
-              "home": "France",
-              "away": "Morocco",
-              "home_xg": 1.21,
-              "away_xg": 1.19,
-              "p_home_90": 0.483,
-              "p_draw_90": 0.2201,
-              "p_away_90": 0.2969,
-              "p_regulation": 0.7799,
-              "p_extra_time": 0.2201,
-              "p_penalties": 0.1215,
-              "p_home_et": 0.0498,
-              "p_away_et": 0.0488,
-              "p_home_pens": 0.0637,
-              "p_away_pens": 0.0578,
-              "p_home_total": 0.5965,
-              "p_away_total": 0.4035,
-              "top_scorelines": [
-                {
-                  "score": "1-1",
-                  "home_goals": 1,
-                  "away_goals": 1,
-                  "prob": 0.1306
-                },
-                {
-                  "score": "1-0",
-                  "home_goals": 1,
-                  "away_goals": 0,
-                  "prob": 0.1098
-                },
-                {
-                  "score": "0-1",
-                  "home_goals": 0,
-                  "away_goals": 1,
-                  "prob": 0.108
-                }
-              ]
-            }
+            "winner": "France",
+            "date": "2026-07-09"
           },
           {
             "home": "Spain",
             "away": "Belgium",
             "home_label": "Spain",
             "away_label": "Belgium",
-            "played": false,
-            "winner": null,
-            "home_goals": null,
-            "away_goals": null,
-            "status": null,
+            "played": true,
+            "home_goals": 2,
+            "away_goals": 1,
+            "status": "FT",
             "home_pens": null,
             "away_pens": null,
-            "date": "2026-07-10",
-            "p_home": 0.7655,
-            "p_away": 0.2345,
-            "pred": {
-              "home": "Spain",
-              "away": "Belgium",
-              "home_xg": 1.661,
-              "away_xg": 0.664,
-              "p_home_90": 0.6317,
-              "p_draw_90": 0.2097,
-              "p_away_90": 0.1586,
-              "p_regulation": 0.7903,
-              "p_extra_time": 0.2097,
-              "p_penalties": 0.115,
-              "p_home_et": 0.0705,
-              "p_away_et": 0.0241,
-              "p_home_pens": 0.0633,
-              "p_away_pens": 0.0518,
-              "p_home_total": 0.7655,
-              "p_away_total": 0.2345,
-              "top_scorelines": [
-                {
-                  "score": "1-0",
-                  "home_goals": 1,
-                  "away_goals": 0,
-                  "prob": 0.1624
-                },
-                {
-                  "score": "2-0",
-                  "home_goals": 2,
-                  "away_goals": 0,
-                  "prob": 0.1349
-                },
-                {
-                  "score": "1-1",
-                  "home_goals": 1,
-                  "away_goals": 1,
-                  "prob": 0.1078
-                }
-              ]
-            }
+            "winner": "Spain",
+            "date": "2026-07-10"
           },
           {
             "home": "Norway",
             "away": "England",
             "home_label": "Norway",
             "away_label": "England",
-            "played": false,
-            "winner": null,
-            "home_goals": null,
-            "away_goals": null,
-            "status": null,
+            "played": true,
+            "home_goals": 1,
+            "away_goals": 2,
+            "status": "AET",
             "home_pens": null,
             "away_pens": null,
-            "date": "2026-07-11",
-            "p_home": 0.3887,
-            "p_away": 0.6114,
-            "pred": {
-              "home": "Norway",
-              "away": "England",
-              "home_xg": 1.052,
-              "away_xg": 2.542,
-              "p_home_90": 0.3073,
-              "p_draw_90": 0.2342,
-              "p_away_90": 0.4586,
-              "p_regulation": 0.7658,
-              "p_extra_time": 0.2342,
-              "p_penalties": 0.1,
-              "p_home_et": 0.0331,
-              "p_away_et": 0.1011,
-              "p_home_pens": 0.0483,
-              "p_away_pens": 0.0517,
-              "p_home_total": 0.3887,
-              "p_away_total": 0.6114,
-              "top_scorelines": [
-                {
-                  "score": "1-2",
-                  "home_goals": 1,
-                  "away_goals": 2,
-                  "prob": 0.0934
-                },
-                {
-                  "score": "0-2",
-                  "home_goals": 0,
-                  "away_goals": 2,
-                  "prob": 0.0888
-                },
-                {
-                  "score": "1-3",
-                  "home_goals": 1,
-                  "away_goals": 3,
-                  "prob": 0.0792
-                }
-              ]
-            }
+            "winner": "England",
+            "date": "2026-07-11"
           },
           {
             "home": "Argentina",
             "away": "Switzerland",
             "home_label": "Argentina",
             "away_label": "Switzerland",
-            "played": false,
-            "winner": null,
-            "home_goals": null,
-            "away_goals": null,
-            "status": null,
+            "played": true,
+            "home_goals": 3,
+            "away_goals": 1,
+            "status": "AET",
             "home_pens": null,
             "away_pens": null,
-            "date": "2026-07-12",
-            "p_home": 0.7463,
-            "p_away": 0.2537,
-            "pred": {
-              "home": "Argentina",
-              "away": "Switzerland",
-              "home_xg": 2.192,
-              "away_xg": 0.799,
-              "p_home_90": 0.5648,
-              "p_draw_90": 0.2721,
-              "p_away_90": 0.1631,
-              "p_regulation": 0.7279,
-              "p_extra_time": 0.2721,
-              "p_penalties": 0.1291,
-              "p_home_et": 0.1106,
-              "p_away_et": 0.0324,
-              "p_home_pens": 0.0709,
-              "p_away_pens": 0.0583,
-              "p_home_total": 0.7463,
-              "p_away_total": 0.2537,
-              "top_scorelines": [
-                {
-                  "score": "2-0",
-                  "home_goals": 2,
-                  "away_goals": 0,
-                  "prob": 0.1207
-                },
-                {
-                  "score": "1-0",
-                  "home_goals": 1,
-                  "away_goals": 0,
-                  "prob": 0.1101
-                },
-                {
-                  "score": "2-1",
-                  "home_goals": 2,
-                  "away_goals": 1,
-                  "prob": 0.0964
-                }
-              ]
-            }
+            "winner": "Argentina",
+            "date": "2026-07-12"
           }
         ]
       },
@@ -698,10 +526,10 @@
         "name": "Semi-Finals",
         "matches": [
           {
-            "home": null,
-            "away": null,
-            "home_label": "Winner QF1",
-            "away_label": "Winner QF2",
+            "home": "France",
+            "away": "Spain",
+            "home_label": "France",
+            "away_label": "Spain",
             "played": false,
             "winner": null,
             "home_goals": null,
@@ -709,17 +537,53 @@
             "status": null,
             "home_pens": null,
             "away_pens": null,
-            "date": "",
-            "feeds": [
-              0,
-              1
-            ]
+            "date": "2026-07-14",
+            "p_home": 0.4599,
+            "p_away": 0.5401,
+            "pred": {
+              "home": "France",
+              "away": "Spain",
+              "home_xg": 0.777,
+              "away_xg": 1.624,
+              "p_home_90": 0.3629,
+              "p_draw_90": 0.2411,
+              "p_away_90": 0.396,
+              "p_regulation": 0.7589,
+              "p_extra_time": 0.2411,
+              "p_penalties": 0.131,
+              "p_home_et": 0.0325,
+              "p_away_et": 0.0776,
+              "p_home_pens": 0.0645,
+              "p_away_pens": 0.0666,
+              "p_home_total": 0.4599,
+              "p_away_total": 0.5401,
+              "top_scorelines": [
+                {
+                  "score": "0-1",
+                  "home_goals": 0,
+                  "away_goals": 1,
+                  "prob": 0.1472
+                },
+                {
+                  "score": "0-2",
+                  "home_goals": 0,
+                  "away_goals": 2,
+                  "prob": 0.1195
+                },
+                {
+                  "score": "1-1",
+                  "home_goals": 1,
+                  "away_goals": 1,
+                  "prob": 0.1144
+                }
+              ]
+            }
           },
           {
-            "home": null,
-            "away": null,
-            "home_label": "Winner QF3",
-            "away_label": "Winner QF4",
+            "home": "England",
+            "away": "Argentina",
+            "home_label": "England",
+            "away_label": "Argentina",
             "played": false,
             "winner": null,
             "home_goals": null,
@@ -727,11 +591,47 @@
             "status": null,
             "home_pens": null,
             "away_pens": null,
-            "date": "",
-            "feeds": [
-              2,
-              3
-            ]
+            "date": "2026-07-15",
+            "p_home": 0.5051,
+            "p_away": 0.495,
+            "pred": {
+              "home": "England",
+              "away": "Argentina",
+              "home_xg": 1.178,
+              "away_xg": 1.126,
+              "p_home_90": 0.3975,
+              "p_draw_90": 0.2147,
+              "p_away_90": 0.3879,
+              "p_regulation": 0.7853,
+              "p_extra_time": 0.2147,
+              "p_penalties": 0.1208,
+              "p_home_et": 0.0482,
+              "p_away_et": 0.0457,
+              "p_home_pens": 0.0594,
+              "p_away_pens": 0.0614,
+              "p_home_total": 0.5051,
+              "p_away_total": 0.495,
+              "top_scorelines": [
+                {
+                  "score": "1-1",
+                  "home_goals": 1,
+                  "away_goals": 1,
+                  "prob": 0.1325
+                },
+                {
+                  "score": "1-0",
+                  "home_goals": 1,
+                  "away_goals": 0,
+                  "prob": 0.1176
+                },
+                {
+                  "score": "0-1",
+                  "home_goals": 0,
+                  "away_goals": 1,
+                  "prob": 0.1124
+                }
+              ]
+            }
           }
         ]
       },
@@ -1333,18 +1233,15 @@
     "group_complete": true,
     "alive": [
       "Argentina",
-      "Belgium",
       "England",
       "France",
-      "Morocco",
-      "Norway",
-      "Spain",
-      "Switzerland"
+      "Spain"
     ],
     "eliminated": [
       "Algeria",
       "Australia",
       "Austria",
+      "Belgium",
       "Bosnia & Herzegovina",
       "Brazil",
       "Canada",
@@ -1365,8 +1262,10 @@
       "Japan",
       "Jordan",
       "Mexico",
+      "Morocco",
       "Netherlands",
       "New Zealand",
+      "Norway",
       "Panama",
       "Paraguay",
       "Portugal",
@@ -1377,6 +1276,7 @@
       "South Africa",
       "South Korea",
       "Sweden",
+      "Switzerland",
       "Tunisia",
       "Turkey",
       "USA",

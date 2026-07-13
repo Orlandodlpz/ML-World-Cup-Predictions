@@ -5,6 +5,6 @@
 /data/.Python
 learning.md
 *.pyc
-
+/docs/
 .venv
 *.log
